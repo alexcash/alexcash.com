@@ -3,17 +3,17 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Design & Development: Alex Cash
+  Site: alexcash.com
+  Twitter: alexcash
+  Location: Iowa
 
 /* THANKS */
-  Names (& URL):
+  Names (& URL): Room 12 Studios, Jared and Adam Cash for hosting arrangements
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
+  Components: Modernizr, jQuery, Tweet! (http://tweet.seaofclouds.com/)
   Software:
 
 
