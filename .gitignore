@@ -1,0 +1,4 @@
+#these two directories are created by our build script for publishing. we don't need them stored in git.
+
+publish/
+intermediate/
