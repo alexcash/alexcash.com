@@ -96,6 +96,7 @@ img.floatleft{
 
 body{
 	background-color:#d3cec3;
+	color:2b2b2b;
 }
 
 h1{
@@ -117,7 +118,7 @@ h2{
 	text-align:center;
 }
 
-p{
+#bio p{
 	color:2b2b2b;
 	text-align:center;
 }
@@ -199,11 +200,30 @@ a:hover{
 	text-decoration: underline;
 }
 
-#bio{
-	
+#bio{	
 	width:450px;
 	margin: 20px auto 20px auto;
 }
+
+
+#contentblock{
+	width:500px;
+	margin: 20px auto 20px auto;
+}
+
+#contentblock ul{
+	list-style-type: none;
+	margin: 0;
+	padding:5px;
+}
+
+#contentblock li{
+	margin-bottom:10px;
+}
+
+div.clear { clear: both; }
+
+
 
 
 
