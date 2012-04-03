@@ -73,7 +73,9 @@ td { vertical-align: top; }
 /* ===== Primary Styles ========================================================
    Author:Alex Cash
    ========================================================================== */
-
+html{
+	overflow-y: scroll;
+}
 header{
 	margin:0;
 	padding:0;
