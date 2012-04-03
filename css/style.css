@@ -264,10 +264,6 @@ div.clear { clear: both; }
    ========================================================================== */
 
 @media screen and (max-device-width: 480px) {
-	#page-wrap {
-		width:	700px;
-		margin: 10px;
-	}
 
 }
 
