@@ -105,9 +105,10 @@ header{
 	/* For IE 8*/
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 	padding: 10px;
-	border-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	width: 500px;
-	height: 410px;
+	height: 421px;
 	margin: 0 auto;
 }
 
