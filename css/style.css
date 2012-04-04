@@ -227,16 +227,6 @@ a:hover{
 	text-decoration: underline;
 }
 
-#contentblock ul{
-	list-style-type: none;
-	margin: 0;
-	padding:5px;
-}
-
-#contentblock li{
-	margin-bottom:10px;
-}
-
 #linksblock{
 	text-align:center;
 	width:500px;
