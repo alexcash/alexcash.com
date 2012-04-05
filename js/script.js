@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 jQuery(function($){
     jQuery(function($){
-        $(".tweet").tweet({
+        $(".tweetr").tweet({
             username: "alexcash",
             join_text: "auto",
             avatar_size: null,
