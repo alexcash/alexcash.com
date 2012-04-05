@@ -240,36 +240,6 @@ footer{
 	padding: 0;
 }
 
-lt-ie8 .tweet{
-	padding-left:10px;
-	padding-top:12px;
-	padding-right:15px;
-	background-image: url("../img/box.png");
-	background-repeat:no-repeat;
-	background-position:left top;
-	margin-top: 18px;
-	margin-right: -5px;
-	width: 335px;
-	height:175px;
-	display: block;
-	position:absolute;
-	left:500px;
-	top:20px;
-	font-size:115%;
-	color:666666;
-}
-
-lt-ie8 .tweet p{
-	padding:0;
-	margin:0;
-}
-
-lt-id8 .tweet ul{
-	list-style-type: none;
-	margin: 0;
-	padding:5px;
-}
-
 a, a:visited{
 	color: #427500;
 	text-decoration:none;
