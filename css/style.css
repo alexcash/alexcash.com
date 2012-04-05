@@ -157,11 +157,16 @@ nav ul{
 	margin:auto;
 }
 
+nav li{
+	display:block;
+	width: 25%;
+	float:left;
+}
+
 nav a, nav a:visited{
 	text-align:center;
 	display:block;
-	float:left;
-	width: 25%;
+	width: 100%;
 	margin: 0;
 	font-size:130%;
 	color:#FFF;
