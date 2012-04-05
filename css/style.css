@@ -179,9 +179,15 @@ nav a, nav a:visited{
 	color:#FFF;
 	background-color:#999967;
 	text-decoration:none;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
-nav a:hover{
+nav a:hover, nav a:focus{
+	background-color:#666666;
 	color:#FFF;
 	text-decoration:none;
 }

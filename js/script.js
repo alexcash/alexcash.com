@@ -1,13 +1,6 @@
 /* Author:
 
 */
-$(document).ready(function(){
-	$(".bg").hover(function() {
-		$(this).animate({ backgroundColor: "#666666" }, 500);
-	},function() {
-		$(this).animate({ backgroundColor: "#999967" }, 500);
-	});
-});
 
 jQuery(function($){
     jQuery(function($){
