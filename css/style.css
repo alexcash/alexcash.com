@@ -76,22 +76,27 @@ td { vertical-align: top; }
 html{
 	overflow-y: scroll;
 }
-header{
-	margin:0;
-	padding:0;
-	display:block;
-	clear:both;
-	height: 300px;
-	position:relative;
-}
 
 #main{
+	width:100%;
+	background-color:#6082A1;
+}
+
+#center960{
+	position: relative;
 	display:block;
 	clear:both;
-	width:100%;
+	width:960px;
+	margin:0 auto;
 	height: 825px;
-	background-color:#d3cec3;
-	background-image: url("../img/bg.png");
+	background-color:#d3cec3;	
+	background: url("../img/bg.png");
+	background: url("../img/bg.png"), -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, #6082A1 60%); /* FF3.6+ */
+	background: url("../img/bg.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: url("../img/bg.png"), -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* Chrome10+,Safari5.1+ */
+	background: url("../img/bg.png"), -o-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* Opera 12+ */
+	background: url("../img/bg.png"), -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* IE10+ */
+	background: url("../img/bg.png"), radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* W3C */
 	background-repeat: no-repeat;
 	background-position: left bottom;
 	overflow:hidden;
@@ -99,8 +104,8 @@ header{
 
 #container{
 	position:absolute;
-	left: 400px;
-	top: 415px;
+	left: 350px;
+	top: 395px;
 	background-color: rgb(211, 206, 195);
 	background-color: rgba(211, 206, 195, 0.9);
 	padding: 10px;
@@ -113,9 +118,14 @@ header{
 	-webkit-border-top-right-radius: 15px;
 	border-top-right-radius: 15px;
 	
-	width: 500px;
-	height: 421px;
+	width: 530px;
+	height: 441px;
 	margin: 0 auto;
+}
+
+.accentText{
+	text-align: center;
+	font-style: italic;
 }
 
 img.floatleft{
@@ -131,9 +141,8 @@ body{
 
 h1{
 	text-transform:uppercase;
-	margin:0;
-	padding:0;
-	border:0;
+	margin-top: -10px;
+	margin-bottom: -20px;
 	text-align:center;
 	font-size: 500%;
 	color:2b2b2b;
@@ -156,6 +165,7 @@ nav{
 	clear:both;
 	display:block;
 	width:100%;
+	background-color: #1D1C39;
 	border-bottom: 2px solid #666666;
 }
 
@@ -177,7 +187,7 @@ nav a, nav a:visited{
 	margin: 0;
 	font-size:130%;
 	color:#FFF;
-	background-color:#999967;
+	background-color:#1D1C39;
 	text-decoration:none;
 	
 	-webkit-transition: all 0.5s ease-in-out;
@@ -215,16 +225,16 @@ footer{
 	border:5px solid #2b2b2b;
 	background:rgb(211, 206, 195);
 	/* css3 */
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
+	-webkit-border-radius:10px 10px 10px 0;
+	-moz-border-radius:10px 10px 10px 0;
+	border-radius:15px 15px 15px 0;
 }
 
 .tweet:before{
 	content:"";
 	position:absolute;
 	bottom:-30px; /* value = - border-top-width - border-bottom-width */
-	left:16px; /* controls horizontal position */
+	left:-5px; /* controls horizontal position */
     border-top: 30px;
 	border-right: 30px;
 	border-bottom: 0;
@@ -239,8 +249,8 @@ footer{
 .tweet:after {
  	content:"";
 	position:absolute;
-	bottom:-20px; /* value = - border-top-width - border-bottom-width */
-	left:20px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+	bottom:-18px; /* value = - border-top-width - border-bottom-width */
+	left:0px; /* value = (:before left) + (:before border-left) - (:after border-left) */
 	border-top: 20px;
 	border-right: 20px;
 	border-bottom: 0;
@@ -269,19 +279,32 @@ a:hover{
 }
 
 #linksblock{
+	display: block
+	margin: 0 auto;
 	text-align:center;
-	width:500px;
+	width: 420px;
+	height:120px;
 	margin: 20px auto 20px auto;
 }
 
-#linksblock ul{
-	list-style-type: none;
-	margin: 0;
-	padding:5px;
+.link{
+	float:left;
+	clear:none;
+	padding: 20px
 }
 
-#linksblock li{
-	margin-bottom:10px;
+.link a, .link a:visited{
+	color: transparent;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.link a:hover, .link a:focus{
+	color: black;
+	text-decoration: none;
 }
 
 div.clear { clear: both; }
