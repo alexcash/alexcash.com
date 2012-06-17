@@ -2,6 +2,14 @@
 
 */
 
+//insure last block content and footer take up whole screen
+function flex(){
+	var adjust = window.innerHeight - 875;
+	if(adjust > 0)
+  		$("#flex").height(adjust);
+}
+
+//pull in the tweet
 jQuery(function($){
     jQuery(function($){
         $(".tweetr").tweet({
@@ -15,6 +23,7 @@ jQuery(function($){
     });
 });
 
+//smooth scroll !IMPORTANT! flex() also called at end
 $(document).ready(function() {
   function filterPath(string) {
   return string
@@ -61,8 +70,10 @@ $(document).ready(function() {
     }
     return [];
   }
- 
+  
+  flex();
+   
 });
 
-
-
+//call flex on window resize
+$(window).resize(flex);
