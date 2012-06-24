@@ -43,9 +43,11 @@ $(document).ready(function() {
       if (target) {
         var targetOffset = $target.offset().top;
         $(this).click(function(event) {
+          $('#fix').css('height', '1px');
           event.preventDefault();
           $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
             location.hash = target;
+            $('#fix').css('height', '0px');
           });
         });
       }

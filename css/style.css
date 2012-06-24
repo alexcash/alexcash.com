@@ -362,6 +362,22 @@ nav:after{
 	margin: 0 auto;
 }
 
+#devfade{
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background: transparent; /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(96,130,161,0) 0%, #1f4669 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(96,130,161,0)), color-stop(100%,#1F4669)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(96,130,161,0) 0%, #1f4669 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(96,130,161,0) 0%, #1f4669 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(96,130,161,0) 0%, #1f4669 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(96,130,161,0) 0%, #1f4669 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006082A1', endColorstr='#1F4669',GradientType=0 ); /* IE6-9 */
+}
+
+
 #connect{
 	position: relative;
 	max-width:1100px;
@@ -553,10 +569,19 @@ div.clear { clear: both; }
 	}
 		
 	#connect900{
-		height: 700px;
+		height: 750px;
 	}
 	nav{
 		display: none;
+	}
+	
+	#linksblock{
+		width: 240px;
+	}
+	
+	.link{
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
