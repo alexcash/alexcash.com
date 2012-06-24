@@ -73,9 +73,17 @@ td { vertical-align: top; }
 /* ===== Primary Styles ========================================================
    Author:Alex Cash
    ========================================================================== */
-html{
-	overflow-y: scroll;
-	color: black;
+   
+/* FONTS */
+
+p, a, .tweet{
+	font-family: 'Ledger', sans-serif;
+	font-weight: normal;
+}
+
+h1, h2, nav a{
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
 }
 
 h1{
@@ -88,7 +96,8 @@ h1{
 }
 
 h2{
-	padding: 0;
+	padding: 0px 0px 2px 0px;
+	font-size: 35px;
 	margin: 0;
 	text-align: center;
 	color: white;
@@ -100,18 +109,47 @@ h2{
 	color: white;
 }
 
-
 p{
 	margin-top: 0;
-	margin-bottom: 16px;
+	margin-bottom: 14px;
+	font-size: 15px;
 }
+
+nav a{
+	font-size: 20px;
+}
+
+a, a:visited{
+	color: white;
+	text-decoration:none;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+
+a:hover, a:focus{
+	color:white;
+	text-decoration: underline;
+}
+
+
+/* site wide */
+html{
+	overflow-y: scroll;
+	color: black;
+}
+
+/* Sections in descending order */
 
 #main{
 	-webkit-box-shadow: 0px 0px 30px rgba(50, 50, 50, 1);
 	-moz-box-shadow:    0px 0px 30px rgba(50, 50, 50, 1);
 	box-shadow:         0px 0px 50px rgba(0,0,0,1);
 	max-width:1100px;
-	min-width: 960px;
+	min-width: 900px;
 	margin: 0 auto;
 }
 
@@ -153,7 +191,7 @@ nav:after{
 	background: linear-gradient(top, #1F4669 0%,#6082A1 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F4669', endColorstr='#6082A1',GradientType=0 ); /* IE6-9 */
 	max-width:1100px;
-	min-width: 960px;
+	min-width: 900px;
 	margin: 0 auto;
 }
 
@@ -162,35 +200,30 @@ nav:after{
 	position: relative;
 	height: 100%;
 	max-width:1100px;
-	min-width: 960px;
+	min-width: 900px;
 	margin: 0 auto;
 	background:#6082A1;
 }
 
-#about960{
+#about900{
 	display:block;
 	clear:both;
 	position:relative;
-	width:954px;
+	width:894px;
 	margin:0 auto;
 	padding: 0 3px;
 	height: 825px;
-	background-color:#6082A1;
-	background: url("../img/bg.png");
-	background: url("../img/bg.png"), -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, #6082A1 60%); /* FF3.6+ */
-	background: url("../img/bg.png"), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: url("../img/bg.png"), -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* Chrome10+,Safari5.1+ */
-	background: url("../img/bg.png"), -o-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* Opera 12+ */
-	background: url("../img/bg.png"), -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* IE10+ */
-	background: url("../img/bg.png"), radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#6082A1 60%); /* W3C */
+	background-color: #6082A1;
+	background:url("../img/bgsm.png"), #6082A1;	
+	background-size: 100%;
+	background-position: center top;
 	background-repeat: no-repeat;
-	background-position: left bottom;
 	overflow:hidden;
 }
 
 #about .container{
 	position:absolute;
-	left: 350px;
+	right: 0;
 	top: 395px;
 	background:#6082A1;
 	background: rgba(96, 130, 161, 0.9);
@@ -224,40 +257,99 @@ nav:after{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006082A1', endColorstr='#1F4669',GradientType=0 ); /* IE6-9 */
 }
 
+#aboutsite{
+	position: relative;
+	max-width:1100px;
+	min-width: 900px;
+	margin: 0 auto;
+	background:#1F4669;
+}
+
+#aboutsite900{
+	display:block;
+	clear:both;
+	position:relative;
+	width:894px;
+	height: 610px;
+	margin:0 auto;
+	padding: 0 3px;
+	background:#1F4669;
+	background-size: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	overflow:hidden;
+}
+
+#aboutsite .container{
+	position:absolute;
+	left: 50%;
+	bottom: 0;	
+	width: 600px;
+	height:480px;
+	margin-left: -310px;
+	
+	background-color:rgb(31, 70, 105);
+	background-color:rgba(40,91,135,0.95);
+	padding: 10px;
+	
+	-moz-border-radius-topleft:15px;
+	-webkit-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+	
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;	
+}
+
+#aboutsitefade{
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background: transparent; /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(31,70,105,0) 0%, #6082A1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,70,105,0)), color-stop(100%,#6082A1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(31,70,105,0) 0%, #6082A1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(31,70,105,0) 0%, #6082A1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(31,70,105,0) 0%, #6082A1 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(31,70,105,0) 0%, #6082A1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001F4669', endColorstr='#6082A1',GradientType=0 ); /* IE6-9 */
+}
+
+
+
 #connect{
 	max-width:1100px;
-	min-width: 960px;
+	min-width: 900px;
 	margin: 0 auto;
 	background-color:#1F4669;
 }
 
-#connect960{
+#connect900{
 	display:block;
 	clear:both;
 	position:relative;
-	width:954px;
+	width:894px;
 	margin:0 auto;
 	padding: 0 3px;
 	height: 825px;
 	background-color:#1F4669;
-	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, #1F4669 60%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#1F4669 60%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#1F4669 60%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#1F4669 60%); /* IE10+ */
-	background: radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,#1F4669 60%); /* W3C */
+	background: url("../img/bg2sm.png"), #1F4669;
+	background-size: 100%;
+	background-position: center top;
 	background-repeat: no-repeat;
-	background-position: left bottom;
 	overflow:hidden;
 }
 
 #connect .container{
 	position:absolute;
-	right: 350px;
-	top: 395px;
+	left: 0px;
+	top: 455px;
 	background-color:rgb(31, 70, 105);
 	background-color:rgba(31, 70, 105, 0.9);
 	padding: 10px;
+	padding-left: 100px;
 	
 	-moz-border-radius-topleft:15px;
 	-webkit-border-top-left-radius: 15px;
@@ -267,8 +359,8 @@ nav:after{
 	-webkit-border-top-right-radius: 15px;
 	border-top-right-radius: 15px;
 	
-	width: 530px;
-	height: 441px;
+	width: 370px;
+	height: 370px;
 	margin: 0 auto;
 }
 
@@ -284,20 +376,23 @@ img.floatleft{
 }
 
 #flex{
-	background-color:#1F4669;
-	max-height: 100%;
-	padding-bottom: 50px;
-	overflow: auto;
+	background: rgb(31,70,105); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(31,70,105,1) 0%, rgba(96,130,161,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(31,70,105,1)), color-stop(100%,rgba(96,130,161,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(31,70,105,1) 0%,rgba(96,130,161,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(31,70,105,1) 0%,rgba(96,130,161,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(31,70,105,1) 0%,rgba(96,130,161,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(31,70,105,1) 0%,rgba(96,130,161,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f4669', endColorstr='#6082a1',GradientType=0 ); /* IE6-9 */	
+
+	height: 100px;
 }
 
 footer{
-	margin-top: -50px;
 	height:50px;
 	background-color: #1F4669;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	float:left;
-	clear:both;
 	display:block;
 	width:100%;
 	font-size:80%;
@@ -308,9 +403,9 @@ footer{
 }
 
 .tweet{
-	width: 310px;
+	width: 340px;
 	position:absolute;
-	left:500px;
+	left:510px;
 	top:35px;   
 	padding:15px;
 	margin:1em 0 3em;
@@ -360,35 +455,22 @@ footer{
 	padding: 0;
 }
 
-a, a:visited{
-	color: white;
-	text-decoration:none;
-	
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-
-}
-
-a:hover, a:focus{
-	color:white;
-	text-decoration: underline;
-}
-
 #linksblock{
 	display: block
 	margin: 0 auto;
 	text-align:center;
-	width: 280px;
-	height:120px;
+	width: 320px;
+	height:110px;
 	margin: 20px auto 20px auto;
 }
 
 .link{
 	float:left;
 	clear:none;
-	padding: 20px
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0;
+	padding-bottom: 10px;
 }
 
 .link a, .link a:visited{
@@ -414,9 +496,73 @@ div.clear { clear: both; }
 /* =============================================================================
    Media Queries
    ========================================================================== */
+@media screen and (max-width: 500px) {
+	#pagehead{
+		height: 90px;
+	}
+	
+	h1{
+		font-size: 75px;
+	}
+		
+	#connect900{
+		height: 700px;
+	}
+	nav{
+		display: none;
+	}
+}
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 600px) {
+	.container{
+		left: 0 !important;
+		width: 91% !important;
+		padding-left: 5% !important;
+		padding-right: 5% !important;
+		margin: 0 !important;
+		border-radius: 0 !important;
+		height: auto !important;
+		word-wrap: break-word !important;
+		height: auto !important;
+		top: auto !important;
+		bottom: 0 !important;
+		padding-bottom: 40px !important;
 
+	}
+	
+	#aboutsite, #aboutsite900{
+		display: table;
+	}
+		
+	#aboutsite .container{
+		position: relative;
+		background-color: #1F4669;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 700px){
+
+	.tweet{
+		display: none;
+		word-break: hyphenate;
+	}	
+}
+
+
+@media screen and (max-width: 900px) {
+	#about900, #about, #aboutsite900, #aboutsite, #connect, #connect900, #pagehead, footer, #main, html, body{
+		width: 100%;
+		min-width: 320px;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.tweet{
+		right: 5px;
+		word-break:hypenate;
+		width:auto;
+	}
 }
 
 /* =============================================================================
