@@ -583,6 +583,10 @@ div.clear { clear: both; }
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	
+	#flex{
+		height: 0px;
+	}
 }
 
 @media screen and (max-width: 600px) {
