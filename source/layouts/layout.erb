@@ -9,23 +9,26 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Alex Cash" %></title>
     
-    <%= stylesheet_link_tag "all" %>
-    <link rel="stylesheet" media="screen and (min-width: 600px)" type="text/css" href="stylesheets/images.css" />
-    <!--[if lt IE 9]>
-      <link rel="stylesheet" type="text/css" href="css/images.css" />
-    <![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100|Ledger' rel='stylesheet' type='text/css'>    
+    <%= stylesheet_link_tag "normalize", "all" %>
 
     <%= javascript_include_tag  "all" %>
   </head>
   
   <body class="<%= page_classes %>">
+
     <%= yield %>
+  
+    <footer>
+      Code Content and Design &copy; 2012 Alex Cash<br/>
+      Photo &copy; 2012 Yoder's Photography
+    </footer>
+
     <script>
       var _gaq=[['_setAccount','UA-29834387-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
+
   </body>
 </html>
