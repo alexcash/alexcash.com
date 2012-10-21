@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,20 +8,17 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Alex Cash" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "normalize", "simplegrid", "all" %>
   </head>
-  
   <body class="<%= page_classes %>">
-
-    <%= yield %>
-  
-    <footer>
-      Code Content and Design &copy; 2012 Alex Cash<br/>
-      Photo &copy; 2012 Yoder's Photography
-    </footer>
-
+    <div class="contain">
+      <%= yield %>
+    
+      <footer>
+        Code Content and Design &copy; 2012 Alex Cash<br/>
+        Photo &copy; 2012 Yoder's Photography
+      </footer>
+    </div>
     <script>
       var _gaq=[['_setAccount','UA-29834387-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
