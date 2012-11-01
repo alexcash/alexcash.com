@@ -21,31 +21,79 @@ body{
 	  }
 
 	  .me {
+	  	
 	  	width:75%;
+	  	
+	  	//todo: get compass working;
+	  	background: url("../images/me.jpg");
+		background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../images/me.jpg"); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* W3C */
+
+	  	background-size: cover;
+	  	position:relative;
+
+	  	header {
+	  		position: absolute;
+	  		bottom: 10px;
+	  		right: 10px;
+	  		width: 40%;
+	  		h1{
+	  			text-align: right;
+	  		}
+
+	  		@media screen and (max-width: 600px){
+	  			right: auto;
+	  			bottom: auto;
+	  			top: 10px;
+	  			left: 10px;
+	  			width: 60%;
+	  			h1{
+	  				text-align: left;
+	  			}
+	  		}
+	  	}
+
 	  	@media screen and (max-width: 1024px) {
 	  		width: 100%;
+	  		background-size: auto;
 	  	}
-	  	padding-right: 20px;
-	  }
-	  .blog-preview{
-	  	@media screen and (max-width: 1024px) {
-	  		width: 100%;
-	  	}
-	  	width:25%;
 	  }
 
-	  .tout{
+	  .blog-preview{
+	  	
+	  	padding-left: 20px;
+	  	width:25%;
+
+	  	@media screen and (max-width: 1024px) {
+	  		display:none;
+	  	}
+	  }
+
+	  .tout {
 	  	width: 25%;
+	  	padding-right: 20px;
+
+	  	&:last-of-type{
+	  		padding-right:0;
+	  	}
+
 	  	@media screen and (max-width: 1024px) {
 	  		width: 50%;
 	  	}
 	  	@media screen and (max-width: 600px) {
 	  		width: 100%;
+	  		h2 {
+	  			text-align: right;
+	  		}
 	  	}
-	  	padding-right:20px;
-	  	&:last-of-type{
-	  		padding-right:0px;
-	  	}
+	  }
+	  
+	  footer {
+	  	text-align:right;
 	  }
 	}
 }
