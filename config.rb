@@ -52,6 +52,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = ":title.html"
+end
+
 # Build-specific configuration
 configure :build do
   activate :gzip

@@ -17,12 +17,12 @@ body{
 	  }
 
 	  .blog-preview, .me {
-	  	min-height: 300px;
+	  	height: 300px;
 	  }
 
 	  .me {
 	  	
-	  	width:75%;
+	  	width:66%;
 	  	
 	  	//todo: get compass working;
 	  	background: url("../images/me.jpg");
@@ -33,16 +33,16 @@ body{
 		background: -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* IE10+ */
 		background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* W3C */
 
-	  	background-size: cover;
+	  	background-size: auto;
 	  	position:relative;
 
 	  	header {
 	  		position: absolute;
-	  		bottom: 10px;
-	  		right: 10px;
-	  		width: 40%;
+	  		bottom: 0;
+	  		right: 0;
+	  		width: 310px;
 	  		h1{
-	  			text-align: right;
+	  			margin: 0;
 	  		}
 
 	  		@media screen and (max-width: 600px){
@@ -50,7 +50,6 @@ body{
 	  			bottom: auto;
 	  			top: 10px;
 	  			left: 10px;
-	  			width: 60%;
 	  			h1{
 	  				text-align: left;
 	  			}
@@ -59,14 +58,13 @@ body{
 
 	  	@media screen and (max-width: 1024px) {
 	  		width: 100%;
-	  		background-size: auto;
 	  	}
 	  }
 
 	  .blog-preview{
 	  	
 	  	padding-left: 20px;
-	  	width:25%;
+	  	width:33%;
 
 	  	@media screen and (max-width: 1024px) {
 	  		display:none;

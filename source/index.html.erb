@@ -1,7 +1,7 @@
 ---
 title: Alex Cash
 ---
-
+<!-- design code work play -->
 <section class="me">
 	<header>
 		<h1>Alex Cash</h1>
@@ -10,7 +10,11 @@ title: Alex Cash
 </section>
 
 <section class="blog-preview">
-	check
+	<h2><a href="/blog/">Blog</a></h2>
+	<article>
+		<h3><a href="<%= blog.articles[0].url %>"><%= blog.articles[0].title %></a></h3>
+		<%= blog.articles[0].summary %>
+	</article>
 </section>
 
 <section class="tout about">
