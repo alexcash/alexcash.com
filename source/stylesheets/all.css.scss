@@ -12,6 +12,19 @@ body{
 	  padding: 20px;
 	  margin: 0 auto;
 
+	  @media screen and (max-width: 960px){
+	  	padding: 15px;
+	  }
+	  @media screen and (max-width: 700px){
+	  	padding: 10px;
+	  }
+	  @media screen and (max-width: 550px){
+	  	padding: 5px;
+	  }
+	  @media screen and (max-width: 400px){
+	  	padding: 0;
+	  }
+
 	  section {
 	  	float:left;
 	  }
@@ -81,17 +94,56 @@ body{
 
 	  	@media screen and (max-width: 1024px) {
 	  		width: 50%;
+	  		padding-right: 10px;
 	  	}
 	  	@media screen and (max-width: 600px) {
 	  		width: 100%;
 	  		h2 {
 	  			text-align: right;
 	  		}
+	  		padding-left: 10px;
+	  	}
+	  }
+
+	  .timeline {
+	  	width: 100%;
+	  	overflow-y: hidden;
+	  	overflow-x: scroll;
+	  	-ms-touch-action: pan-x;
+    	-webkit-overflow-scrolling: touch;
+	  	
+	  	.slider {
+			width: 1280px;
+		  	.version{
+		  		padding-top: 25px;
+		  		float: left;
+		  		height: 300px;
+		  		width: 310px;		  		
+		  	}
+	  		.v1 {
+	  			background: brown;
+	  		}
+
+	  		.v2 {
+	  			background: orange;
+	  		}
+
+	  		.v3 {
+	  			background: blue;
+	  		}
+
+	  		.v4 {
+	  			background: gray;
+	  		}
 	  	}
 	  }
 	  
 	  footer {
 	  	text-align:right;
+	  	bottom: 0;
+	  	display: block;
+	  	width: 100%;
+	  	clear: both;
 	  }
 	}
 }
