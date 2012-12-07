@@ -2,15 +2,35 @@
 title: Alex Cash | blog
 ---
 
-<% blog.articles[0...5].each do |article| %>
-  <article>
-    <h1>
-      <a href="<%= article.url %>"><%= article.title %></a>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
+<section class="me blog-me">
+	<header>
+		<h1>Blog</h1>
+		<p>Dangerous thoughts from a dangerous man. <a href="http://www.alexcash.com">Home.</a></p>
+	</header>
+</section>
 
-    <%= article.summary %>
+<section class="row">
+	<% blog.articles[0...3].each do |article| %>
+	  <article>
+	    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
 
-    <a href="<%= article.url %>">Read more</a></div>
-  </article>
-<% end %>
+	    <%= article.summary %>
+
+	    <a href="<%= article.url %>">Read more</a>
+	  </article>
+	<% end %>
+</section>
+
+<section class="row">
+	<% blog.articles[3...5].each do |article| %>
+	  <article>
+	    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
+
+	    <%= article.summary %>
+
+	    <a href="<%= article.url %>">Read more</a>
+	  </article>
+	<% end %>
+<section class="row">

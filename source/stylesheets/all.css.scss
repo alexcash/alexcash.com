@@ -25,119 +25,6 @@ body{
 	  	padding: 0;
 	  }
 
-	  section {
-	  	float:left;
-	  }
-
-	  .blog-preview, .me {
-	  	height: 300px;
-	  }
-
-	  .me {
-	  	
-	  	width:66%;
-	  	
-	  	//todo: get compass working;
-	  	background: url("../images/me.jpg");
-		background: -moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../images/me.jpg"); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* IE10+ */
-		background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%), url("../images/me.jpg"); /* W3C */
-
-	  	background-size: auto;
-	  	position:relative;
-
-	  	header {
-	  		position: absolute;
-	  		bottom: 0;
-	  		right: 0;
-	  		width: 310px;
-	  		h1{
-	  			margin: 0;
-	  		}
-
-	  		@media screen and (max-width: 600px){
-	  			right: auto;
-	  			bottom: auto;
-	  			top: 10px;
-	  			left: 10px;
-	  			h1{
-	  				text-align: left;
-	  			}
-	  		}
-	  	}
-
-	  	@media screen and (max-width: 1024px) {
-	  		width: 100%;
-	  	}
-	  }
-
-	  .blog-preview{
-	  	
-	  	padding-left: 20px;
-	  	width:33%;
-
-	  	@media screen and (max-width: 1024px) {
-	  		display:none;
-	  	}
-	  }
-
-	  .tout {
-	  	width: 25%;
-	  	padding-right: 20px;
-
-	  	&:last-of-type{
-	  		padding-right:0;
-	  	}
-
-	  	@media screen and (max-width: 1024px) {
-	  		width: 50%;
-	  		padding-right: 10px;
-	  	}
-	  	@media screen and (max-width: 600px) {
-	  		width: 100%;
-	  		h2 {
-	  			text-align: right;
-	  		}
-	  		padding-left: 10px;
-	  	}
-	  }
-
-	  .timeline {
-	  	width: 100%;
-	  	overflow-y: hidden;
-	  	overflow-x: scroll;
-	  	-ms-touch-action: pan-x;
-    	-webkit-overflow-scrolling: touch;
-	  	
-	  	.slider {
-			width: 1280px;
-		  	.version{
-		  		padding-top: 25px;
-		  		float: left;
-		  		height: 300px;
-		  		width: 310px;		  		
-		  	}
-	  		.v1 {
-	  			background: brown;
-	  		}
-
-	  		.v2 {
-	  			background: orange;
-	  		}
-
-	  		.v3 {
-	  			background: blue;
-	  		}
-
-	  		.v4 {
-	  			background: gray;
-	  		}
-	  	}
-	  }
-	  
 	  footer {
 	  	text-align:right;
 	  	bottom: 0;
@@ -147,3 +34,6 @@ body{
 	  }
 	}
 }
+
+@import "index";
+@import "blog";
