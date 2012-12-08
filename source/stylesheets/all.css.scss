@@ -4,35 +4,125 @@
 	box-sizing: border-box;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@mixin opacity {
+	-khtml-opacity:.50;
+	-moz-opacity:.50;
+	-ms-filter:"alpha(opacity=50)";
+	filter:alpha(opacity=50);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+	opacity:.50;
+}
+
+.alphaBackground {
+	width: 100%;
+	height: 100%;
+	@include opacity;
+}
+
 body{
-	background: url("../images/white_texture.png");
+	background: #E1E5ED;
+
+	font-family: 'Open Sans', sans-serif;
+
+	h1 {
+		font-size: 250%;
+	}
+
+	h2{
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+
+	h3{
+		margin-top: .3em;
+		margin-bottom: .3em;
+	}
 
 	.contain {
-	  max-width: 1280px;
-	  padding: 20px;
+	
+	-webkit-box-shadow: 0 0 20px rgba(50, 50, 50, 1);
+	-moz-box-shadow: 0 0 20px rgba(50,50,50,1);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+
+	  position: relative;
+	  background: url("../images/white_texture.png");
+	  max-width: 1440px;
+	  min-height: 100%;
+	  //padding: 20px;
 	  margin: 0 auto;
 
-	  @media screen and (max-width: 960px){
-	  	padding: 15px;
-	  }
-	  @media screen and (max-width: 700px){
-	  	padding: 10px;
-	  }
-	  @media screen and (max-width: 550px){
-	  	padding: 5px;
-	  }
-	  @media screen and (max-width: 400px){
-	  	padding: 0;
-	  }
+	  // @media screen and (max-width: 960px){
+	  // 	padding: 15px;
+	  // }
+	  // @media screen and (max-width: 700px){
+	  // 	padding: 10px;
+	  // }
+	  // @media screen and (max-width: 550px){
+	  // 	padding: 5px;
+	  // }
+	  // @media screen and (max-width: 400px){
+	  // 	padding: 0;
+	  // }
+
 
 	  footer {
-	  	text-align:right;
-	  	bottom: 0;
-	  	display: block;
-	  	width: 100%;
+	  	.alphaBackground{
+	  		background-color: yellow;
+	  	}
+	  	position: relative;
+	  	height: 200px;
 	  	clear: both;
+	  	width: 100%;
+	  	text-align: right;
+	  	span {
+	  		position: absolute;
+	  		display: block;
+	  		bottom: 0;
+	  		right: 10px;
+	  	}
 	  }
 	}
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+
+	a {
+		float: left;
+		display: block;
+		width: 33%;
+		
+		&.blogLink {
+			display: none;
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 25%;
+			&.blogLink {
+				display: block;
+			}
+		}
+	}
+}
+
+.subcontent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+nav.blogNav a{
+	width: 25%;
 }
 
 @import "index";
