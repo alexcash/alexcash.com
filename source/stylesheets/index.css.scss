@@ -11,7 +11,9 @@ section {
 	width:66.5%;
 	
 	.alphaBackground{
-		background: url("../images/me.jpg");
+		background: url("../images/v4bg.jpg");
+		background-color: #d2d0c4;
+		background-repeat:no-repeat;
 	}
 
 	background-size: auto;
@@ -20,7 +22,7 @@ section {
 	header {
 		position: absolute;
 		bottom: 20px;
-		right: 0;
+		right: 20px;
 		width: 310px;
 		h1{
 			margin: 0;
@@ -47,7 +49,7 @@ section {
 
 .blog-preview{
 	.alphaBackground {
-		background: green;
+		background: #ab9e92;
 	}
 
 	position: relative;
