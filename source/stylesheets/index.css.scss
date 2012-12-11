@@ -145,6 +145,12 @@ section {
 		overflow-x: scroll;
 		-ms-touch-action: pan-x;
 		-webkit-overflow-scrolling: touch;
+		&:after{
+			display: none;
+		}
+		&:before{
+			display: none;
+		}
 	}
 	
 	.slider {
