@@ -8,8 +8,14 @@ section {
 
 .me {
 	
-	width:66.5%;
-	
+	width:100%;
+	margin-right: -480px;
+
+	.container {
+		position: relative;
+		margin-right: 480px;
+	}
+
 	.alphaBackground{
 		background: url("../images/v4bg.jpg");
 		background-color: #d2d0c4;
@@ -39,22 +45,27 @@ section {
 			h1{
 				text-align: left;
 			}
+			p {
+				display: none;
+			}
 		}
 	}
 
-	@media screen and (max-width: 1024px) {
-		width: 100%;
+	@media screen and (max-width: $breakpoint-1) {
+		margin-right: 0;
+		.container {
+			width: 100%;
+		}
 	}
 }
 
 .blog-preview{
-	.alphaBackground {
-		background: #ab9e92;
-	}
-
+	background: rgba(171, 158, 146, .5);
 	position: relative;
-	width:33.5%;
+	float: right;
+	width:480px;
 	height: 300px;
+
 
 	.subcontent{
 		padding-left: 20px;
@@ -77,7 +88,7 @@ section {
 		float: right;
 	}
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: $breakpoint-1) {
 		display:none;
 	}
 }
@@ -91,7 +102,7 @@ section {
 		padding-right:0;
 	}
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: $breakpoint-1) {
 		width: 50%;
 		padding-right: 10px;
 	}
