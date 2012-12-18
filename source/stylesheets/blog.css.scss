@@ -1,11 +1,8 @@
-$blog-break: 580px;
-$blog-aside: 290px;
-
 .blog-me header span {
 	display: none;
 }
 
-@media screen and (min-width: $blog-break) {
+@media screen and (min-width: $blog-break) and (min-height: 610px) {
 	.blog-me{
 		width: $blog-aside;
 		height: 100%;
@@ -29,13 +26,8 @@ $blog-aside: 290px;
 			}
 		}
 	}
-}
-
-
-section.articles{
-	padding-left: $blog-aside;
-	@media screen and (max-width: $blog-break) {
-	 padding-left: 0;
+	section.articles{
+		padding-left: $blog-aside;
 	}
 }
 
@@ -45,11 +37,7 @@ article {
 	padding-left: 10px;
 	padding-right: 10px;
 
-	&:last-of-type{
-		padding-right:0;
-	}
-
-	@media screen and (max-width: $breakpoint-1) {
+	@media screen and (max-width: 1000px) {
 		width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;

@@ -1,97 +1,10 @@
-section {
-	float:left;
-}
-
-.blog-preview, .me {
-	height: 300px;
-}
-
-.me {
-	
-	width:100%;
-
-	.container {
-		position: relative;
-	}
-
-	.alphaBackground{
-		background: url("../images/v4bg.jpg");
-		background-color: #d2d0c4;
-		background-repeat:no-repeat;
-	}
-
-	background-size: auto;
-	position:relative;
-
-	header {
-		position: absolute;
-		bottom: 10px;
-		right: 20px;
-		width: 310px;
-		h1{
-			margin: 0;
+.home-me nav {
+	text-align: center;
+	span {
+		font-size: .5em;
+		@media screen and (max-width: $blog-break){
+			display: none;
 		}
-		p {
-			margin-top: 5px;
-		}
-
-		@media screen and (max-width: 590px){
-			padding-left: 10px;
-			left: 0;
-			bottom: 0;
-			min-width: 320px;
-			max-width: 100%;
-			width: 100%;
-			background:rgba(255,255,255, 0.3);
-			h1{
-				text-align: left;
-				line-height: 1.2em;
-			}
-			p {
-				display: none;
-			}
-		}
-	}
-
-	@media screen and (max-width: $breakpoint-1) {
-		margin-right: 0;
-		.container {
-			width: 100%;
-		}
-	}
-}
-
-.blog-preview{
-	background: rgba(171, 158, 146, .5);
-	position: relative;
-	float: right;
-	width:480px;
-	height: 300px;
-
-
-	.subcontent{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	a {
-		padding-right: 20px;
-	}
-
-	h2 {		
-		text-align: right;
-	}
-
-	p:last-of-type{
-		margin-bottom: .5em;
-	}
-
-	.read-more{
-		float: right;
-	}
-
-	@media screen and (max-width: $breakpoint-1) {
-		display:none;
 	}
 }
 
