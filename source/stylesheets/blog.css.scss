@@ -1,25 +1,57 @@
-.blog-me{
-	width: 100%;
-	header{
-		width: 250px;
+$blog-break: 580px;
+$blog-aside: 290px;
+
+.blog-me header span {
+	display: none;
+}
+
+@media screen and (min-width: $blog-break) {
+	.blog-me{
+		width: $blog-aside;
+		height: 100%;
+		position: fixed;
+		header {
+			top: 300px;
+			bottom: relative;
+			width: 100%;
+			right: auto;
+			padding-left: 10px;
+			li {
+				width: 100%;
+			}
+			i {
+				padding-left: 20px;
+				padding-right: 40px;
+			}
+			span {
+				display: inline;
+				font-size: 1em;
+			}
+		}
 	}
 }
 
-.row{
-	article {
-		float: left;
-		width: 33%;
+
+section.articles{
+	padding-left: $blog-aside;
+	@media screen and (max-width: $blog-break) {
+	 padding-left: 0;
+	}
+}
+
+article {
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	&:last-of-type{
+		padding-right:0;
+	}
+
+	@media screen and (max-width: $breakpoint-1) {
+		width: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
-
-		&:last-of-type{
-			padding-right:0;
-		}
-
-		@media screen and (max-width: $breakpoint-1) {
-			width: 100%;
-			padding-left: 10px;
-			padding-right: 10px;
-		}
 	}
 }

@@ -9,11 +9,9 @@ section {
 .me {
 	
 	width:100%;
-	//margin-right: -480px;
 
 	.container {
 		position: relative;
-		//margin-right: 480px;
 	}
 
 	.alphaBackground{
@@ -47,6 +45,7 @@ section {
 			background:rgba(255,255,255, 0.3);
 			h1{
 				text-align: left;
+				line-height: 1.2em;
 			}
 			p {
 				display: none;

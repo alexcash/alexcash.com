@@ -98,7 +98,6 @@ body{
 
 nav {
 	ul {
-		height: 2.1em;
 		margin: 0;
 		padding: 0;
 		margin-left: -14px;
@@ -116,17 +115,27 @@ nav {
 		&:hover {
 			color: $a-blue-hover;
 			text-decoration: none;
-			font-size: 2.1em;
 		}
+	}
 
-		&.blogLink {
-			display: none;
-		}
-
-		@media screen and (max-width: $breakpoint-1) {
-			&.blogLink {
-				display: inline;
+	@media screen and (max-width: 590px){
+		text-align: center;
+		ul {
+			margin-left: 10px;
+			margin-right: 10px;
+			li {
+				width: 25%;
 			}
+		}
+	}
+}
+
+.home-me nav {
+	text-align: center;
+	span {
+		font-size: .5em;
+		@media screen and (max-width: 590px){
+			display: none;
 		}
 	}
 }

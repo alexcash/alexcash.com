@@ -2,7 +2,7 @@
 title: Alex Cash
 ---
 <!-- design code work play -->
-<section class="me">
+<section class="me home-me">
 	<div class = "container">
 		<div class="alphaBackground"></div>
 		<header>
@@ -10,10 +10,10 @@ title: Alex Cash
 			<p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
 			<nav>
 				<ul>
-					<li><a href="http://www.facebook.com/alexcash"><i class="icon-facebook"></i></a></li>
-					<li><a href="http://www.twitter.com/alexcash"><i class="icon-twitter"></i></a></li>
-					<li><a href="http://www.github.com/alexcash"><i class="icon-github"></i></a></li>
-					<li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307"><i class="icon-linkedin"></i></a></li>
+					<li><a href="/blog"><i class="icon-book"></i><span> Blog</span></a></li>
+					<li><a href="http://www.twitter.com/alexcash"><i class="icon-twitter"></i><span> Twitter</span></a></li>
+					<li><a href="http://www.github.com/alexcash"><i class="icon-github"></i><span> Github</span></a></li>
+					<li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307"><i class="icon-linkedin"></i><span> Linkedin</span></a></li>
 				</ul>
 			</nav>
 		</header>
@@ -72,17 +72,4 @@ title: Alex Cash
 			</div>
 		</div>
 	</div>
-</section>
-
-<section class="row">
-	<% blog.articles[0...3].each do |article| %>
-	  <article>
-	    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
-	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
-
-	    <%= article.summary %>
-
-	    <a href="<%= article.url %>">Read more</a>
-	  </article>
-	<% end %>
 </section>

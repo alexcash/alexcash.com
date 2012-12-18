@@ -7,39 +7,26 @@ title: Alex Cash | blog
 	<header>
 		<h1>Blog</h1>
 		<p>The writing of Alex Cash. Dangerous thoughts from a dangerous man.</p>
+		<nav>
+			<ul>
+				<li><a href="../"><i class="icon-home"></i><span> Home</span></a></li>
+				<li><a href="http://www.twitter.com/alexcash"><i class="icon-twitter"></i><span> Twitter</span></a></li>
+				<li><a href="http://www.github.com/alexcash"><i class="icon-github"></i><span> Github</span></a></li>
+				<li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307"><i class="icon-linkedin"></i><span> Linkedin</span></a></li>
+			</ul>
+		</nav>
 	</header>
-	<nav class="blogNav">
-		<ul>
-			<li><a href="http://www.twitter.com/alexcash">Twitter</a></li>
-			<li><a href="http://www.github.com/alexcash">Github</a></li>
-			<li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307">Linkedin</a></li>
-			<li><a href="../">Home</a></li>
-		</ul>
-	</nav>
 </section>
 
-<section class="row">
-	<% blog.articles[0...3].each do |article| %>
-	  <article>
-	    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
-	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
+<section class="articles">
+<% blog.articles.each do |article| %>
+  <article>
+    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
 
-	    <%= article.summary %>
+    <%= article.summary %>
 
-	    <a href="<%= article.url %>">Read more</a>
-	  </article>
-	<% end %>
+    <a href="<%= article.url %>">Read more</a>
+  </article>
+<% end %>
 </section>
-
-<section class="row">
-	<% blog.articles[3...5].each do |article| %>
-	  <article>
-	    <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
-	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
-
-	    <%= article.summary %>
-
-	    <a href="<%= article.url %>">Read more</a>
-	  </article>
-	<% end %>
-<section class="row">
