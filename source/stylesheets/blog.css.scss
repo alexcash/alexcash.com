@@ -1,45 +1,6 @@
-.blog-me header span {
-	display: none;
-}
-
-@media screen and (min-width: $blog-break) and (min-height: 610px) {
-	.blog-me{
-		width: $blog-aside;
-		height: 100%;
-		position: fixed;
-		header {
-			top: 300px;
-			bottom: relative;
-			width: 100%;
-			right: auto;
-			padding-left: 10px;
-			li {
-				width: 100%;
-			}
-			i {
-				padding-left: 20px;
-				padding-right: 40px;
-			}
-			span {
-				display: inline;
-				font-size: 1em;
-			}
-		}
-	}
-	section.articles{
-		padding-left: $blog-aside;
-	}
-}
-
 article {
-	float: left;
-	width: 50%;
+	max-width: 650px;
+	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
-
-	@media screen and (max-width: 1000px) {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
 }

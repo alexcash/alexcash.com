@@ -1,6 +1,6 @@
 $breakpoint-1: 1100px;
-$blog-break: 560px;
-$blog-aside: 280px;
+$blog-break: 600px;
+$blog-aside: 300px;
 
 $a-blue-text: #0B62A4;
 $a-blue-hover: #3F92D2;
@@ -22,13 +22,13 @@ $a-yellow: #FFBF01;
 	-ms-filter:"alpha(opacity=70)";
 	filter:alpha(opacity=70);
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
-	opacity:.70;
+	opacity:1.0;
 	pointer-events: none;
 }
 
 body{
-	background: #E1E5ED;
-
+	background: white;
+	
 	a, a:visited {
 		color: $a-orange-text;
 		text-decoration: none;
@@ -68,31 +68,32 @@ body{
 	}
 
 	.contain {
-	
-	-webkit-box-shadow: 0 0 20px rgba(50, 50, 50, 1);
-	-moz-box-shadow: 0 0 20px rgba(50,50,50,1);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+		background: #F7F7F7;
+		border-left: solid 1px gray;
+		border-right: solid 1px gray;
+		
+		color: #2B373D;
+		-webkit-font-smoothing: antialiased;
+		font-size: 18px;
 
+		position: relative;
+		max-width: 1440px;
+		min-height: 100%;
+		margin: 0 auto;
 
-	  position: relative;
-	  background: url("../images/white_texture.png");
-	  max-width: 1440px;
-	  min-height: 100%;
-	  margin: 0 auto;
-
-	  footer {
-	  	position: relative;
-	  	height: 50px;
-	  	clear: both;
-	  	width: 100%;
-	  	text-align: right;
-	  	span {
-	  		position: absolute;
-	  		display: block;
-	  		bottom: 0;
-	  		right: 10px;
-	  	}
-	  }
+		footer {
+			position: relative;
+			height: 50px;
+			clear: both;
+			width: 100%;
+			text-align: right;
+			span {
+				position: absolute;
+				display: block;
+				bottom: 0;
+				right: 10px;
+			}
+		}
 	}
 }
 
@@ -153,38 +154,37 @@ body{
 			width: 100%;
 		}
 	}
-}
-
-
-nav {
-	ul {
-		margin: 0;
-		padding: 0;
-		margin-left: -14px;
-		li{
-			float: left;
-			display: block;
-			width: 78px;
-		}
-	}
-
-	a, a:visited {
-		font-size: 2em;
-		color: $a-blue-text;
-
-		&:hover {
-			color: $a-blue-hover;
-			text-decoration: none;
-		}
-	}
-
-	@media screen and (max-width: $blog-break){
-		text-align: center;
+	
+	nav {
 		ul {
-			margin-left: 10px;
-			margin-right: 10px;
-			li {
-				width: 25%;
+			margin: 0;
+			padding: 0;
+			margin-left: -14px;
+			li{
+				float: left;
+				display: block;
+				width: 78px;
+			}
+		}
+
+		a, a:visited {
+			font-size: 2em;
+			color: $a-blue-text;
+
+			&:hover {
+				color: $a-blue-hover;
+				text-decoration: none;
+			}
+		}
+
+		@media screen and (max-width: $blog-break){
+			text-align: center;
+			ul {
+				margin-left: 10px;
+				margin-right: 10px;
+				li {
+					width: 25%;
+				}
 			}
 		}
 	}
