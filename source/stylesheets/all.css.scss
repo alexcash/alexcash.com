@@ -5,7 +5,9 @@
 
 
 $breakpoint-1: 1150px;
-$breakpoint-2: 600px;
+$breakpoint-2: 675px;
+$blog-break: 550px;
+$breakpoint-3: 475px;
 
 $a-blue-text: #0B62A4;
 $a-blue-hover: #3F92D2;
@@ -17,6 +19,13 @@ $a-orange-hover: #BF5930;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -45,13 +54,6 @@ body{
 	
 	.contain {
 		background: #F7F7F7;
-		background: url('../images/gplaypattern.png');
-		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-			background: url('../images/gplaypattern_@2X.png');
-			background-size: 188px 178px;
-		}
-		border-left: solid 1px gray;
-		border-right: solid 1px gray;
 
 		position: relative;
 		min-height: 100%;
@@ -98,6 +100,12 @@ body{
 		}
 
 		@media screen and (max-width: $breakpoint-2){
+			left: 258px;
+			right: 5px;
+			width: auto;
+		}
+
+		@media screen and (max-width: $breakpoint-3){
 			right: 5px;
 			padding-left: 10px;
 			left: 0;
@@ -118,9 +126,6 @@ body{
 
 	@media screen and (max-width: $breakpoint-1) {
 		margin-right: 0;
-		.container {
-			width: 100%;
-		}
 	}
 	
 	nav {
@@ -144,7 +149,7 @@ body{
 			}
 		}
 
-		@media screen and (max-width: $breakpoint-2){
+		@media screen and (max-width: $breakpoint-3){
 			text-align: center;
 			ul {
 				margin-left: 10px;
@@ -158,33 +163,38 @@ body{
 }
 
 .touts {
-	@media screen and (min-width: $breakpoint-2) {
-		background: #F7F7F7;
+	float: left;
+	width: 100%;
+	margin-right: -$blog-break;
+
+	.container {
+		width: auto;
+		margin-right: $blog-break;
 	}
 
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
+	@media screen and (max-width: $breakpoint-1) {
+		margin-right: 0;
+
+		.container {
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (min-width: $blog-break) {
+		background: #F7F7F7;
 	}
 
 	div {
 		float: left;
-		width: 25%;
+		width: 50%;
 		padding: .5em;
 
 		h2{
 			color: $a-orange-text;
-			margin-top: 1.2em;
+			margin-top: .3em;
+			margin-bottom: 0;
 		}
 
-		&:last-of-type{
-			padding-right:0;
-		}
-
-		@media screen and (max-width: $breakpoint-1) {
-			width: 50%;
-		}
 		@media screen and (max-width: $breakpoint-2) {
 			width: 100%;
 			h2 {
@@ -195,10 +205,9 @@ body{
 }
 
 .blog {
-	clear: both;
-	width: $breakpoint-2;
-	margin: 20px auto 20px auto;
+	width: $blog-break;
 	padding: 5px 50px 5px 50px;
+	float: left;
 
 	background: url('../images/bedge_grunge.png');
 	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -206,7 +215,14 @@ body{
 		background-size: 588px 375px;
 	}
 
-	@media screen and (max-width: $breakpoint-2) {
+	@media screen and (max-width: $breakpoint-1) {
+		width: $blog-break;
+		float: none;
+		clear: both;
+		margin: 20px auto 20px auto;
+	}
+
+	@media screen and (max-width: $blog-break) {
 		width: 100%;
 		padding: 10px 1em 10px 1em;
 	}
@@ -224,15 +240,14 @@ body{
 }
 
 .timeline {
+	background: url('../images/bedge_grunge.png');
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		background: url('../images/bedge_grunge_@2X.png');
+		background-size: 588px 375px;
+	}
 	position: relative;
 	width: 100%;
 	
-	background: url('../images/classy_fabric.png');
-	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/classy_fabric_@2X.png');
-		background-size: 102px 102px;
-	}
-
 	h2, a, a:visited, .v4{
 		color: $a-blue-text;
 	}

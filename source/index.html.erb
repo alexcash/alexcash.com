@@ -1,8 +1,9 @@
 ---
 title: Alex Cash
+priority: 1.0
 ---
 <!-- design code work play -->
-<section class="me home-me">
+<section class="me">
 		<header>
 			<h1>Alex Cash</h1>
 			<p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
@@ -17,41 +18,43 @@ title: Alex Cash
 		</header>
 </section>
 
+<div class="clearfix">
+	<section class="touts">
+		<div class="container">
+			<div>
+				<h2>Design</h2>
+				<p>The web should be a beautiful place. It's my job not just to facilitate interactions, deliver content, or write code. It's also my job to make user's experiences delightful. While I pride myself in being able to make a professional design come to life, I also push myself to craft entire experiences, and grow in my ability to design.</p>
+			</div>
 
-<section class="touts">
-	<div>
-		<h2>Design</h2>
-		<p>The web should be a beautiful place. It's my job not just to facilitate interactions, deliver content, or write code. It's also my job to make user's experiences delightful. While I pride myself in being able to make a professional design come to life, I also push myself to craft entire experiences, and grow in my ability to design.</p>
-	</div>
+			<div>
+				<h2>Code</h2>
+				<p>Like any good craftsmen, I believe a good developer must love his tools. Whether it's html, css, or javascript, I want to be an expert on good engineering practice, and paths to productivity in front end development. Before being a professional in web technologies, I developed for iOS. I wrote iPredict, an app downloaded over a million times for room 12 studios.</p>
+			</div>
 
-	<div>
-		<h2>Code</h2>
-		<p>Like any good craftsmen, I believe a good developer must love his tools. Whether it's html, css, or javascript, I want to be an expert on good engineering practice, and paths to productivity in front end development. Before being a professional in web technologies, I developed for iOS. I wrote iPredict, an app downloaded over a million times for room 12 studios.</p>
-	</div>
+			<div>
+				<h2>Work</h2>
+				<p>I'm a front end engineer at Nest. I love my job. I get to work every day on creating web experiences to delight. I started at Nest as an intern, before that I also had the opportunity to intern with Pioneer Hi-Bred. In May of 2012, graduated from Graceland univeristy with a degree in Computer Science and Information Technology.</p>
+			</div>
 
-	<div>
-		<h2>Work</h2>
-		<p>I'm a front end engineer at Nest. I love my job. I get to work every day on creating web experiences to delight. I started at Nest as an intern, before that I also had the opportunity to intern with Pioneer Hi-Bred. In May of 2012, graduated from Graceland univeristy with a degree in Computer Science and Information Technology.</p>
-	</div>
+			<div>
+				<h2>Play</h2>
+				<p>In my free time I like to hone my design and development skills. This site is an example of some of that work. I play World of Warcraft, where I raid in the guild &lt; Dulce Bellum &gt; on Stonemaul-US. When I'm not in front of a glowing scren I like to spend my time geocaching with my wife on trails and in parks accross the coutnry.</p>
+			</div>
+		</div>
+	</section>
 
-	<div>
-		<h2>Play</h2>
-		<p>In my free time I like to hone my design and development skills. This site is an example of some of that work. I play World of Warcraft, where I raid in the guild &lt; Dulce Bellum &gt; on Stonemaul-US. When I'm not in front of a glowing scren I like to spend my time geocaching with my wife on trails and in parks accross the coutnry.</p>
-	</div>
-	<span></span>
-</section>
+	<section class="blog">
+		<h2>Blog</h2>
+		<p>Dangerous thoughts from a dangerous man.</p>
 
-<section class="blog">
-	<h2>Blog</h2>
-	<p>Dangerous thoughts from a dangerous man.</p>
-
-	<% blog.articles.each do |article| %>
-	  <article>
-	    <h3><a href="<%= article.url %>"><%= article.title %></a></h3>
-	    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
-	  </article>
-	<% end %>
-</section>
+		<% blog.articles.each do |article| %>
+		  <article>
+		    <h3><a href="<%= article.url %>"><%= article.title %></a></h3>
+		    <h4><time><%= article.date.strftime('%b %e %Y') %></time></h4>
+		  </article>
+		<% end %>
+	</section>
+</div>
 
 <section class="timeline">
 	<h2>Deep Freeze</h2>

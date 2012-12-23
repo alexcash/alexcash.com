@@ -1,5 +1,6 @@
 # required to compress pngs
 require "middleman-smusher"
+require "builder"
 
 ###
 # Compass
@@ -60,6 +61,7 @@ end
 activate :directory_indexes
 page "/404.html", :directory_index => false
 
+page "*.xml", :layout => false
 
 # Build-specific configuration
 configure :build do
