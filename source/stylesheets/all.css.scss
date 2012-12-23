@@ -20,6 +20,10 @@ $a-orange-hover: #BF5930;
 	box-sizing: border-box;
 }
 
+.clearfix {
+	position: relative;
+}
+
 .clearfix:after {
 	content: '';
 	display: table;
@@ -53,7 +57,12 @@ body{
 	}
 	
 	.contain {
-		background: #F7F7F7;
+	
+		background: url('../images/random_grey_variations.png');
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			background: url('../images/random_grey_variations_@2X.png');
+			background-size: 200px 200px;
+		}
 
 		position: relative;
 		min-height: 100%;
@@ -170,6 +179,39 @@ body{
 	.container {
 		width: auto;
 		margin-right: $blog-break;
+		.row {
+			width: 100%;
+			clear: both;
+			div {
+				background: url('../images/old_mathematics.png');
+				@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+					background: url('../images/old_mathematics_@2X.png');
+					background-size: 200px 200px;
+				}
+
+				float: left;
+				width: 50%;
+				border: .5em solid rgba(0,0,0,0);
+				padding: .5em;
+
+				-moz-background-clip: padding;     /* Firefox 3.6 */
+				-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+				background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+				h2{
+					color: $a-orange-text;
+					margin-top: .3em;
+					margin-bottom: 0;
+				}
+
+				@media screen and (max-width: $breakpoint-2) {
+					width: 100%;
+					h2 {
+						text-align: right;
+					}
+				}
+			}
+		}
 	}
 
 	@media screen and (max-width: $breakpoint-1) {
@@ -179,45 +221,38 @@ body{
 			margin-right: 0;
 		}
 	}
-
-	@media screen and (min-width: $blog-break) {
-		background: #F7F7F7;
-	}
-
-	div {
-		float: left;
-		width: 50%;
-		padding: .5em;
-
-		h2{
-			color: $a-orange-text;
-			margin-top: .3em;
-			margin-bottom: 0;
-		}
-
-		@media screen and (max-width: $breakpoint-2) {
-			width: 100%;
-			h2 {
-				text-align: right;
-			}
-		}
-	}
 }
 
 .blog {
 	width: $blog-break;
 	padding: 5px 50px 5px 50px;
-	float: left;
+	border: .5em solid rgba(0,0,0,0);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 500px;
 
-	background: url('../images/bedge_grunge.png');
+	overflow-y: scroll;
+	-ms-touch-action: pan-x;
+	-webkit-overflow-scrolling: touch;
+
+	background: url('../images/old_mathematics.png');
 	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/bedge_grunge_@2X.png');
-		background-size: 588px 375px;
+		background: url('../images/old_mathematics_@2X.png');
+		background-size: 200px 200px;
 	}
+
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
 
 	@media screen and (max-width: $breakpoint-1) {
 		width: $blog-break;
-		float: none;
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
 		clear: both;
 		margin: 20px auto 20px auto;
 	}
@@ -240,10 +275,10 @@ body{
 }
 
 .timeline {
-	background: url('../images/bedge_grunge.png');
+	background: url('../images/old_mathematics.png');
 	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/bedge_grunge_@2X.png');
-		background-size: 588px 375px;
+		background: url('../images/old_mathematics_@2X.png');
+		background-size: 200px 200px;
 	}
 	position: relative;
 	width: 100%;
