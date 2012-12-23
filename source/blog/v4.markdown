@@ -3,8 +3,6 @@ title: "v4.0"
 date: 2012/12/10
 ---
 
-Today is my birthday! What better way than to celebrate than with version 4.0 of my personal website?
-
 For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I'd frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:
 
 - **alexca.sh short domain.** A few months ago I aquired this URL, and with 4.0 it will provide short links to all my blog posts, and future pages of interest.

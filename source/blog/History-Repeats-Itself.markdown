@@ -1,5 +1,5 @@
 --- 
-title: "Windows 8: History Repeats Itself"
+title: "History Repeats Itself"
 date: 2012/03/06
 ---
 

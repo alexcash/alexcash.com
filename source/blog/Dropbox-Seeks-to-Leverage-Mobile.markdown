@@ -1,6 +1,7 @@
 --- 
 title: "Dropbox Seeks to Leverage Mobile"
 date: 2012/02/28
+published: false
 ---
 
 <a href="http://www.binarysmokesignals.com/wp-content/uploads/2012/02/dropbox_logo.png"><img class="alignright  wp-image-65" title="dropbox logo" src="http://www.binarysmokesignals.com/wp-content/uploads/2012/02/dropbox_logo.png" alt="" width="154" height="154" /></a>

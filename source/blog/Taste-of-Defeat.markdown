@@ -1,5 +1,5 @@
 --- 
-title: "The Taste of Defeat: a Lesson in Testing"
+title: "The Taste of Defeat"
 date: 2012/04/25
 ---
 
