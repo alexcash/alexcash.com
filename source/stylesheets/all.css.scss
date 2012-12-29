@@ -14,9 +14,9 @@ $a-blue-hover: #3F92D2;
 $a-orange-text: #FF4901;
 $a-orange-hover: #BF5930;
 
+$div-back: hsla(40, 50%, 25%, .1);
+
 *, *:after, *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -48,19 +48,21 @@ body{
 	}
 
 	h2, h3, h4 {
+		text-shadow: 1px 1px 0px #888;
 		color: $a-blue-text;
 		font-family: 'Arvo', serif;
 	}
 
 	h1 {
+		text-shadow: 1px 1px 0px #888;
 		color: $a-blue-text;
 	}
 	
 	.contain {
 	
-		background: url('../images/random_grey_variations.png');
+		background: url('../images/old_mathematics.png');
 		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-			background: url('../images/random_grey_variations_@2X.png');
+			background: url('../images/old_mathematics_@2X.png');
 			background-size: 200px 200px;
 		}
 
@@ -95,6 +97,8 @@ body{
 	
 	background-size: auto;
 	position:relative;
+
+	box-shadow: 0px 2px 5px #888;
 
 	header {
 		position: absolute;
@@ -183,20 +187,14 @@ body{
 			width: 100%;
 			clear: both;
 			div {
-				background: url('../images/old_mathematics.png');
-				@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-					background: url('../images/old_mathematics_@2X.png');
-					background-size: 200px 200px;
-				}
+				background: $div-back;
 
 				float: left;
 				width: 50%;
 				border: .5em solid rgba(0,0,0,0);
 				padding: .5em;
 
-				-moz-background-clip: padding;     /* Firefox 3.6 */
-				-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-				background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+				background-clip: padding-box;
 
 				h2{
 					color: $a-orange-text;
@@ -237,15 +235,10 @@ body{
 	-ms-touch-action: pan-x;
 	-webkit-overflow-scrolling: touch;
 
-	background: url('../images/old_mathematics.png');
-	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/old_mathematics_@2X.png');
-		background-size: 200px 200px;
-	}
+	background: $div-back;
 
-	-moz-background-clip: padding;     /* Firefox 3.6 */
-	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+
+	background-clip: padding-box;
 
 	@media screen and (max-width: $breakpoint-1) {
 		width: $blog-break;
@@ -275,11 +268,8 @@ body{
 }
 
 .timeline {
-	background: url('../images/old_mathematics.png');
-	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/old_mathematics_@2X.png');
-		background-size: 200px 200px;
-	}
+	background: $div-back;
+
 	position: relative;
 	width: 100%;
 	
