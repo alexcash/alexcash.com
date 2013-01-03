@@ -11,6 +11,22 @@
     <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= page_classes %>">
+
+  <section class="me">
+      <header>
+        <h1>Alex Cash</h1>
+        <p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
+        <nav>
+          <ul>
+            <li><a href="http://www.twitter.com/alexcash"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.github.com/alexcash"><i class="icon-github"></i></a></li>
+            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307"><i class="icon-linkedin"></i></a></li>
+            <li><a href="http://www.facebook.com/alexcash"><i class="icon-facebook"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+  </section>
+
     <div class="contain">
       <%= yield %>
       <footer>
@@ -23,6 +39,6 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-
   </body>
+  <%= javascript_include_tag "all" %>
 </html>
