@@ -1,11 +1,15 @@
 //= require_tree .
 
-jQuery(function($){
+
+//doc ready
+$(function($){
+    
+    //populate tweets
     $(".tweet").tweet({
         username: "alexcash",
         join_text: "auto",
         avatar_size: null,
-        count: 10,
+        count: 7,
         auto_join_text_default: "",
         auto_join_text_ed: "",
         auto_join_text_ing: "",
@@ -13,4 +17,5 @@ jQuery(function($){
         auto_join_text_url: "",
         loading_text: "loading tweets..."
     });
+
 });

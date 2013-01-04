@@ -29,16 +29,19 @@
 
     <div class="contain">
       <%= yield %>
-      <footer>
-        <span>&copy; 2012 Alex Cash</span>
-      </footer>
     </div>
-    <script>
-      var _gaq=[['_setAccount','UA-29834387-1'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    
+    <footer>
+      <span>&copy; 2013 Alex Cash</span>
+    </footer>
+
   </body>
+
+  <script>
+    var _gaq=[['_setAccount','UA-29834387-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
   <%= javascript_include_tag "all" %>
 </html>
