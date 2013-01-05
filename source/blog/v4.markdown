@@ -1,18 +1,20 @@
 --- 
 title: "v4.0"
-date: 2012/12/10
+date: 2013/01/06
 ---
 
 For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I'd frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:
 
+- **New look and feel.** Fully responsive, clean and lightweight.
+
+- **A blog!** As a senior at Graceland, I created and maintained a small wordpress blog at binarysmokesignals.com. Now that I'm graduated, I wanted provide a more personal platform to share thoughts and writings. Now you can find posts right here at alexcash.com. Posts that I felt were relevant have made the migration from binary smoke signals. Others did not. I'm looking forward to writing more here in the future.
+
+- **Complete code rewrite.** Over the last months, I've become a bit of a tools snob. I went from just slamming out html and css in a text editor in v3, to a full blown tool chain for v4. I use middleman for static site generation, SASS and Compass for css precompilation, and I've got many more tricks up my sleeve too. You can see the [source](https://github.com/alexcash/alexcash.com) on github, and I plan on bloging more about it soon.
+
 - **alexca.sh short domain.** A few months ago I aquired this URL, and with 4.0 it will provide short links to all my blog posts, and future pages of interest.
 
-- **A blog!** During my senior year at Graceland, I created and maintained a small blog at binarysmokesignals.com. Now that I'm graduated, I wanted provide a more personal platform to share thoughts and writings. So now you can find posts right here at alexcash.com. Posts that I felt were relevant have made the migration from binary smoke signals. Others did not. I'm looking forward to writing more here in the future.
+- **New server architecture.** I recently made the jump from a traditional apache server at dreamhost to cloud fronted nginx instance through AWS. I'm planning on writing a blog about this transition soon.
 
-- **New server architecture.** I recently made the jump from a traditional apache server at dreamhost to CDN backed nginx instance through AWS. I'm planning on writing a blog about this transition soon.
-
-- **Complete code rewrite.** Over the last months, I've become a bit of a tools snob. I went from just slamming out html and css in a text editor in v3, to a full blown tool chain for v4. I use middleman for static site generation, SASS and Compass for css precompilation, and I've got many more tricks up my sleeve too. You can see the source on github, and I plan on bloging more about it soon.
-
-- **Design retrospective.** My code has been out in the public since 1.0, and you can always go back and see the progression over time. However, I wanted to provide a way for people to see truly how far I've come. So, on my home page I've provided a timeline with images of alexcash.com at every version. In the future, I'd like to have fully host versions you can browse as well.
+- **Design retrospective.** My code has been out in the public since 1.0, and you can jump through the commit history on [github](https://github.com/alexcash/alexcash.com) to see my progress. However, I wanted to provide a simpler way for people to see how far I've come. So, on my home page I've provided a [timeline](/#timeline) with images of alexcash.com at every major revision. Click or tap through to see a 'deep freeze' copy of that version of the site.
  
 The web should be beautiful, funcitonal, clear, and concise. I hope you've enjoyed my efforts so far. Join me as I work to contribute to that future.
