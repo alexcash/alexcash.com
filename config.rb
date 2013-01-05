@@ -56,6 +56,7 @@ set :images_dir, 'images'
 activate :blog do |blog|
   blog.sources  = "blog/:title"
   blog.permalink = ":title"
+  blog.layout = "blog_layout"
 end
 
 activate :directory_indexes
