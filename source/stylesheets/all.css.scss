@@ -14,6 +14,8 @@ $a-blue-hover: #3F92D2;
 $a-orange-text: #FF4901;
 $a-orange-hover: #BF5930;
 
+$a-trans-bg: hsla(40, 50%, 25%, .2);
+
 * {
 	box-sizing: border-box;
 }
@@ -35,11 +37,7 @@ body{
 	color: #2B373D;
 	-webkit-font-smoothing: antialiased;
 
-	background: url('../images/old_mathematics.png');
-	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-		background: url('../images/old_mathematics_@2X.png');
-		background-size: 200px 200px;
-	}
+	background: url('../images/graph.jpg');
 
 	a, a:visited {
 		color: $a-orange-text;
@@ -64,7 +62,13 @@ body{
 	
 	.contain {
 		width: 100%;
-		max-width: 1350px;
+		max-width: 95%;
+
+		@media screen and (max-width: 1350px){
+			width: 100%;
+			max-width: 1280px;
+		}
+
 
 		position: relative;
 		min-height: 100%;
@@ -72,7 +76,7 @@ body{
 	}
 
 	footer {
-		background-color: hsla(40, 50%, 25%, .1);
+		background-color: $a-trans-bg;
 		height: 100px;
 		margin-top: 20px; 
 		clear: both;
@@ -147,7 +151,7 @@ body{
 			li{
 				float: left;
 				display: block;
-				width: 25%;
+				width: 20%;
 				font-size: 1.5em;
 			}
 		}
@@ -166,9 +170,6 @@ body{
 			ul {
 				margin-left: 10px;
 				margin-right: 10px;
-				li {
-					width: 25%;
-				}
 			}
 		}
 	}
@@ -274,7 +275,7 @@ body{
 			list-style-type: none;
 		}
 		.tweet_odd {
-			background-color: hsla(40, 50%, 25%, .1);
+			background-color: $a-trans-bg;
 		}
 	}
 }
@@ -366,3 +367,5 @@ body{
 		}
 	}
 }
+
+@import "blog";
