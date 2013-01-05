@@ -1,6 +1,7 @@
 --- 
 title: "v4.0"
 date: 2013/01/06
+description: "For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I'd frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:"
 ---
 
 For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I'd frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:

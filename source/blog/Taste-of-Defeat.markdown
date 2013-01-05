@@ -1,6 +1,7 @@
 --- 
 title: "The Taste of Defeat"
 date: 2012/04/25
+description: "As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed last weeks post it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling."
 ---
 
 As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed [last weeks post](/Adventures-in-Robotics/) it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling.
