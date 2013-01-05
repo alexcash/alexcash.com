@@ -14,6 +14,13 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
 
+    <meta property="og:title" content="<%= data.page.title || "Alex Cash" %>"/>
+    <meta property="og:type" content="<% if data.page.notBlog? %>website<% else %>article<% end %>"/>
+    <meta property="og:url" content="http://www.alexcash.com<%= current_page.url %>"/>
+    <meta property="og:image" content="http://www.alexcash.com/images/social.jpg"/>
+    <meta property="og:site_name" content="alexcash.com"/>
+    <meta property="og:description" content="<%= data.page.description %>"/>
+
     <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= page_classes %><% if !data.page.notBlog? %> blog-page <% end %>">
@@ -27,11 +34,11 @@
             <% if !data.page.notBlog? %>
               <li><a href="/"><i class="icon-home"></i></a></li>
             <% end %>            
-            <li><a href="http://www.twitter.com/alexcash"><i class="icon-twitter"></i></a></li>
-            <li><a href="http://www.github.com/alexcash"><i class="icon-github"></i></a></li>
-            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307"><i class="icon-linkedin"></i></a></li>
-            <li><a href="http://www.facebook.com/alexcash"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author"><i class="icon-google-plus"></i></a>
+            <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+            <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
           </ul>
         </nav>
       </header>
