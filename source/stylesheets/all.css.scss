@@ -18,6 +18,8 @@ $a-trans-bg: hsla(40, 50%, 25%, .2);
 
 * {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 .clearfix {
@@ -36,6 +38,7 @@ body{
 	font-size: 20px;		
 	color: #2B373D;
 	-webkit-font-smoothing: antialiased;
+	min-width: 320px;
 
 	background: url('../images/graph.jpg');
 
@@ -126,7 +129,6 @@ body{
 			padding-left: 10px;
 			left: 0;
 			bottom: 0;
-			min-width: 320px;
 			max-width: 100%;
 			width: 100%;
 			background:rgba(255,255,255, 0.5);
