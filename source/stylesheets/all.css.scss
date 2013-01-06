@@ -241,6 +241,10 @@ body{
 	padding: 1em;
 	overflow: hidden;
 
+	h2 {
+		margin-bottom: 0.2em;
+	}
+
 	@media screen and (max-width: $breakpoint-1) {
 		padding: .5em;
 	}
@@ -309,6 +313,14 @@ body{
 		text-align: right;
 	}
 
+	h2 {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
 	article {
 		margin-bottom: 50px;
 		h3, h4 {
@@ -360,9 +372,6 @@ body{
 			height: 310px;
 			top: 0;
 		  	.version{
-		  		img {
-					height: 250px;
-				}
 				*behavior: url(/javascripts/boxsizing.htc);
 		  		padding: 5px;
 		  		float: left;
