@@ -14,7 +14,7 @@ $a-blue-hover: #3F92D2;
 $a-orange-text: #FF4901;
 $a-orange-hover: #BF5930;
 
-$a-trans-bg: hsla(40, 50%, 25%, .2);
+$a-trans-bg: rgba(96, 74, 32, 0.2);
 
 * {
 	box-sizing: border-box;
@@ -79,6 +79,7 @@ body{
 	}
 
 	footer {
+       	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33604A20,endColorstr=#33604A20); 
 		background-color: $a-trans-bg;
 		height: 100px;
 		margin-top: 20px; 
@@ -204,8 +205,7 @@ body{
 	float: left;
 	width: 25%;
 	padding: .5em;
-
-	background-clip: padding-box;
+	*behavior: url(/javascripts/boxsizing.htc);
 
 	h2{
 		color: $a-orange-text;
@@ -277,6 +277,7 @@ body{
 			list-style-type: none;
 		}
 		.tweet_odd {
+       		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33604A20,endColorstr=#33604A20); 
 			background-color: $a-trans-bg;
 		}
 	}
@@ -287,8 +288,6 @@ body{
 	padding: 1em;
 	float: right;
 	clear: right;
-
-	background-clip: padding-box;
 
 	@media screen and (max-width: $breakpoint-1) {
 		padding: .5em;
@@ -357,6 +356,7 @@ body{
 		  		img {
 					height: 250px;
 				}
+				*behavior: url(/javascripts/boxsizing.htc);
 		  		padding: 5px;
 		  		float: left;
 		  		height: 310px;

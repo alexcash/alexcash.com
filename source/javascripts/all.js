@@ -1,4 +1,5 @@
-//= require_tree .
+//= require jquery-1.8.3.js
+//= require jquery.tweet.js
 
 
 //doc ready

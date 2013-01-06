@@ -29,9 +29,20 @@
     <meta name="twitter:description" content="<%= data.page.description %>">
     <meta name="twitter:image" content="http://www.alexcash.com/images/social.jpg">
 
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag "polyfills" %>
+    <![endif]-->
+    <!--[if IE 7]>
+      <%= stylesheet_link_tag "font-awesome-ie7.min.css" %>
+    <![endif]-->
+
+
     <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= page_classes %><% if !data.page.notBlog? %> blog-page <% end %>">
+      <!--[if lt IE 8]>
+          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
 
   <section class="me">
       <header>
