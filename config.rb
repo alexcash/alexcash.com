@@ -64,18 +64,20 @@ page "/404.html", :directory_index => false
 
 page "*.xml", :layout => false
 
+ignore "/deepfreeze/*"
+
 # Build-specific configuration
 configure :build do
-  activate :gzip
-  activate :minify_css
-  activate :minify_javascript
+  activate :gzip, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
+  activate :minify_css, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
+  activate :minify_javascript, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
 
-  activate :asset_hash
+  activate :asset_hash, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
   # Use relative URLs
   # activate :relative_assets
 
   # Compress PNGs after build
-  activate :smusher
+  activate :smusher, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
