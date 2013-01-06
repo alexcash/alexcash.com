@@ -77,7 +77,7 @@ configure :build do
   # activate :relative_assets
 
   # Compress PNGs after build
-  activate :smusher, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
+  activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
