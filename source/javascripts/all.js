@@ -16,7 +16,8 @@ $(function($){
         auto_join_text_ing: "",
         auto_join_text_reply: "",
         auto_join_text_url: "",
-        loading_text: "loading tweets..."
+        loading_text: "loading tweets...",
+        template: "{text} - {time}"
     });
 
 });

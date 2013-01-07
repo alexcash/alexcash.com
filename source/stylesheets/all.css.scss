@@ -122,7 +122,7 @@ body{
 			margin: 0;
 		}
 		p {
-			margin-top: 5px;
+			margin-top: 0;
 		}
 
 		@media screen and (max-width: $breakpoint-2){
@@ -219,6 +219,10 @@ body{
 		margin-bottom: 0;
 	}
 
+	p{
+		margin-top: .5em;
+	}
+
 	@media screen and (max-width: $breakpoint-1) {
 		width: 50%;
 	}
@@ -241,7 +245,7 @@ body{
 	overflow: hidden;
 
 	h2 {
-		margin-bottom: 0.2em;
+		margin-bottom: 0.3em;
 	}
 
 	@media screen and (max-width: $breakpoint-1) {
@@ -317,7 +321,7 @@ body{
 	}
 
 	p {
-		margin-top: 0;
+		margin-top: 0.3em;
 	}
 
 	article {
@@ -336,6 +340,7 @@ body{
 	
 	h2 {
 		color: $a-orange-text;
+		margin-bottom: .5em;
 	}
 
 	a, a:visited, .v4{
