@@ -31,15 +31,13 @@
     <meta name="twitter:description" content="<%= data.page.description %>">
     <meta name="twitter:image" content="http://www.alexcash.com/images/social.jpg">
 
+    <%= stylesheet_link_tag "all" %>
     <!--[if lt IE 9]>
       <%= javascript_include_tag "polyfills" %>
     <![endif]-->
     <!--[if IE 7]>
       <%= stylesheet_link_tag "font-awesome-ie7.min.css" %>
     <![endif]-->
-
-
-    <%= stylesheet_link_tag "all" %>
   </head>
   <body class="<%= page_classes %><% if !data.page.notBlog? %> blog-page <% end %>">
   <!--[if lt IE 8]>
