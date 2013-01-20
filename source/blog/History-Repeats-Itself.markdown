@@ -2,6 +2,7 @@
 title: "History Repeats Itself"
 date: 2012/03/06
 description: "Back at mobile world congress, Microsoft announced the Consumer Preview of Windows 8. The download is available to everyone, so I decided to take it out for a spin. What follows isn't simply thoughts on my time using Windows 8, but also where Windows is going. Buckle up; This is going to be a long ride."
+priority: 0.8
 ---
 
 <img src= "../images/blog/history-repeats-itself/win8.jpg"  />
