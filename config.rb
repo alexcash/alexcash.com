@@ -64,9 +64,6 @@ page "/404.html", :directory_index => false
 
 page "*.xml", :layout => false
 
-ignore "/deepfreeze/*"
-ignore "/holiday2012/*"
-
 # Build-specific configuration
 configure :build do
   activate :gzip, ignore: [/deepfreeze\/*/, /nesTweet\/*/]

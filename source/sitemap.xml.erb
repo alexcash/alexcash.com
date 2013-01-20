@@ -3,7 +3,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <% pages.each do |p| %>
-	<% if !p.metadata[:page]['siteMapExclude'] %>
+	<% if !p.metadata[:page]['siteMapExclude'] and !p.destination_path.include? 'deepfreeze' and !p.destination_path.include? 'holiday2012'  %>
 	  <url>
 	    <loc><%= base_url + p.destination_path.gsub('index.html','') %></loc>
 	    <% if priority = p.metadata[:page]['priority'] %>
