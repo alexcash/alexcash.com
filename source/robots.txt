@@ -4,8 +4,4 @@
 User-agent: *
 Disallow: /deepfreeze/
 Disallow: /email_assets/
-Disallow: /fonts/
 Disallow: /holiday2012/
-Disallow: /images/
-Disallow: /javascripts/
-Disallow: /stylesheets/
