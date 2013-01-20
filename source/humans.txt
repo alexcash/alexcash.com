@@ -1,26 +1,38 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+So, I guess this is where we do the secret handshake. I work a lot on my site and I'm pretty proud of it. If you're reading this your feed back is welcome! DM or reply @alexcash to get in touch.
 
+Tools
 
-/* TEAM */
-  Design & Development: Alex Cash
-  Site: alexcash.com
-  Twitter: alexcash
-  Location: V1,V2: Lamoni Iowa, V3: Mountain View, CA
-
-/* THANKS */
-  Names (& URL): Room 12 Studios, Jared and Adam Cash for hosting arrangements
-  				 Jesse Cash for pro QA
-
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery, Tweet! (http://tweet.seaofclouds.com/)
-  
-  
-/*SOFTWARE */
+  v4:
+  Sublime Text 2, iTerm, Transmit, AWS (Ec2, Cloudfront, Route53), Pixelmator, github, chrome canary
 
   V3:
   Coda 2, git, adobe photoshop, adobe illustrator, Sip(http://itunes.apple.com/us/app/sip/id507257563?mt=12)
   
   V2:
-  Notepad++, winSCP, git Bash shell, GitHub
+  Notepad++, winSCP, git Bash shell (windows), GitHub
+
+Frameworks, Lbraries, Assets,
+
+  Middleman (http://middlemanapp.com/),
+  Midleman Blog (https://github.com/middleman/middleman-blog),
+  Middleman Favicon (https://github.com/follmann/middleman-favicon-maker),
+  jQuery 1.8.3 (http://jquery.com/), 
+  Tweet! (http://tweet.seaofclouds.com/), 
+  SASS (http://sass-lang.com/),
+  HTML5 shiv (google code),
+  Box sizing polyfill (http://github.com/Schepp/box-sizing-polyfill),
+  respondjs (https://github.com/scottjehl/Respond),
+  font awesome (http://fortawesome.github.com/Font-Awesome/),
+  open sans (http://www.google.com/webfonts/specimen/Open+Sans),
+  arvo (http://www.google.com/webfonts/specimen/Arvo)
+
+  - While I no longer use the html5bp I am still heavily influenced by it, and often fall back on it as a reference. I highly reccommend it as a starting point if you don't know much about using open source code on your sites. You will learn a lot by digging into it. http://html5boilerplate.com/
+  - http://html5please.com/ is your friend. Make cool new shit, degrade gracefully.
+
+
+All code included from a tool, framework, or library maintains it's respective license. All other code and assets:
+
+Copyright © 2013 Alex Cash
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.</i>
