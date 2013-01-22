@@ -11,7 +11,7 @@ I'm in my Senior year at [Graceland University](http://graceland.edu/), and this
 	<iframe src="http://www.youtube.com/embed/X8ftqeZnook?rel=0" frameborder="0" width="560" height="315"> </iframe>
 </div>
 
-The source code for this solution can be found on [my github](https://github.com/alexcash/MICS-2011-Robitcs-Solution). The reason this comes to mind is because we are competing again tomorrow. I don't want to give out too many details on the competition or our solution before the competition is over, but here is a video to tide you over:
+The source code for this solution can be found on [my github](https://github.com/alexcash/Robotics-Solutions). The reason this comes to mind is because we are competing again tomorrow. I don't want to give out too many details on the competition or our solution before the competition is over, but here is a video to tide you over:
 
 <div class="youtube">
 	<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI?rel=0" frameborder="0" width="560" height="315"> </iframe>
