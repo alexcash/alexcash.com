@@ -1,5 +1,6 @@
 //= require jquery-1.8.3.js
 //= require jquery.tweet.js
+//= require jquery.last.fm.js
 
 
 //doc ready
@@ -18,6 +19,14 @@ $(function($){
         auto_join_text_url: "",
         loading_text: "loading tweets...",
         template: "{text} - {time}"
+    });
+
+    //populate top albums
+    $('.albums').lfm({
+        APIkey: "4583963e1d8402859dd8f6e3893625fe",
+        User: "alex-cash",
+        limit: 8,
+        Behavior: "click"
     });
 
 });

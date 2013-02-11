@@ -1,5 +1,6 @@
 @import "normalize";
 @import "font-awesome";
+@import "lfm";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Open+Sans);
 
 
@@ -236,13 +237,10 @@ body{
 }
 
 .tweets {
-	width: 50%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
+	width: 33%;
 	padding: 1em;
-	overflow: hidden;
+	float: left;
+	clear: left;
 
 	h2 {
 		margin-bottom: 0.3em;
@@ -250,10 +248,11 @@ body{
 
 	@media screen and (max-width: $breakpoint-1) {
 		padding: .5em;
+		width: 50%;
 	}
 
 	@media screen and (max-width: $breakpoint-2) {
-		display: none;
+		width: 100%;
 	}
 
 	.tweet_list {
@@ -261,28 +260,6 @@ body{
 		margin: 0;
 		padding: 0;
 		overflow-y: hidden;
-
-		li:nth-child(1) {
-			opacity: .95;
-		}
-		li:nth-child(2) {
-			opacity: .9;
-		}
-		li:nth-child(3) {
-			opacity: .8;
-		}
-		li:nth-child(4) {
-			opacity: .7;
-		}
-		li:nth-child(5) {
-			opacity: .5;
-		}
-		li:nth-child(6) {
-			opacity: .3;
-		}
-		li:nth-child(7) {
-			opacity: .1;
-		}
 
 		li {
 			overflow-y: auto;
@@ -298,13 +275,14 @@ body{
 }
 
 .blog {
-	width: 50%;
+	width: 33%;
 	padding: 1em;
 	float: right;
 	clear: right;
 
 	@media screen and (max-width: $breakpoint-1) {
 		padding: .5em;
+		width: 50%;
 	}
 
 	@media screen and (max-width: $breakpoint-2) {
@@ -328,6 +306,51 @@ body{
 		margin-bottom: 50px;
 		h3, h4 {
 			margin: 0;
+		}
+	}
+}
+
+.lfm {
+	width: 33%;
+	float: left;
+	padding: 1em;
+
+	h2 {
+		margin-bottom: 0.3em;
+	}
+
+	@media screen and (max-width: $breakpoint-1) {
+		padding: .5em;
+		width: 100%;
+		clear: both;
+	}
+
+	.album {
+		width: 50%;
+		
+		h2 {
+			margin-top: 0.3em;
+		}
+		h1 {
+			color: $a-orange-text;
+			margin-bottom: 0.4em;
+			margin-top: 0.4em;
+		}
+		
+		font-size: 10px;
+
+		@media screen and (min-width: 1600px ) {
+			width: 33%;
+		}
+		
+		@media screen and (max-width: $breakpoint-1) {
+			width: 25%;
+		}
+		@media screen and (max-width: $breakpoint-2) {
+			width: 50%;
+		}
+		@media screen and (max-width: $breakpoint-3) {
+			font-size: 8px;
 		}
 	}
 }
