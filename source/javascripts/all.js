@@ -1,33 +1,24 @@
 //= require jquery-1.8.3.js
-//= require jquery.tweet.js
 //= require jquery.last.fm.js
 
 
 //doc ready
 $(function($){
-    
-    //populate tweets
-    $(".tweet").tweet({
-        username: "alexcash",
-        join_text: "auto",
-        avatar_size: null,
-        count: 7,
-        auto_join_text_default: "",
-        auto_join_text_ed: "",
-        auto_join_text_ing: "",
-        auto_join_text_reply: "",
-        auto_join_text_url: "",
-        loading_text: "loading tweets...",
-        template: "{text} - {time}"
-    });
-
+    'use strict';
     //populate top albums
     $('.albums').lfm({
-        APIkey: "4583963e1d8402859dd8f6e3893625fe",
-        User: "alex-cash",
-        limit: 8,
-        Behavior: "click"
+        APIkey: '4583963e1d8402859dd8f6e3893625fe',
+        User: 'alex-cash',
+        limit: 12,
+        Behavior: 'hover'
     });
+
+    setTimeout(function () {
+        console.log($('.timeline', $('iframe').first().contents()));
+        console.log($('.tweets'));
+        $('.tweets').append($('.stream ol', $('iframe').first().contents()));
+    }, 1000);
+
 
 });
 
