@@ -14,8 +14,6 @@ $(function($){
     });
 
     setTimeout(function () {
-        console.log($('.timeline', $('iframe').first().contents()));
-        console.log($('.tweets'));
         $('.tweets').append($('.stream ol', $('iframe').first().contents()));
     }, 1000);
 
