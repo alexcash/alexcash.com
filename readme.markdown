@@ -19,7 +19,7 @@ _Included in this project are several libraries and code snippets, and their_
 _respective copyright and license information is included with or contained in_
 _them. For all other code and assets:_
 
-_Copyright © 2013 Alex Cash_
+_Copyright © 2014 Alex Cash_
 
 _This work is free. You can redistribute it and/or modify it under the terms of_
 _the Do What The Fuck You Want To Public License, Version 2, as published by_

@@ -24,7 +24,7 @@ Frameworks, Lbraries, Assets,
 All code included from a tool, framework, or library maintains it's respective
 license. All other code and assets:
 
-Copyright © 2013 Alex Cash
+Copyright © 2014 Alex Cash
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
