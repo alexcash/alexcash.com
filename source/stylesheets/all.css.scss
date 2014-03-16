@@ -36,7 +36,6 @@ $a-trans-bg: rgba(96, 74, 32, 0.2);
     text-align: center;
     width: 100%;
     display: block;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33604A20,endColorstr=#33604A20);
     background-color: $a-trans-bg;
 }
 
@@ -86,7 +85,6 @@ body{
     }
 
     footer {
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33604A20,endColorstr=#33604A20);
         background-color: $a-trans-bg;
         height: 100px;
         margin-top: 20px;
@@ -277,7 +275,6 @@ body{
             }
         }
         .tweet_odd {
-            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33604A20,endColorstr=#33604A20);
             background-color: $a-trans-bg;
         }
     }
