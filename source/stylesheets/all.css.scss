@@ -342,6 +342,15 @@ body{
         h3, h4 {
             margin: 0;
         }
+        h3 a {
+            color: $a-blue-text;
+            &:hover {
+                color: $a-blue-hover;
+            }
+        }
+        h4 {
+            color: $a-orange-text;
+        }
     }
 }
 
