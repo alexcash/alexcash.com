@@ -40,7 +40,7 @@ $(function($){
         var albums = [];
 
         _.each(data.topalbums.album, function(album){
-            var imgURL = album.image[album.image.length-1]['#text']
+            var imgURL = album.image[album.image.length-1]['#text'];
             if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
                 return;
             }

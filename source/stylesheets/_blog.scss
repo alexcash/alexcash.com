@@ -1,66 +1,57 @@
-.blog-page {
+article.blog-page {
+    max-width: 700px;
+    margin: 0 auto;
 
-    nav ul li {
-        width: 16.5%;
-    }
+    header {
+        position: relative;
 
-    .contain {
-        max-width: 700px;
-    }
-
-    article {
-        header {
-            position: relative;
-
-            h1 {
-                color: $a-orange-text;
-                margin-top: .2em;
-                margin-bottom: 0;
-            }
-            h2 {
-                margin-top: 0;
-                text-align: right;
-                position: absolute;
-                width: 100%;
-                bottom: -28px;
-            }
+        h1 {
+            color: $a-orange-text;
+            margin-top: .2em;
+            margin-bottom: 0;
         }
-
-        .youtube {
-            position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px; height: 0; overflow: hidden;
-
-            iframe, object, embed {
+        h2 {
+            margin-top: 0;
+            text-align: right;
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            }
+            bottom: -28px;
         }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        padding: 10px;
     }
 
-}
+    .youtube {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
 
-.jqlfm {
-    .albums {
+        iframe, object, embed {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        .album {
-            width: 50%;
-            @media screen and (max-width: $breakpoint-2) {
-                h2, h1 {
-                    margin-bottom: 0.4em;
-                }
+        height: 100%;
+        }
+    }
 
-                font-size: 10px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    padding: 10px;
+
+    .jqlfm {
+        .albums {
+            width: 100%;
+            .album {
+                width: 50%;
+                @media screen and (max-width: $breakpoint-2) {
+                    h2, h1 {
+                        margin-bottom: 0.4em;
+                    }
+
+                    font-size: 10px;
+                }
             }
         }
     }

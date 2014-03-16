@@ -95,14 +95,45 @@ body{
 
     footer {
         background-color: $a-trans-bg;
-        height: 100px;
         margin-top: 20px;
         clear: both;
         width: 100%;
-        text-align: center;
         span {
-            position: relative;
-            top: 40%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav {
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 20px;
+            ul {
+                margin: 0;
+                padding: 0;
+                li{
+                    float: left;
+                    display: block;
+                    width: 20%;
+                    font-size: 1.5em;
+                }
+            }
+
+            a, a:visited {
+                color: $a-blue-text;
+
+                &:hover {
+                    color: $a-blue-hover;
+                    text-decoration: none;
+                }
+            }
+
+            // @media screen and (max-width: $breakpoint-3){
+            //     text-align: center;
+            //     ul {
+            //         margin-left: 10px;
+            //         margin-right: 10px;
+            //     }
+            // }
         }
     }
 }
@@ -159,36 +190,6 @@ body{
 
     @media screen and (max-width: $breakpoint-1) {
         margin-right: 0;
-    }
-
-    nav {
-        ul {
-            margin: 0;
-            padding: 0;
-            li{
-                float: left;
-                display: block;
-                width: 20%;
-                font-size: 1.5em;
-            }
-        }
-
-        a, a:visited {
-            color: $a-blue-text;
-
-            &:hover {
-                color: $a-blue-hover;
-                text-decoration: none;
-            }
-        }
-
-        @media screen and (max-width: $breakpoint-3){
-            text-align: center;
-            ul {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-        }
     }
 }
 
@@ -313,15 +314,17 @@ body{
         right: 1em;
         position: absolute;
         width: 100%;
+        width: -webkit-calc(100% -2em);
+        width: calc(100% -2em);
     }
 }
 
 .blog {
-    padding-top: 25px;
-    max-width: 1000px;
-    margin: 0 auto;
     h2 {
         margin-bottom: 0;
+        padding-left: .5em;
+        padding-right: 10px;
+        color: $a-orange-text;
     }
 
     p {
@@ -333,7 +336,7 @@ body{
             width: 100%;
             padding: 10px;
         }
-        padding: 25px;
+        padding: .5em;
         float: left;
         width: 50%;
         h3, h4 {
@@ -433,7 +436,6 @@ body{
     width: 100%;
 
     h2 {
-        color: $a-orange-text;
         margin-bottom: .5em;
     }
 

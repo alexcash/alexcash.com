@@ -22,7 +22,7 @@
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
 
     <meta property="og:title" content="<%= data.page.title || "Alex Cash" %>"/>
-    <meta property="og:type" content="<% if data.page.notBlog? %>website<% else %>article<% end %>"/>
+    <meta property="og:type" content="article"/>
     <meta property="og:url" content="http://www.alexcash.com<%= current_page.url %>"/>
     <meta property="og:image" content="http://www.alexcash.com<%= asset_path :images, 'social.jpg' %>"/>
     <meta property="og:site_name" content="alexcash.com"/>
@@ -45,26 +45,14 @@
         s.parentNode.insertBefore(g,s);}(document,'script'));
     </script>
   </head>
-  <body class="<%= page_classes %><% if !data.page.notBlog? %> blog-page <% end %>">
+  <body class="<%= page_classes %>">
   <!--[if lt IE 8]>
       <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
   <![endif]-->
   <section class="me">
       <header>
-        <h1>Alex Cash</h1>
+        <a href="/"><h1>Alex Cash</h1></a>
         <p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
-        <nav>
-          <ul>
-            <% if !data.page.notBlog? %>
-              <li><a href="/"><i class="icon-home"></i></a></li>
-            <% end %>
-            <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
-            <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
-            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
-            <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
-          </ul>
-        </nav>
       </header>
   </section>
 
@@ -73,6 +61,13 @@
     </div>
 
     <footer>
+        <nav class="clearfix"><ul class="clearfix">
+          <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+          <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+          <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+          <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+        </ul></nav>
       <span>&copy; 2013 Alex Cash</span>
     </footer>
 

@@ -59,6 +59,8 @@ activate :blog do |blog|
   blog.layout = "blog_layout"
 end
 
+activate :livereload
+
 activate :directory_indexes
 page "/404.html", :directory_index => false
 
