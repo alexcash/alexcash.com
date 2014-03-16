@@ -1,4 +1,4 @@
-//= require jquery-1.8.3.js
+//= require jquery-2.1.0.js
 //= require jquery.last.fm.js
 
 
@@ -19,9 +19,3 @@ $(function($){
 
 
 });
-
-//analytics
-var _gaq=[['_setAccount','UA-29834387-1'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s);}(document,'script'));
