@@ -76,7 +76,6 @@ $(function($){
         url: 'https://api.instagram.com/v1/users/227221390/media/recent/?client_id=d29dc6d5e6ad41018cacb4d8916612a4',
         dataType: 'jsonp',
     }).then(function(response){
-        console.log(response);
         _.each(response.data, function(imgObj){
             $('.instagram').append('<img class=" album" src="' + imgObj.images.low_resolution.url + '">');
         });
