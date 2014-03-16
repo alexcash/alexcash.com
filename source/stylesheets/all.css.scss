@@ -46,7 +46,7 @@ body{
     -webkit-font-smoothing: antialiased;
     min-width: 320px;
 
-    background: url('../images/graph.jpg');
+    background: #EEEFF3;
 
     a, a:visited {
         color: $a-orange-text;
@@ -56,6 +56,13 @@ body{
         &:hover, &:focus {
             color: $a-orange-hover;
         }
+    }
+
+    h2:after {
+        content:' ';
+        display:block;
+        margin-top: 4px;
+        border:1px solid #d0d0d0;
     }
 
     h2, h3, h4 {
@@ -236,6 +243,7 @@ body{
 .tweets {
     width: 33%;
     padding: 1em;
+    padding-top: .5em;
     float: left;
 
     h2 {
@@ -307,7 +315,7 @@ body{
 .lfm, .instagram {
     width: 33%;
     float: left;
-    padding: 1em;
+    padding: .5em;
 
     h2 {
         margin-bottom: 0.3em;
