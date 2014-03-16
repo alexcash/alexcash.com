@@ -9,15 +9,21 @@
     }
 
     article {
-        h1 {
-            color: $a-orange-text;
-            margin-top: .2em;
-            margin-bottom: 0;
-        }
-        h2 {
-            margin-top: 0;
-            text-align: right;
-            margin-top: -40px;
+        header {
+            position: relative;
+
+            h1 {
+                color: $a-orange-text;
+                margin-top: .2em;
+                margin-bottom: 0;
+            }
+            h2 {
+                margin-top: 0;
+                text-align: right;
+                position: absolute;
+                width: 100%;
+                bottom: -28px;
+            }
         }
 
         .youtube {

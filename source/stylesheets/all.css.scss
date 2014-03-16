@@ -1,6 +1,6 @@
 @import "normalize";
 @import "font-awesome";
-@import "lfm";
+@import "compass";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Open+Sans);
 
 
@@ -13,6 +13,8 @@ $a-blue-text: #0B62A4;
 $a-blue-hover: #3F92D2;
 $a-orange-text: #FF4901;
 $a-orange-hover: #BF5930;
+
+$a-bg-color: #EEEFF3;
 
 $a-trans-bg: rgba(96, 74, 32, 0.2);
 
@@ -46,7 +48,7 @@ body{
     -webkit-font-smoothing: antialiased;
     min-width: 320px;
 
-    background: #EEEFF3;
+    background: $a-bg-color;
 
     a, a:visited {
         color: $a-orange-text;
@@ -304,7 +306,7 @@ body{
     &:after {
         content: '';
         display: block;
-        @include background(linear-gradient(top, rgba(231, 231, 226, 0) 0px, #EEEFF3 100%));
+        @include background(linear-gradient(top, rgba(231, 231, 226, 0) 0px, $a-bg-color 100%));
         bottom: 10px;
         height: 20%;
         left: 1em;
@@ -354,6 +356,9 @@ body{
     -ms-flex: 1;              /* IE 10 */
     flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
+    @extend .clearfix;
+
+
     h2 {
         margin-bottom: 0.3em;
     }
@@ -364,23 +369,18 @@ body{
         clear: both;
     }
 
-    .album {
+    .element {
+        cursor: pointer;
         width: 50%;
+        display: block;
+        float: left;
+        height: auto;
+        font-size: 10px;
+        position: relative;
 
         &:nth-child(n+9) {
             display: none;
         }
-
-        h2 {
-            margin-top: 0.3em;
-        }
-        h1 {
-            color: $a-orange-text;
-            margin-bottom: 0.4em;
-            margin-top: 0.4em;
-        }
-
-        font-size: 10px;
 
         @media screen and (min-width: 1600px ) {
             width: 33%;
@@ -399,6 +399,30 @@ body{
             font-size: 8px;
             display: block !important;
         }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            @include box-shadow(inset 0 0 50px $a-bg-color);
+            @include transition(0.15s opacity);
+            @include translateZ(0);
+            opacity: 0;
+        }
+
+
+        &:hover:after {
+            opacity: 1;
+        }
+
     }
 }
 
