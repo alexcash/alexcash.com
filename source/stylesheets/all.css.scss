@@ -237,7 +237,6 @@ body{
     width: 33%;
     padding: 1em;
     float: left;
-    clear: left;
 
     h2 {
         margin-bottom: 0.3em;
@@ -245,10 +244,6 @@ body{
 
     @media screen and (max-width: $breakpoint-1) {
         padding: .5em;
-        width: 50%;
-    }
-
-    @media screen and (max-width: $breakpoint-2) {
         width: 100%;
     }
 
@@ -281,21 +276,8 @@ body{
 }
 
 .blog {
-    width: 33%;
-    padding: 1em;
-    float: right;
-    clear: right;
-
-    @media screen and (max-width: $breakpoint-1) {
-        padding: .5em;
-        width: 50%;
-    }
-
-    @media screen and (max-width: $breakpoint-2) {
-        width: 100%;
-        padding: 10px 1em 10px 1em;
-    }
-
+    max-width: 1280px;
+    margin: 0 auto;
     h2 {
         margin-bottom: 0;
     }
@@ -305,14 +287,24 @@ body{
     }
 
     article {
-        margin-bottom: 50px;
+        @media screen and (max-width: $breakpoint-2) {
+            width: 100%;
+            padding: 25px;
+        }
+        padding: 50px;
+        float: left;
+        width: 50%;
         h3, h4 {
             margin: 0;
         }
     }
 }
 
-.lfm {
+.instagram{
+    clear: left;
+}
+
+.lfm, .instagram {
     width: 33%;
     float: left;
     padding: 1em;

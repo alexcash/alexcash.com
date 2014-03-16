@@ -3,6 +3,22 @@
 //= require moment.min.js
 //= require jquery.last.fm.js
 
+function linkify(text) {
+    'use strict';
+
+    text = text.replace(/(https?:\/\/\S+)/gi, function (s) {
+        return '<a href="' + s + '">' + s + '</a>';
+    });
+
+    text = text.replace(/(^|)@(\w+)/gi, function (s) {
+        return '<a href="http://twitter.com/' + s + '">' + s + '</a>';
+    });
+
+    text = text.replace(/(^|)#(\w+)/gi, function (s) {
+        return '<a href="http://search.twitter.com/search?q=' + s.replace(/#/,'%23') + '">' + s + '</a>';
+    });
+    return text;
+}
 
 //doc ready
 $(function($){
@@ -55,21 +71,15 @@ $(function($){
         }));
     });
 
+    $.ajax({
+        type: 'GET',
+        url: 'https://api.instagram.com/v1/users/227221390/media/recent/?client_id=d29dc6d5e6ad41018cacb4d8916612a4',
+        dataType: 'jsonp',
+    }).then(function(response){
+        console.log(response);
+        _.each(response.data, function(imgObj){
+            $('.instagram').append('<img class=" album" src="' + imgObj.images.low_resolution.url + '">');
+        });
+    });
+
 });
-
-
-function linkify(text) {
-    text = text.replace(/(https?:\/\/\S+)/gi, function (s) {
-        return '<a href="' + s + '">' + s + '</a>';
-    });
-
-    text = text.replace(/(^|)@(\w+)/gi, function (s) {
-        return '<a href="http://twitter.com/' + s + '">' + s + '</a>';
-    });
-
-    text = text.replace(/(^|)#(\w+)/gi, function (s) {
-        return '<a href="http://search.twitter.com/search?q=' + s.replace(/#/,'%23') + '">' + s + '</a>';
-     });
-    return text;
-}
-
