@@ -1,7 +1,8 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "middleman", 		"~> 3.0.5"
-gem "middleman-smusher","~> 3.0.0"
+gem "middleman",        "~> 3.2"
+gem "middleman-smusher","~> 3.0"
+gem "nokogiri"
 gem "middleman-blog"
 gem "middleman-favicon-maker"
 gem "builder"

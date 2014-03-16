@@ -12,5 +12,6 @@
 
 # Ignore Sass' cache
 /.sass-cache
+/.cache
 
 .DS_Store
