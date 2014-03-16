@@ -32,7 +32,7 @@ $(function($){
 
 
     // last.fm image-grid
-    $.ajax({
+    $('.albums').length && $.ajax({
         url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=alex-cash&period=6month&api_key=4583963e1d8402859dd8f6e3893625fe&format=json&limit=20',
         type: 'get',
         dataType: 'jsonp',
@@ -62,7 +62,7 @@ $(function($){
     });
 
     // twitter
-    $.ajax({
+    $('.tweets').length && $.ajax({
         url:'https://spreadsheets.google.com/feeds/list/0AnMG6z98bgj6dGJCTlJMc3FvZVdiY3FOTjVteklKQWc/od6/public/values?alt=json',
         type:'get'
     }).then(function(data){
@@ -95,7 +95,7 @@ $(function($){
     });
 
     // instagram image-grid
-    $.ajax({
+    $('.instagram') && $.ajax({
         type: 'GET',
         url: 'https://api.instagram.com/v1/users/227221390/media/recent/?client_id=d29dc6d5e6ad41018cacb4d8916612a4',
         dataType: 'jsonp',
