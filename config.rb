@@ -68,11 +68,13 @@ page "*.xml", :layout => false
 
 # Build-specific configuration
 configure :build do
-  activate :gzip, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
-  activate :minify_css, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
-  activate :minify_javascript, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
+  ignore '/deepfreeze\/*/'
+  ignore '/nesTweet\/*/'
+  activate :gzip
+  activate :minify_css
+  activate :minify_javascript
 
-  activate :asset_hash, ignore: [/deepfreeze\/*/, /nesTweet\/*/]
+  activate :asset_hash
   # Use relative URLs
   # activate :relative_assets
 
