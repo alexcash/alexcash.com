@@ -282,6 +282,11 @@ body{
         right: 1em;
         position: absolute;
 
+        @media screen and (max-width: $breakpoint-1) {
+            left: .5em;
+            right: .5em;
+        }
+
         li {
             background-color: lighten($a-trans-bg, 50%);
             overflow-y: auto;
@@ -314,6 +319,13 @@ body{
         width: 100%;
         width: -webkit-calc(100% - 2em);
         width: calc(100% - 2em);
+
+        @media screen and (max-width: $breakpoint-1) {
+            left: .5em;
+            right: .5em;
+            width: -webkit-calc(100% - 1em);
+            width: calc(100% - 1em);
+        }
     }
 }
 
