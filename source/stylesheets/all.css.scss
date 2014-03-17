@@ -382,6 +382,16 @@ body{
     }
 }
 
+.instagram .element:nth-child(n+10) {
+    display: none;
+}
+
+
+.lfm .element:nth-child(n+9) {
+    display: none;
+}
+
+
 .element {
     cursor: pointer;
     width: 50%;
@@ -390,10 +400,6 @@ body{
     height: auto;
     font-size: 10px;
     position: relative;
-
-    &:nth-child(n+9) {
-        display: none;
-    }
 
     @media screen and (min-width: 1600px ) {
         width: 33%;
