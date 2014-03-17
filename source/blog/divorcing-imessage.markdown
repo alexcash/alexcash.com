@@ -2,7 +2,6 @@
 title: "Divorcing iMessage"
 date: 2014/04/16
 description: ""
-published: false
 priority: 0.8
 ---
 
@@ -34,8 +33,8 @@ _Just when I thought I was out... they pull me back in._
 
 Needless to say I was pretty upset. If my wife or parents had tried to contact
 me for some sort of emergency, I never would have gotten that message. Not only
-that, but they would have though everyting was hunky dory. It says 'delivered' right
-there!
+that, but they would have thought everyting was hunky dory. It says 'delivered'
+right there!
 
 I began the search for a solution online. Some people suggested logging into the
 Apple support profile website, and deregistering devices (if you had even bothered registering)
@@ -49,7 +48,7 @@ I had access to, but my iPad was at home. I worried about all the past devices
 I had sold or recycled that had been signed in. My iPhone 4, my 3gs. If the phone
 number belongs to the phone, why can I continue to use it as an iMessage handle
 on other devices? What if my contract with Sprint lapsed, and they assigned my
-number to someone else? Would I sitll recieve iMessage at that number if I failed
+number to someone else? Would I still recieve iMessage at that number if I failed
 to sign out my iPad? Why hadn't my phone _told_ me that I'd need to sign out
 other devices?
 

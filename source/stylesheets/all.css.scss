@@ -165,13 +165,13 @@ body{
             margin-top: 0;
         }
 
-        @media screen and (max-width: $breakpoint-2){
-            left: 260px;
-            right: 5px;
-            width: auto;
-        }
+        // @media screen and (max-width: $breakpoint-2){
+        //     left: 260px;
+        //     right: 5px;
+        //     width: auto;
+        // }
 
-        @media screen and (max-width: $breakpoint-3){
+        @media screen and (max-width: 770px){
             right: 5px;
             padding-left: 10px;
             left: 0;
