@@ -111,6 +111,7 @@ body{
                 margin: 0;
                 padding: 0;
                 li{
+                    text-align: center;
                     float: left;
                     display: block;
                     width: 20%;
@@ -179,7 +180,7 @@ body{
             width: 100%;
             background:rgba(255,255,255, 0.5);
             h1{
-                text-align: left;
+                text-align: right;
                 line-height: 1.2em;
             }
             p {
@@ -245,9 +246,6 @@ body{
 
     @media screen and (max-width: $breakpoint-2) {
         width: 100%;
-        h2 {
-            text-align: right;
-        }
     }
 }
 
