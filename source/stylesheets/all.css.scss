@@ -322,7 +322,7 @@ body{
 .blog {
     h2 {
         margin-bottom: 0;
-        padding-left: .5em;
+        padding-left: 10px;
         padding-right: 10px;
         color: $a-orange-text;
     }
@@ -334,11 +334,10 @@ body{
     article {
         @media screen and (max-width: $breakpoint-2) {
             width: 100%;
-            padding: 10px;
         }
-        padding: .5em;
         float: left;
         width: 50%;
+        padding: .5em;
         h3, h4 {
             margin: 0;
         }
