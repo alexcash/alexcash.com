@@ -1,7 +1,7 @@
 ---
 title: "Divorcing iMessage"
-date: 2014/04/16
-description: ""
+date: 2014/03/16
+description: "It turns out, a lot of people want to leave iMessage. In my case, I wanted to experiment with the forbidden fruit of Android. Google and Sprint have a partnership that allows you to connect your phone number to Google voice without violating your cell contract and incurring an early termination fee."
 priority: 0.8
 ---
 
