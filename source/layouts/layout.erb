@@ -51,7 +51,6 @@
   <section class="me">
       <header>
         <a href="/"><h1>Alex Cash</h1></a>
-        <p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
       </header>
   </section>
 
@@ -60,14 +59,36 @@
     </div>
 
     <footer>
-        <nav class="clearfix"><ul class="clearfix">
-          <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
-          <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
-          <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
-          <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
-          <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
-        </ul></nav>
-      <span>&copy; <%= Time.now.year %> Alex Cash</span>
+      <div class="footer-contain">
+        <table class="social-table">
+          <tr>
+            <td><img src="../images/social.jpg" class="social-me"></img></td>
+            <td class="copy">
+              <i>Alex Cash is a software engineer and aspiring designer currently building web experiences to delight at&nbsp;Nest.</i>
+            </td>
+            <td class="socials">
+              <nav class="clearfix"><ul class="clearfix">
+                <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+                <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+                <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+                <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+              </ul></nav>
+              <span>&copy; <%= Time.now.year %> Alex Cash</span>
+            </td>
+          </tr>
+        </table>
+        <div class="social-floater">
+          <nav class="clearfix"><ul class="clearfix">
+            <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+            <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+          </ul></nav>
+          <span>&copy; <%= Time.now.year %> Alex Cash</span>
+        </div>
+      </div>
     </footer>
 
   </body>
