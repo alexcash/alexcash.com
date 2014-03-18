@@ -189,22 +189,6 @@ body{
     }
 }
 
-.row-2 {
-    position: relative;
-    clear: left;
-    display: flex;
-
-    @media screen and (max-width: $breakpoint-1) {
-        display: block;
-    }
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-
 .tout {
     float: left;
     width: 25%;
@@ -229,12 +213,33 @@ body{
     }
 }
 
+.row-2 {
+    position: relative;
+    clear: left;
+    display: flex;
+    > section {
+        flex: 1;
+        display: none;
+        .no-flex & {
+            width: 33%;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-1) {
+        display: block;
+    }
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
 .tweets {
-    width: 33%;
     padding: 1em;
     padding-top: .5em;
     float: left;
-    flex: 1;
     position: relative;
 
     .no-flexbox & {
@@ -307,52 +312,10 @@ body{
     }
 }
 
-.blog {
-    h2 {
-        margin-bottom: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: $a-orange-text;
-    }
-
-    p {
-        margin-top: 0.3em;
-    }
-
-    article {
-        @media screen and (max-width: $breakpoint-2) {
-            width: 100%;
-        }
-        float: left;
-        width: 50%;
-        padding: .5em;
-        h3, h4 {
-            margin: 0;
-        }
-        h3 a {
-            color: $a-blue-text;
-            &:hover {
-                color: $a-blue-hover;
-            }
-        }
-        h4 {
-            color: $a-orange-text;
-        }
-    }
-}
-
-.instagram{
-    clear: left;
-}
-
 .lfm, .instagram {
-    width: 33%;
+    @extend .clearfix;
     float: left;
     padding: .5em;
-    flex: 1;
-
-    @extend .clearfix;
-
 
     h2 {
         margin-bottom: 0.3em;
@@ -363,17 +326,10 @@ body{
         width: 100%;
         clear: both;
     }
+    .element:nth-child(n+10) {
+        display: none;
+    }
 }
-
-.instagram .element:nth-child(n+10) {
-    display: none;
-}
-
-
-.lfm .element:nth-child(n+9) {
-    display: none;
-}
-
 
 .element {
     cursor: pointer;
@@ -427,6 +383,39 @@ body{
 
 }
 
+.blog {
+    h2 {
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $a-orange-text;
+    }
+
+    p {
+        margin-top: 0.3em;
+    }
+
+    article {
+        @media screen and (max-width: $breakpoint-2) {
+            width: 100%;
+        }
+        float: left;
+        width: 50%;
+        padding: .5em;
+        h3, h4 {
+            margin: 0;
+        }
+        h3 a {
+            color: $a-blue-text;
+            &:hover {
+                color: $a-blue-hover;
+            }
+        }
+        h4 {
+            color: $a-orange-text;
+        }
+    }
+}
 
 .timeline {
     clear: both;

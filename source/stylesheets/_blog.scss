@@ -35,20 +35,4 @@ article.blog-page {
     }
 
     padding: 10px;
-
-    .jqlfm {
-        .albums {
-            width: 100%;
-            .element {
-                width: 50%;
-                @media screen and (max-width: $breakpoint-2) {
-                    h2, h1 {
-                        margin-bottom: 0.4em;
-                    }
-
-                    font-size: 10px;
-                }
-            }
-        }
-    }
 }

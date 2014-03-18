@@ -13,5 +13,5 @@ I leveraged this to write a jQuery function to create a grid of album artwork fo
 
 If you aren't the developer type, just check out the demo below.
 
-<div class="albums clearfix"></div>
+<div class="lfm"></div>
 

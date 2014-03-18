@@ -33,7 +33,7 @@ $(function($){
 
 
     // last.fm image-grid
-    $('.albums').length && $.ajax({
+    $('.lfm').length && $.ajax({
         url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=alex-cash&period=6month&api_key=4583963e1d8402859dd8f6e3893625fe&format=json&limit=20',
         type: 'get',
         dataType: 'jsonp',
@@ -57,9 +57,9 @@ $(function($){
         });
         albums = albums.slice(0,12);
 
-        $('.albums').append(_.template(imageGridTemplate, {
+        $('.lfm').append(_.template(imageGridTemplate, {
             elements: albums
-        }));
+        })).show();
     });
 
     // twitter
@@ -93,7 +93,7 @@ $(function($){
 
         $('.tweets').append(_.template($('#tweets-template').html(), {
             tweets: _.first(outTweets, 10)
-        }));
+        })).show();
     });
 
     // instagram image-grid
@@ -113,7 +113,7 @@ $(function($){
 
         $('.instagram').append(_.template(imageGridTemplate, {
             elements: photos
-        }));
+        })).show();
     });
 
 });
