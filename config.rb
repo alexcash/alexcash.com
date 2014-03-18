@@ -48,9 +48,7 @@ require "builder"
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 activate :blog do |blog|
@@ -59,7 +57,6 @@ activate :blog do |blog|
   blog.layout = "blog_layout"
 end
 
-activate :livereload
 
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 9', 'android 2.3']
@@ -69,6 +66,11 @@ end
 activate :directory_indexes
 page "/404.html", :directory_index => false
 page "*.xml", :layout => false
+
+# Development-specific configuration
+configure :development do
+    activate :livereload
+end
 
 # Build-specific configuration
 configure :build do

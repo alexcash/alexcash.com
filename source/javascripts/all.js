@@ -1,6 +1,6 @@
 //= require jquery-2.1.0.js
 //= require lodash.js
-//= require moment.min.js
+//= require moment.js
 
 //doc ready
 $(function($){
