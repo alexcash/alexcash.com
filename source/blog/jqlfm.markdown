@@ -1,11 +1,11 @@
 ---
 title: "jQuery.last.fm"
 date: 2013/02/10
-description: "Recently, I discoverd a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away."
+description: "Recently, I discovered a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away."
 priority: 0.8
 ---
 
-Recently, I discoverd a script one of my new coworkers wrote for [his website](http://www.number61.net/about/) called [rdio tiles](https://github.com/mgipp/Rdio-Tiles) that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away.
+Recently, I discovered a script one of my new coworkers wrote for [his website](http://www.number61.net/about/) called [rdio tiles](https://github.com/mgipp/Rdio-Tiles) that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away.
 
 Being the curmudgeon I am, I'm not quite ready to pay a monthly fee for music. I've been working on my mp3 library for over a decade, and I've grown quite attached to iTunes. Enter [last.fm](http://www.last.fm/). Last.fm has provided a service called scrobbling since 2002. By installing a simple app on my mac, I started logging(scrobbling) every song I listened to in iTunes up to Last.fm servers. Then, all of that data is available to me via a simple API.
 

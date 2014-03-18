@@ -1,14 +1,14 @@
---- 
+---
 title: "The Taste of Defeat"
 date: 2012/04/25
-description: "As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed last weeks post it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling."
+description: "As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed last weeks post it explains the problem, which helps a bit, and is much more upbeat. I suggest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling."
 priority: 0.8
 ---
 
-As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed [last weeks post](/Adventures-in-Robotics/) it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling.
+As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed [last weeks post](/Adventures-in-Robotics/) it explains the problem, which helps a bit, and is much more upbeat. I suggest reading it first. I wish I had a good story to tell you but I don't. So, I'll just show you what happened. Words can't really do justice to how disappointing this experience was, but if you look at our faces (I'm the one on the right) at about 1:26 you'll understand that it wasn't a good feeling.
 
 <div class="youtube">
-	<iframe src="http://www.youtube.com/embed/3ZoqgPOKeTA?rel=0" frameborder="0" width="420" height="315"> </iframe>
+    <iframe src="http://www.youtube.com/embed/3ZoqgPOKeTA?rel=0" frameborder="0" width="420" height="315"> </iframe>
 </div>
 
 In my mind, the time following the realization that our robot wasn't going to finish the maze (1:26) was extremely short. I remember immediately thinking <em>I need to get off the stage. </em>What clearly took us some time in the video happened in an instant in my mind. It's actually pretty painful to watch. We stood there, dumbfounded at our robot driving into a wall forever.
