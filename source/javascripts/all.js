@@ -1,3 +1,4 @@
+//= require modernizr.js
 //= require jquery-2.1.0.js
 //= require lodash.js
 //= require moment.js
@@ -64,7 +65,8 @@ $(function($){
     // twitter
     $('.tweets').length && $.ajax({
         url:'https://spreadsheets.google.com/feeds/list/0AnMG6z98bgj6dGJCTlJMc3FvZVdiY3FOTjVteklKQWc/od6/public/values?alt=json',
-        type:'get'
+        type:'get',
+        dataType: 'jsonp',
     }).then(function(data){
         var tweetObjects = data.feed.entry,
             tweets = [],

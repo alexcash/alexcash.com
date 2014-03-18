@@ -237,6 +237,10 @@ body{
     flex: 1;
     position: relative;
 
+    .no-flexbox & {
+        height: 900px;
+    }
+
     h2 {
         margin-bottom: 0.3em;
     }
