@@ -61,9 +61,13 @@ end
 
 activate :livereload
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9', 'android 2.3']
+  config.cascade  = false
+end
+
 activate :directory_indexes
 page "/404.html", :directory_index => false
-
 page "*.xml", :layout => false
 
 # Build-specific configuration
