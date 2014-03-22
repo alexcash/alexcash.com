@@ -50,7 +50,12 @@
   <![endif]-->
   <section class="me">
       <header>
-        <a href="/"><h1>Alex Cash</h1></a>
+        <% if current_page.data.pageTitle %>
+          <a href="/"><h2>Alex Cash</h2></a>
+          <h1><%= current_page.data.pageTitle%></h1>
+        <% else %>
+          <a href="/"><h1>Alex Cash</h1></a>
+        <% end %>
       </header>
   </section>
 
@@ -62,7 +67,7 @@
       <div class="footer-contain">
         <table class="social-table">
           <tr>
-            <td><img src="../images/social.jpg" class="social-me"></img></td>
+            <td><%= image_tag 'social.jpg', :class => 'social-me'%></td>
             <td class="copy">
               <i>Alex Cash is a software engineer and aspiring designer currently building web experiences to delight at&nbsp;Nest.</i>
             </td>
