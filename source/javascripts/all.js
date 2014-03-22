@@ -7,7 +7,7 @@
 $(function($){
     'use strict';
 
-    console.log = $.noop;
+    //console.log = $.noop;
 
     var _ = window._,
         moment = window.moment,
@@ -34,15 +34,53 @@ $(function($){
                 return undefined;
             }
 
-            var track = data.recenttracks.track.length ? data.recenttracks.track[0] : data.recenttracks.track,
-                imgURL = track.image[track.image.length-1]['#text'];
-            
-            if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
-                console.log('unsatisfactory image');
+            var track;
+
+
+            // sometimes the most recent track is an array. I dunno why.
+            if (data.recenttracks.track.length) {
+                // lastfm gives us a hint with an attr. try to use it
+                _.each(data.recenttracks.track, function(enumTrack){
+                    if(enumTrack['@attr']) { //lastfm says this track is playing
+                        track = enumTrack;
+                        return;
+                    }
+
+                    // but sometimes it won't have artwork, and others in the array
+                    // will have the correct artwork. use it.
+                    if(track && (enumTrack.name === track.name || (enumTrack.album['#text'] != '' && enumTrack.album['#text'] === track.album['#text'])) && enumTrack.image && enumTrack.image[track.image.length-1]['#text'] != '') {
+                        track = enumTrack;
+                    }
+                });
+
+                // ok so sometimes there will be none with the @attr.
+                // grab the most recent.
+                if(!track) {
+                    track = _(data.recenttracks.track).sortBy(function(enumTrack) {
+                        if(enumTrack.date) {
+                            return enumTrack.date.uts;
+                        }
+                        return 0;
+                    }).first();
+                }
+            } else {
+                // if lastfm only decides to return one track use it.
+                track = data.recenttracks.track;
+            }
+
+            // if the track has a date and was played more than 10 minutes ago
+            // it's stale.
+            if(track.date && Date.now() - (track.date.uts*1000) > 600000) {
+                console.log('too old');
                 return undefined;
             }
-            if(track.date && Date.now() - (track.date.uts*1000) > 300000) {
-                console.log('too old');
+
+
+            var imgURL = track.image[track.image.length-1]['#text'];
+            
+            // it has to have a picture we can use
+            if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
+                console.log('unsatisfactory image');
                 return undefined;
             }
 
