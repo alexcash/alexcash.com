@@ -5,11 +5,11 @@ description: "Back at mobile world congress, Microsoft announced the Consumer P
 priority: 0.8
 ---
 
-<img src= "../images/blog/history-repeats-itself/win8.jpg"  />
-
 Back at mobile world congress, Microsoft announced the Consumer Preview of Windows 8. The download is available to everyone, so I decided to take it out for a spin. What follows isn't simply thoughts on my time using Windows 8, but also where Windows is going. Buckle up; This is going to be a long ride.
 
 For those that don't know, Microsoft has been working on and previewing the next version of the Windows operating system for about a year now. While Apple and Google have decided to unify the OS across their phones and tablets, Microsoft has opted to unify their OS across tablets and desktops. Microsoft claims that the user interface is equally usable whether you are using touch, mouse, or keyboard. After sitting down with it for a few days I have some pretty strong feelings about Windows 8 with a keyboard and mouse. Is it usable? Yes. Is it a good idea? No, absolutely not, and I'll explain why.
+
+<img src= "../images/blog/history-repeats-itself/win8.jpg"  />
 
 Way back in 2000, Microsoft started <a href="http://www.microsoft.com/presspass/features/2000/nov00/11-13tabletpc.mspx">talking about</a> tablets. While the devices that they previewed had many ideas we find antiquated today like a stylus and handwriting recognition, it introduced an idea that remains constant in Microsoft's methodology today: tablets should be powerful enough to run a full desktop OS. In 2002, with the introduction of Windows XP, Microsoft <a href="http://www.businessweek.com/technology/content/nov2002/tc2002111_0469.htm">doubled down</a> on their promise to bring tablets to the masses. "This is a when, not an if, question. Don't tell me you don't believe in Tablet." said Bill Gates. Admittedly, they weren't wrong. With tablets like the iPad and Kindle Fire moving over <a href="http://www.v3.co.uk/v3-uk/news/2135289/tablet-sales-grow-250-cent-2011-reach-million">73 million</a> units in 2011, the tablet generation is clearly here to say.
 

@@ -39,7 +39,7 @@ notBlog: true
 <section class="blog clearfix">
     <h2>Blog</h2>
     <div class="row clearfix">
-    <% blog.articles[0...4].each_with_index do |article, index| %>
+    <% blog.articles.each_with_index do |article, index| %>
       <% if (index > 0 and index % 2 == 0) %>
         </div><div class="row clearfix">
       <% end %>
