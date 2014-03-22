@@ -7,9 +7,13 @@
 $(function($){
     'use strict';
 
+    console.log = $.noop;
+
     var _ = window._,
         moment = window.moment,
         imageGridTemplate = $('#image-grid').html(),
+        lfmKey = '4583963e1d8402859dd8f6e3893625fe',
+        lfmUserName = 'alex-cash',
         linkify = function(text) {
             text = text.replace(/(https?:\/\/\S+)/gi, function (s) {
                 return '<a href="' + s + '">' + s + '</a>';
@@ -23,7 +27,55 @@ $(function($){
                 return '<a href="http://search.twitter.com/search?q=' + s.replace(/#/,'%23') + '">' + s + '</a>';
             });
             return text;
+        },
+        processNowPlaying = function(data, status){
+            if(status !== 'success') {
+                console.log('network error');
+                return undefined;
+            }
+
+            var track = data.recenttracks.track.length ? data.recenttracks.track[0] : data.recenttracks.track,
+                imgURL = track.image[track.image.length-1]['#text'];
+            
+            if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
+                console.log('unsatisfactory image');
+                return undefined;
+            }
+            if(track.date && Date.now() - (track.date.uts*1000) > 300000) {
+                console.log('too old');
+                return undefined;
+            }
+
+            return {
+                imgURL: imgURL,
+                linkURL: track.url,
+                title: track.name,
+                artist: track.artist['#text']
+            };
+        },
+        processTopAlbums = function(data, status){
+            if(status !== 'success') {
+                return undefined;
+            }
+            var albums = [];
+
+            _.each(data.topalbums.album, function(album){
+                var imgURL = album.image[album.image.length-1]['#text'];
+                if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
+                    return;
+                }
+                albums.push ({
+                    imgURL: imgURL,
+                    linkURL: album.url,
+                    title:   album.name,
+                    artist: album.artist.name,
+                    played: album.playcount
+                });
+            });
+
+            return albums.slice(0,12);
         };
+
 
     _.templateSettings = {
         evaluate:    /\{\{#([\s\S]+?)\}\}/g,            // {{# console.log("blah") }}
@@ -32,42 +84,39 @@ $(function($){
     };
 
 
-    // last.fm image-grid
-    $('.lfm').length && $.ajax({
-        url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=alex-cash&period=6month&api_key=4583963e1d8402859dd8f6e3893625fe&format=json&limit=20',
-        type: 'get',
-        dataType: 'jsonp',
-    }).then(function(data){
-        var albums = [];
-
-        _.each(data.topalbums.album, function(album){
-            var imgURL = album.image[album.image.length-1]['#text'];
-            if (imgURL.indexOf('noimage') > -1 || imgURL.indexOf('.gif') > -1) {
-                return;
-            }
-            albums.push ({
-                image_url: imgURL,
-                link_url: album.url,
-                // info: {
-                //     name:   album.name,
-                //     artist: album.artist.name,
-                //     played: album.playcount
-                // }
+    if ($('.lfm').length) {
+        var nowPlayingPromise = $.ajax({
+                url: 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=' + lfmUserName + '&limit=1&nowplaying=true&api_key=' + lfmKey + '&format=json',
+                type: 'get',
+                dataType: 'jsonp',
+            }),
+            topAlbumsPromise = $('.lfm').length && $.ajax({
+                url: 'http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=' + lfmUserName + '&period=6month&api_key=' + lfmKey + '&format=json&limit=20',
+                type: 'get',
+                dataType: 'jsonp',
             });
-        });
-        albums = albums.slice(0,12);
 
-        $('.lfm').append(_.template(imageGridTemplate, {
-            elements: albums
-        })).show();
-    });
+        $.when(nowPlayingPromise, topAlbumsPromise).always(function(nowPlayingArgs, topAlbumsArgs){
+            var nowPlaying = processNowPlaying(nowPlayingArgs[0], nowPlayingArgs[1]) || false,
+                topAlbums = processTopAlbums(topAlbumsArgs[0], nowPlayingArgs[1]);
+
+            topAlbums && $('.lfm').append(_.template(imageGridTemplate, {
+                top: nowPlaying,
+                elements: topAlbums
+            })).show();
+        });
+    }
+
 
     // twitter
     $('.tweets').length && $.ajax({
         url:'https://spreadsheets.google.com/feeds/list/0AnMG6z98bgj6dGJCTlJMc3FvZVdiY3FOTjVteklKQWc/od6/public/values?alt=json',
         type:'get',
         dataType: 'jsonp',
-    }).then(function(data){
+    }).always(function(data, status){
+        if(status !== 'success') {
+            return;
+        }
         var tweetObjects = data.feed.entry,
             tweets = [],
             outTweets = [];
@@ -85,14 +134,14 @@ $(function($){
             });
             outTweets.unshift({
                 handle: vals[1],
-                body: linkify(_.escape(vals[2])),
+                body: linkify(vals[2]),
                 url: vals[3],
                 timestamp: moment(vals[0], 'MMM DD, YYYY at hh:mma').fromNow()
             });
         });
 
         $('.tweets').append(_.template($('#tweets-template').html(), {
-            tweets: _.first(outTweets, 10)
+            tweets: outTweets
         })).show();
     });
 
@@ -101,13 +150,16 @@ $(function($){
         type: 'GET',
         url: 'https://api.instagram.com/v1/users/227221390/media/recent/?client_id=d29dc6d5e6ad41018cacb4d8916612a4',
         dataType: 'jsonp',
-    }).then(function(response){
+    }).always(function(data, status){
+        if(status !== 'success') {
+            return;
+        }
         var photos = [];
 
-        _.each(response.data, function(imgObj){
+        _.each(data.data, function(imgObj){
             photos.push({
-                image_url: imgObj.images.low_resolution.url,
-                link_url: imgObj.link
+                imgURL: imgObj.images.low_resolution.url,
+                linkURL: imgObj.link
             });
         });
 
