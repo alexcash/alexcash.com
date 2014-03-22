@@ -74,8 +74,6 @@ end
 
 # Build-specific configuration
 configure :build do
-  ignore '/deepfreeze\/*/'
-  ignore '/nesTweet\/*/'
   activate :gzip
   activate :minify_css
   activate :minify_javascript

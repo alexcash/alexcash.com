@@ -2,4 +2,5 @@
 
 rsync -azv build alexcash.com:/home/ec2-user
 rsync -azv nginx.conf alexcash.com:/home/ec2-user
+rsync -azv deepfreeze alexcash.com:/home/ec2-user
 ssh -t alexcash.com 'sudo /etc/init.d/nginx restart'
