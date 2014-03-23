@@ -7,8 +7,6 @@
 $(function($){
     'use strict';
 
-    //console.log = $.noop;
-
     var _ = window._,
         moment = window.moment,
         imageGridTemplate = $('#image-grid').html(),
