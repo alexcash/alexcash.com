@@ -1,24 +1,25 @@
 So, I guess this is where we do the secret handshake. I work a lot on my site
-and I'm pretty proud of it. If you're reading this your feed back is welcome! DM
-or reply @alexcash to get in touch.
+and I'm pretty proud of it. If you're reading this your feedback is welcome.
+Feel free to reach out at toalexcash@gmail.com
 
 Tools
 
-  v4:
-  Sublime Text 2, iTerm, Transmit, AWS (Ec2, Cloudfront, Route53), Pixelmator,
-  github, chrome canary
+  Sublime Text, iTerm, Pixelmator, Chrome
 
+Services
 
-Frameworks, Lbraries, Assets,
+  AWS, Github
 
-  Middleman (http://middlemanapp.com/),
-  Midleman Blog (https://github.com/middleman/middleman-blog),
-  Middleman Favicon (https://github.com/follmann/middleman-favicon-maker),
-  jQuery (http://jquery.com/),
-  SASS (http://sass-lang.com/),
-  COMPASS (http://compass-style.org/),
-  font awesome (http://fortawesome.github.com/Font-Awesome/),
-  open sans (http://www.google.com/webfonts/specimen/Open+Sans),
+Frameworks, Lbraries, Assets
+
+  Middleman (http://middlemanapp.com/)
+  jQuery (http://jquery.com/)
+  lodash (http://lodash.com/)
+  moment.js (http://momentjs.com/)
+  SASS (http://sass-lang.com/)
+  autoprefixer (https://github.com/ai/autoprefixer)
+  font awesome (http://fortawesome.github.com/Font-Awesome/)
+  open sans (http://www.google.com/webfonts/specimen/Open+Sans)
   arvo (http://www.google.com/webfonts/specimen/Arvo)
 
 All code included from a tool, framework, or library maintains it's respective
