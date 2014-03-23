@@ -2,6 +2,5 @@
 # http://code.google.com/web/controlcrawlindex/
 
 User-agent: *
-Disallow: /deepfreeze/
 Disallow: /email_assets/
 Disallow: /holiday2012/
