@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    
+      <title>jQuery.last.fm | Alex Cash</title>
+    
+
+    <meta name="description" content="Recently, I discoverd a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away.">
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <link rel="canonical" href="http://www.alexcash.com/jqlfm/">
+    <link rel="shortlink" type="text/html" href="http://alexca.sh/jqlfm/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
+
+    <meta property="og:title" content="jQuery.last.fm"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.alexcash.com/jqlfm/"/>
+    <meta property="og:image" content="http://www.alexcash.com/images/social-69edb97d.jpg"/>
+    <meta property="og:site_name" content="alexcash.com"/>
+    <meta property="og:description" content="Recently, I discoverd a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away."/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@alexcash">
+    <meta name="twitter:creator" content="@alexcash">
+    <meta name="twitter:url" content="http://www.alexcash.com/jqlfm/">
+    <meta name="twitter:title" content="jQuery.last.fm">
+    <meta name="twitter:description" content="Recently, I discoverd a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away.">
+    <meta name="twitter:image" content="http://www.alexcash.com/images/social-69edb97d.jpg">
+
+    <link href="/stylesheets/all-05d2d199.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="/javascripts/polyfills-997f446a.js" type="text/javascript"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+      <link href="/stylesheets/font-awesome-ie7.min-a1f6c439.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+  <body class="jqlfm jqlfm_index blog-page ">
+  <!--[if lt IE 8]>
+      <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
+  <![endif]-->
+  <section class="me">
+      <header>
+        <h1>Alex Cash</h1>
+        <p>You found me. Who am I? I'm a web developer. I'm a software engineer. I'm a mobile enthusiast. I'm glad you're here.</p>
+        <nav>
+          <ul>
+            
+              <li><a href="/"><i class="icon-home"></i></a></li>
+            
+            <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+            <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+          </ul>
+        </nav>
+      </header>
+  </section>
+
+    <div class="contain">
+        <article>
+  	<h1>jQuery.last.fm</h1>
+  	<h2>2013/02/10</h2>
+    <p>Recently, I discoverd a script one of my new coworkers wrote for <a href='http://www.number61.net/about/'>his website</a> called <a href='https://github.com/mgipp/Rdio-Tiles'>rdio tiles</a> that showed artwork for music from his &#8216;heavy rotation&#8217; on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you&#8217;re currently into? It&#8217;s the perfect addition to this site &#8211; I started searching for a way to do it right away.</p>
+
+<p>Being the curmudgeon I am, I&#8217;m not quite ready to pay a monthly fee for music. I&#8217;ve been working on my mp3 library for over a decade, and I&#8217;ve grown quite attached to iTunes. Enter <a href='http://www.last.fm/'>last.fm</a>. Last.fm has provided a service called scrobbling since 2002. By installing a simple app on my mac, I started logging(scrobbling) every song I listened to in iTunes up to Last.fm servers. Then, all of that data is available to me via a simple API.</p>
+
+<p>I leveraged this to write a jQuery function to create a grid of album artwork for the top albums I&#8217;ve been listening to lately. I also put together some 3d css animations to go with the detail views. After spending a while on this I realized others might want this functionality too. So I turned into a jQuery plugin, and open sourced it under the MIT and GPL licenses. If you&#8217;d like to incorporate this into your site, or contribute to making the plugin better, check out the <a href='http://alexcash.github.com/jQuery.last.fm/'>project site</a>, or fork <a href='https://github.com/alexcash/jQuery.last.fm'>the project</a> on github.</p>
+
+<p>If you aren&#8217;t the developer type, just check out the demo below.</p>
+<div class='albums' />
+  </article>
+
+    </div>
+
+    <footer>
+      <span>&copy; 2013 Alex Cash</span>
+    </footer>
+
+  </body>
+  <script src="/javascripts/all-17b5d49b.js" async="true" type="text/javascript"></script>
+</html>

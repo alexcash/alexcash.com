@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alex Cash</title>
+  <subtitle>Dangerous thoughts from a dangerous mind.</subtitle>
+  <id>http://www.alexcash.com/</id>
+  <link href="http://www.alexcash.com/"/>
+  <link href="http://www.alexcash.com/feed.xml" rel="self"/>
+  <updated>2013-02-10T00:00:00Z</updated>
+  <author>
+    <name>Alex Cash</name>
+  </author>
+  <entry>
+    <title>jQuery.last.fm</title>
+    <link rel="alternate" href="/jqlfm/"/>
+    <id>/jqlfm/</id>
+    <published>2013-02-10T00:00:00Z</published>
+    <updated>2013-02-10T00:00:00Z</updated>
+    <author>
+      <name>Alex Cash</name>
+    </author>
+    <summary type="html">&lt;p&gt;Recently, I discoverd a script one of my new coworkers wrote for &lt;a href='http://www.number61.net/about/'&gt;his website&lt;/a&gt; called &lt;a href='https://github.com/mgipp/Rdio-Tiles'&gt;rdio tiles&lt;/a&gt; that showed artwork for music from his &amp;#8216;heavy rotation&amp;#8217; on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you&amp;#8217;re currently into? It&amp;#8217;s the perfect addition to this site &amp;#8211; I started searching for a way to do it right away.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Recently, I discoverd a script one of my new coworkers wrote for &lt;a href='http://www.number61.net/about/'&gt;his website&lt;/a&gt; called &lt;a href='https://github.com/mgipp/Rdio-Tiles'&gt;rdio tiles&lt;/a&gt; that showed artwork for music from his &amp;#8216;heavy rotation&amp;#8217; on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you&amp;#8217;re currently into? It&amp;#8217;s the perfect addition to this site &amp;#8211; I started searching for a way to do it right away.&lt;/p&gt;
+
+&lt;p&gt;Being the curmudgeon I am, I&amp;#8217;m not quite ready to pay a monthly fee for music. I&amp;#8217;ve been working on my mp3 library for over a decade, and I&amp;#8217;ve grown quite attached to iTunes. Enter &lt;a href='http://www.last.fm/'&gt;last.fm&lt;/a&gt;. Last.fm has provided a service called scrobbling since 2002. By installing a simple app on my mac, I started logging(scrobbling) every song I listened to in iTunes up to Last.fm servers. Then, all of that data is available to me via a simple API.&lt;/p&gt;
+
+&lt;p&gt;I leveraged this to write a jQuery function to create a grid of album artwork for the top albums I&amp;#8217;ve been listening to lately. I also put together some 3d css animations to go with the detail views. After spending a while on this I realized others might want this functionality too. So I turned into a jQuery plugin, and open sourced it under the MIT and GPL licenses. If you&amp;#8217;d like to incorporate this into your site, or contribute to making the plugin better, check out the &lt;a href='http://alexcash.github.com/jQuery.last.fm/'&gt;project site&lt;/a&gt;, or fork &lt;a href='https://github.com/alexcash/jQuery.last.fm'&gt;the project&lt;/a&gt; on github.&lt;/p&gt;
+
+&lt;p&gt;If you aren&amp;#8217;t the developer type, just check out the demo below.&lt;/p&gt;
+&lt;div class='albums' /&gt;</content>
+  </entry>
+  <entry>
+    <title>v4.0</title>
+    <link rel="alternate" href="/v4/"/>
+    <id>/v4/</id>
+    <published>2013-01-19T00:00:00Z</published>
+    <updated>2013-01-19T00:00:00Z</updated>
+    <author>
+      <name>Alex Cash</name>
+    </author>
+    <summary type="html">&lt;p&gt;For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I&amp;#8217;d frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here&amp;#8217;s what&amp;#8217;s new:&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the begining, I promised myself I&amp;#8217;d frequently itterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here&amp;#8217;s what&amp;#8217;s new:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;New look and feel.&lt;/strong&gt; Fully responsive, clean and lightweight.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A blog!&lt;/strong&gt; As a senior at Graceland, I created and maintained a small wordpress blog at binarysmokesignals.com. Now that I&amp;#8217;m graduated, I wanted provide a more personal platform to share thoughts and writings. Now you can find posts right here at alexcash.com. Posts that I felt were relevant have made the migration from binary smoke signals. Others did not. I&amp;#8217;m looking forward to writing more here in the future.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Complete code rewrite.&lt;/strong&gt; Over the last months, I&amp;#8217;ve become a bit of a tools snob. I went from just slamming out html and css in a text editor in v3, to a full blown tool chain for v4. The site is staticly generated using &lt;a href='http://middlemanapp.com/'&gt;middleman&lt;/a&gt; and &lt;a href='http://sass-lang.com/'&gt;sass&lt;/a&gt;. You can see the &lt;a href='https://github.com/alexcash/alexcash.com'&gt;source&lt;/a&gt; on github. I&amp;#8217;m pretty proud of it.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;alexca.sh short domain.&lt;/strong&gt; A few months ago I aquired this URL, and with 4.0 it will provide short links to all my blog posts, and future pages of interest.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;New server architecture.&lt;/strong&gt; I recently made the jump from a traditional apache server at dreamhost to cloud fronted nginx instance through AWS. Page loads should be stupid fast.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Design retrospective.&lt;/strong&gt; My code has been out in the public since 1.0, and you can jump through the commit history on &lt;a href='https://github.com/alexcash/alexcash.com'&gt;github&lt;/a&gt; to see my progress. However, I wanted to provide a simpler way for people to see how far I&amp;#8217;ve come. So, on my home page I&amp;#8217;ve provided a &lt;a href='/#timeline'&gt;timeline&lt;/a&gt; with images of alexcash.com at every major revision. Click or tap through to see a &amp;#8216;deep freeze&amp;#8217; copy of that version of the site.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The web should be beautiful, funcitonal, clear, and concise. I hope you&amp;#8217;ve enjoyed my efforts so far. Join me as I work to contribute to that future.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>The Taste of Defeat</title>
+    <link rel="alternate" href="/Taste-of-Defeat/"/>
+    <id>/Taste-of-Defeat/</id>
+    <published>2012-04-25T00:00:00Z</published>
+    <updated>2012-04-25T00:00:00Z</updated>
+    <author>
+      <name>Alex Cash</name>
+    </author>
+    <summary type="html">&lt;p&gt;As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed &lt;a href='/Adventures-in-Robotics/'&gt;last weeks post&lt;/a&gt; it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don&amp;#8217;t. So, I&amp;#8217;ll just show you what happened. Words can&amp;#8217;t really do justice to how disappointing this experience was, but if you look at our faces (I&amp;#8217;m the one on the right) at about 1:26 you&amp;#8217;ll understand that it wasn&amp;#8217;t a good feeling.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;As promised, this is the follow-up to talk about the Robotics competition I attended. If you missed &lt;a href='/Adventures-in-Robotics/'&gt;last weeks post&lt;/a&gt; it explains the problem, which helps a bit, and is much more upbeat. I sugest reading it first. I wish I had a good story to tell you but I don&amp;#8217;t. So, I&amp;#8217;ll just show you what happened. Words can&amp;#8217;t really do justice to how disappointing this experience was, but if you look at our faces (I&amp;#8217;m the one on the right) at about 1:26 you&amp;#8217;ll understand that it wasn&amp;#8217;t a good feeling.&lt;/p&gt;
+&lt;div class='youtube'&gt;
+	&lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/3ZoqgPOKeTA?rel=0' width='420'&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;In my mind, the time following the realization that our robot wasn&amp;#8217;t going to finish the maze (1:26) was extremely short. I remember immediately thinking &lt;em&gt;I need to get off the stage. &lt;/em&gt;What clearly took us some time in the video happened in an instant in my mind. It&amp;#8217;s actually pretty painful to watch. We stood there, dumbfounded at our robot driving into a wall forever. &lt;p style='text-align: center;'&gt;I'll stop dwelling.&lt;/p&gt; The other thing you can take away from the agony of defeat apparent in our faces is that it occurred to us at the exact same time. The people in the room, the judges, none of them knew that something had gone wrong, except for us. In that moment we both knew. That&amp;#8217;s how close you become with your software as a developer. That&amp;#8217;s how close you become with your algorithms. There is no way you can&amp;#8217;t. If you spend hours upon hours (we put in about 60 this year) tweaking lines of code, scribbling out test cases, walking through scenarios on a whiteboard, and running your code over and over, you understand exactly what is happening every instant your program is running. All it took was the robot driving the wrong direction for a split second, and we knew the robot wouldn&amp;#8217;t solve this case. Not just that it wouldn&amp;#8217;t solve it this time, but that it would never solve it. &lt;p style='text-align: center;'&gt;It's a sobering experience.&lt;/p&gt; So what is the moral of the story? Test. Test a little bit, and then test a whole lot more. And not just the codebase in general, but the code you are implementing. We had run our robot hundreds of times pitting it against many many test cases. But we committed a cardinal sin. Even though we had a robot that we knew worked, we thought we could make it better, and we worked until the last possible moment to try. Don&amp;#8217;t ever spend the night before a release (or in this case a competition) making major changes to your source. It isn&amp;#8217;t worth it. We actually wrote a very elegant solution to faster paths back to home after finding the target. It was good code and we were proud of it. However, we neglected a specific set of cases that would have been easily avoidable, had we the time to test. The source code to our robot, with the bug fixed, can be found &lt;a href='https://github.com/alexcash/Robotics-Solutions'&gt;on my gitHub&lt;/a&gt;. &lt;p style='text-align: center;'&gt;Lesson Learned&lt;/p&gt; If you want to do some reading about more traditional testing I found a fairly gentle &lt;a href='http://wiki.developerforce.com/page/How_to_Write_Good_Unit_Tests'&gt;introduction to unit testing&lt;/a&gt; at developer force. I know it&amp;#8217;s like your mom asking you to eat spinach, but trust me when I tell you that it&amp;#8217;s worth avoiding the stomach summersault of watching your code acting unexpectedly in production. The good news is that the winner of the competition was actually a really cool guy.  We chatted him up about all the things in his robot that made us jealous before hand, and explained some of the logic from ours that we were especially proud of. A video of his robot completing a different maze is below.&lt;/p&gt;
+&lt;div class='youtube'&gt;
+&lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/GMIREIwdniI?rel=0' width='560'&gt; &lt;/iframe&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Adventures in Robotics</title>
+    <link rel="alternate" href="/Adventures-in-Robotics/"/>
+    <id>/Adventures-in-Robotics/</id>
+    <published>2012-04-12T00:00:00Z</published>
+    <updated>2012-04-12T00:00:00Z</updated>
+    <author>
+      <name>Alex Cash</name>
+    </author>
+    <summary type="html">&lt;p&gt;I&amp;#8217;m in my Senior year at &lt;a href='http://graceland.edu/'&gt;Graceland University&lt;/a&gt;, and this year I&amp;#8217;m president of our &lt;a href='http://csit.graceland.edu/acm/acm.html'&gt;ACM chapter&lt;/a&gt;. Each year we travel to several different conferences, and for the last several years we have been traveling to the Midwest Instruction and Computing Symposium or &lt;a href='http://www.micsymposium.org/'&gt;MICS&lt;/a&gt;. Part of the conference each year is a Robotics competition. In 2011, about 26 teams of 2-3 students worked on &lt;a href='http://www2.css.edu/mics/RoboMazeMICS_2011.pdf'&gt;a problem&lt;/a&gt; that involved traversing a maze built of black tiles and white tape walls. &lt;a href='http://personal.graceland.edu/~bsanders/'&gt;Brian Anders&lt;/a&gt; and I had never competed in robotics competition, but decided to put together a solution. We ended up taking home second place! The video following illustrates:&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;I&amp;#8217;m in my Senior year at &lt;a href='http://graceland.edu/'&gt;Graceland University&lt;/a&gt;, and this year I&amp;#8217;m president of our &lt;a href='http://csit.graceland.edu/acm/acm.html'&gt;ACM chapter&lt;/a&gt;. Each year we travel to several different conferences, and for the last several years we have been traveling to the Midwest Instruction and Computing Symposium or &lt;a href='http://www.micsymposium.org/'&gt;MICS&lt;/a&gt;. Part of the conference each year is a Robotics competition. In 2011, about 26 teams of 2-3 students worked on &lt;a href='http://www2.css.edu/mics/RoboMazeMICS_2011.pdf'&gt;a problem&lt;/a&gt; that involved traversing a maze built of black tiles and white tape walls. &lt;a href='http://personal.graceland.edu/~bsanders/'&gt;Brian Anders&lt;/a&gt; and I had never competed in robotics competition, but decided to put together a solution. We ended up taking home second place! The video following illustrates:&lt;/p&gt;
+&lt;div class='youtube'&gt;
+	&lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/X8ftqeZnook?rel=0' width='560'&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;The source code for this solution can be found on &lt;a href='https://github.com/alexcash/Robotics-Solutions'&gt;my github&lt;/a&gt;. The reason this comes to mind is because we are competing again tomorrow. I don&amp;#8217;t want to give out too many details on the competition or our solution before the competition is over, but here is a video to tide you over:&lt;/p&gt;
+&lt;div class='youtube'&gt;
+	&lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/Ln_6duaCqnI?rel=0' width='560'&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;expect a follow up with all kinds of goodies about the competition Friday.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>History Repeats Itself</title>
+    <link rel="alternate" href="/History-Repeats-Itself/"/>
+    <id>/History-Repeats-Itself/</id>
+    <published>2012-03-06T00:00:00Z</published>
+    <updated>2012-03-06T00:00:00Z</updated>
+    <author>
+      <name>Alex Cash</name>
+    </author>
+    <summary type="html">&lt;img src='../images/blog/history-repeats-itself/win8.jpg' /&gt;
+&lt;p&gt;Back at mobile world congress, Microsoft announced the Consumer Preview of Windows 8. The download is available to everyone, so I decided to take it out for a spin. What follows isn&amp;#8217;t simply thoughts on my time using Windows 8, but also where Windows is going. Buckle up; This is going to be a long ride.&lt;/p&gt;</summary>
+    <content type="html">&lt;img src='../images/blog/history-repeats-itself/win8.jpg' /&gt;
+&lt;p&gt;Back at mobile world congress, Microsoft announced the Consumer Preview of Windows 8. The download is available to everyone, so I decided to take it out for a spin. What follows isn&amp;#8217;t simply thoughts on my time using Windows 8, but also where Windows is going. Buckle up; This is going to be a long ride.&lt;/p&gt;
+
+&lt;p&gt;For those that don&amp;#8217;t know, Microsoft has been working on and previewing the next version of the Windows operating system for about a year now. While Apple and Google have decided to unify the OS across their phones and tablets, Microsoft has opted to unify their OS across tablets and desktops. Microsoft claims that the user interface is equally usable whether you are using touch, mouse, or keyboard. After sitting down with it for a few days I have some pretty strong feelings about Windows 8 with a keyboard and mouse. Is it usable? Yes. Is it a good idea? No, absolutely not, and I&amp;#8217;ll explain why.&lt;/p&gt;
+
+&lt;p&gt;Way back in 2000, Microsoft started &lt;a href='http://www.microsoft.com/presspass/features/2000/nov00/11-13tabletpc.mspx'&gt;talking about&lt;/a&gt; tablets. While the devices that they previewed had many ideas we find antiquated today like a stylus and handwriting recognition, it introduced an idea that remains constant in Microsoft&amp;#8217;s methodology today: tablets should be powerful enough to run a full desktop OS. In 2002, with the introduction of Windows XP, Microsoft &lt;a href='http://www.businessweek.com/technology/content/nov2002/tc2002111_0469.htm'&gt;doubled down&lt;/a&gt; on their promise to bring tablets to the masses. &amp;#8220;This is a when, not an if, question. Don&amp;#8217;t tell me you don&amp;#8217;t believe in Tablet.&amp;#8221; said Bill Gates. Admittedly, they weren&amp;#8217;t wrong. With tablets like the iPad and Kindle Fire moving over &lt;a href='http://www.v3.co.uk/v3-uk/news/2135289/tablet-sales-grow-250-cent-2011-reach-million'&gt;73 million&lt;/a&gt; units in 2011, the tablet generation is clearly here to say.&lt;/p&gt;
+&lt;img src='../images/blog/history-repeats-itself/metro.png' /&gt;
+&lt;p&gt;But besides being a decade early, Microsoft miscalculated on another front. Microsoft wanted a two for one deal. The mobile market is just now emerging, but that doesn&amp;#8217;t mean it wasn&amp;#8217;t there for the taking way back in the year 2000. Microsoft was right that tablets were the next big thing, but lost because they weren&amp;#8217;t prepared to rethink the user interface paradigm. Just like graphical user interfaces and the mouse went hand in hand, mobile devices like tablets and smartphones require something far more touch friendly. Despite all of this, Microsoft spent years and years re-upping on their promise to no one. Windows XP, Windows Vista, and Windows 7 have all had &amp;#8216;tablet editions&amp;#8217; with support for a stylus, handwriting, and virtually no change to the user interface compared to their desktop counterparts. Now with other companies like Google and Apple eating Windows&amp;#8217; proverbial lunch, they have been forced to action.&lt;/p&gt;
+
+&lt;p&gt;Enter Windows 8. Microsoft has completely redesigned the UI from the ground up, dubbing it&amp;#8217;s new look &amp;#8216;Metro&amp;#8217;. It takes a &amp;#8216;touch first&amp;#8217; type approach to user interaction. From what I can tell in &lt;a href='http://gizmodo.com/5889001/windows-8-consumer-preview-hands-on-no-going-back'&gt;videos&lt;/a&gt; and &lt;a href='http://www.theverge.com/2012/2/29/2832640/windows-8-consumer-preview-pictures-video/in/2552968'&gt;previews&lt;/a&gt; around the internet, this system works wonderfully on a tablet. I&amp;#8217;ll be the first to admit that it looks very beautiful. Microsoft hasn&amp;#8217;t been this savvy on design before. I&amp;#8217;m a real proponent of the idea that in order to succeed in mobile, traditional design and interaction ideas simply won&amp;#8217;t cut it. Even as a long time Mac and iOS user, I&amp;#8217;m ecstatic to see serious competitors in the mobile/touch market.&lt;/p&gt;
+&lt;img src='../images/blog/history-repeats-itself/shoe-horn.jpg' /&gt;
+&lt;p&gt;But Microsoft is still going to miss the boat. It&amp;#8217;s great that they are getting serious about touch interface and tablets, but Windows 8 completely forgets about the Desktop. Sure, finger driven interfaces are cool, hip, and arguably the future, but that&amp;#8217;s because they work really great on small devices like tablets and phones! While touching your data is a delightful experience it is not always the most efficient. For almost 30 years we have been teaching ourselves how to use the mouse and keyboard as extremely powerful work tools. Often times when I want to do a complex task, or work through a problem very quickly, I will sit down at a desktop or laptop computer. On the same token for quick consumption of bite sized data, tablets and phones are a go-to technology. Both have their place, and both are paradigms that make sense.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#8217;s what get&amp;#8217;s Microsoft in trouble. The two for one mentality. The idea that you can sit down and write a single piece of software to be run everywhere is convenient, but it isn&amp;#8217;t practical. Windows 8 is great. Metro is great. But if the shoe doesn&amp;#8217;t fit, don&amp;#8217;t wear it. Windows 8 on the desktop feels &lt;a href='http://en.wikipedia.org/wiki/Shoehorning'&gt;shoehorned&lt;/a&gt;, through and through.&lt;/p&gt;</content>
+  </entry>
+</feed>
