@@ -16,24 +16,24 @@
 
     <link rel="shortcut icon" href="/favicon.ico" />
 
-    <link rel="canonical" href="http://www.alexca.sh<%= current_page.url %>">
+    <link rel="canonical" href="http://alexca.sh<%= current_page.url %>">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
 
     <meta property="og:title" content="<%= current_page.data.title || "Alex Cash" %>"/>
     <meta property="og:type" content="<% if current_page.data.notBlog? %>website<% else %>article<% end %>"/>
-    <meta property="og:url" content="http://www.alexca.sh<%= current_page.url %>"/>
-    <meta property="og:image" content="http://www.alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+    <meta property="og:url" content="http://alexca.sh<%= current_page.url %>"/>
+    <meta property="og:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
     <meta property="og:site_name" content="alexca.sh"/>
     <meta property="og:description" content="<%= current_page.data.description %>"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@alexcash">
     <meta name="twitter:creator" content="@alexcash">
-    <meta name="twitter:url" content="http://www.alexca.sh<%= current_page.url %>">
+    <meta name="twitter:url" content="http://alexca.sh<%= current_page.url %>">
     <meta name="twitter:title" content="<%= current_page.data.title || "Alex Cash" %>">
     <meta name="twitter:description" content="<%= current_page.data.description %>">
-    <meta name="twitter:image" content="http://www.alexcash.com<%= asset_path :images, 'social.jpg' %>">
+    <meta name="twitter:image" content="http://alexcash.com<%= asset_path :images, 'social.jpg' %>">
 
     <%= stylesheet_link_tag "all" %>
 
@@ -84,6 +84,7 @@
                 <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
                 <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
                 <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+                <li><a href="http://alexca.sh/rss" rel="me"><i class="icon-rss"></i></a>
               </ul></nav>
               <span>&copy; <%= Time.now.year %> Alex Cash</span>
             </td>
@@ -96,6 +97,7 @@
             <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
             <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
             <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
+            <li><a href="http://alexca.sh/rss" rel="me"><i class="icon-rss"></i></a>
           </ul></nav>
           <span>&copy; <%= Time.now.year %> Alex Cash</span>
         </div>
