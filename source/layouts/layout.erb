@@ -24,7 +24,7 @@
     <meta property="og:type" content="<% if current_page.data.notBlog? %>website<% else %>article<% end %>"/>
     <meta property="og:url" content="http://alexca.sh<%= current_page.url %>"/>
     <% if current_page.data.headerImage %>
-      <meta property="og:image" content="http://alexca.sh<%= current_page.data.headerImage %>"/>
+      <meta property="og:image" content="http://alexca.sh<%= asset_path :images, current_page.data.headerImage %>"/>
     <% else %>
       <meta property="og:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
     <% end %>
