@@ -23,7 +23,11 @@
     <meta property="og:title" content="<%= current_page.data.title || "Alex Cash" %>"/>
     <meta property="og:type" content="<% if current_page.data.notBlog? %>website<% else %>article<% end %>"/>
     <meta property="og:url" content="http://alexca.sh<%= current_page.url %>"/>
-    <meta property="og:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+    <% if current_page.data.headerImage %>
+      <meta property="og:image" content="http://alexca.sh<%= current_page.data.headerImage %>"/>
+    <% else %>
+      <meta property="og:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+    <% end %>
     <meta property="og:site_name" content="alexca.sh"/>
     <meta property="og:description" content="<%= current_page.data.description %>"/>
 
@@ -33,7 +37,11 @@
     <meta name="twitter:url" content="http://alexca.sh<%= current_page.url %>">
     <meta name="twitter:title" content="<%= current_page.data.title || "Alex Cash" %>">
     <meta name="twitter:description" content="<%= current_page.data.description %>">
-    <meta name="twitter:image" content="http://alexcash.com<%= asset_path :images, 'social.jpg' %>">
+    <% if current_page.data.headerImage %>
+      <meta name="twitter:image" content="http://alexca.sh<%= asset_path :images, current_page.data.headerImage %>"/>
+    <% else %>
+      <meta name="twitter:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+    <% end %>
 
     <%= stylesheet_link_tag "all" %>
 
@@ -50,17 +58,23 @@
       </script>
     <% end %>
   </head>
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %><% if not current_page.data.notBlog? %> blog-page<% end %>">
   <!--[if lt IE 9]>
       <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
   <![endif]-->
-  <section class="me">
+  <% if current_page.data.headerImage %>
+    <section class="me" style="background-image: url(<%= asset_path :images, current_page.data.headerImage %>)">
+  <% else %>
+    <section class="me">
+  <% end %>
+  <% if not current_page.data.notBlog? %>
+    <a href="/" id="back-home"><i class="icon-home"></i></a>
+  <% end %>
       <header>
-        <% if current_page.data.pageTitle %>
-          <a href="/"><h2>Alex Cash</h2></a>
-          <h1><%= current_page.data.pageTitle%></h1>
+        <% if current_page.data.title %>
+          <h1><%= kill_orphans current_page.data.title %></h1>
         <% else %>
-          <a href="/"><h1>Alex Cash</h1></a>
+          <h1>Alex Cash</h1>
         <% end %>
       </header>
   </section>
@@ -79,12 +93,13 @@
             </td>
             <td class="socials">
               <nav class="clearfix"><ul class="clearfix">
+                <li><a href="/" rel="me"><i class="icon-home"></i></a></li>
                 <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
                 <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
                 <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
                 <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
                 <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
-                <li><a href="http://alexca.sh/rss" rel="me"><i class="icon-rss"></i></a>
+                <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
               </ul></nav>
               <span>&copy; <%= Time.now.year %> Alex Cash</span>
             </td>
@@ -92,12 +107,13 @@
         </table>
         <div class="social-floater">
           <nav class="clearfix"><ul class="clearfix">
+            <li><a href="/" rel="me"><i class="icon-home"></i></a></li>
             <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
             <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
             <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
             <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
             <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
-            <li><a href="http://alexca.sh/rss" rel="me"><i class="icon-rss"></i></a>
+            <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
           </ul></nav>
           <span>&copy; <%= Time.now.year %> Alex Cash</span>
         </div>

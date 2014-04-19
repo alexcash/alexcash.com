@@ -1,5 +1,6 @@
 ---
 title: "Listen to Skrillex at 20x speed"
+headerImage: "/images/blog/skrillex-at-20x/header.jpg"
 date: 2014/04/18
 description: "Going back over the edited recording, I discovered something wonderful. Skrillex
 at 20 times it's regular speed."

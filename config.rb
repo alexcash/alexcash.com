@@ -40,12 +40,15 @@ require "builder"
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def kill_orphans(text)
+    temp = text.gsub(/\s+/m, ' ').strip.split(" ")
+    lastword = temp.pop
+    text = temp.join(" ") + "&nbsp;" + lastword
+    return text
+  end
+end
+
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
