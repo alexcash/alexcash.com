@@ -1,6 +1,6 @@
 ## alexcash.com
 
-The source for http://www.alexcash.com. A [middleman](http://middlemanapp.com/)
+The source for http://alexca.sh. A [middleman](http://middlemanapp.com/)
 app.
 
 ###To get started
