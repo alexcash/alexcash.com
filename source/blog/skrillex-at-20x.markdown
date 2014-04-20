@@ -4,7 +4,7 @@ headerImage: "/images/blog/skrillex-at-20x/header.jpg"
 date: 2014/04/18
 description: "Going back over the edited recording, I discovered something wonderful. Skrillex
 at 20 times it's regular speed."
-priority: 0.8
+sitemap_priority: 0.8
 ---
 
 Yesterday I made a screen recording for a friend, explaining how to do a few

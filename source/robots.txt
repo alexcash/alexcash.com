@@ -1,5 +1,4 @@
-# www.robotstxt.org/
-# http://code.google.com/web/controlcrawlindex/
+Sitemap: http://alexca.sh/sitemap.xml   
 
 User-agent: *
 Disallow: /email_assets/
