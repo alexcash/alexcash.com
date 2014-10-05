@@ -146,5 +146,12 @@
         </a>
     {{# }); }}
   </script>
-  <%= javascript_include_tag "all", :async => true %>
+  <% if current_page.data.script %>
+    <%= javascript_include_tag "all", :async => false %>
+    <%= javascript_include_tag current_page.data.script, :async => false %>
+  <% else %>
+    <%= javascript_include_tag "all", :async => true %>
+  <% end %>
+
+
 </html>
