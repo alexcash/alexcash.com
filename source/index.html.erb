@@ -4,40 +4,76 @@ description: "You found me. Who am I? I'm a web developer. I'm a software engine
 notBlog: true
 ---
 
-<div class="row">
-    <section class="tout">
-        <h2>Design</h2>
-        <p>The web should be a beautiful place. It's my job not just to facilitate interactions, deliver content, or write code. It's also my job to make my user's experiences delightful. While I pride myself in being able to make a professional design come to life, I also push myself to craft entire experiences from beginning to end. Better understanding design makes me a better engineer.</p>
-    </section>
-
-    <section class="tout">
-        <h2>Code</h2>
-        <p>Like any good craftsmen, I believe a good developer must love his tools. Whether it's html, css, or javascript, I want to be an expert on good engineering practice and paths to productivity in front end development. Before being a web professional, I developed for iOS. I did the engineering work for <a href="http://itunes.apple.com/us/app/ipredict-lite-fortune-teller/id406282919?mt=8">iPredict</a>, an app downloaded over a million times, with the good guys at <a href="http://www.room12studios.com/">Room 12 Studios</a>.</p>
-    </section>
+<div class="about">
+        <h1>ALEX CASH</h1>
+         <h2>SOFTWARE ENGINEER</h2>
 </div>
 
-<div class="row">
-    <section class="tout">
-        <h2>Work</h2>
-        <p>I'm a front end engineer at <a href="http://nest.com/">Nest</a>. I love my job. I get to work every day on creating web experiences to delight. Previously, I had the opportunity to intern with <a href="http://www.pioneer.com/landing">Pioneer Hi-Bred</a>. At Pioneer, I worked with iOS and Microsoft .NET. In May of 2012, I graduated from Graceland University with a degree in Computer Science and Information Technology. At Graceland, I was our <a href="http://www.acm.org/">ACM</a> chapter president.</p>
-    </section>
+<section class="color-grid clearfix">
+    <div class="logo nest">
+        <%= partial "images/nest" %>
+    </div>
 
-    <section class="tout">
-        <h2>Play</h2>
-        <p>In my free time I like to hone my design and development skills. This site is an example of some of that work. I play World of Warcraft, where I raid in the guild <a href="http://www.dulcebellum.com">&lt; Dulce Bellum &gt;</a> on Stonemaul-US. When I'm not in front of a glowing screen I like to spend my time geocaching with my wife on trails and in parks accross the country.</p>
-    </section>
-</div>
+    <div class="logo room12">
+        <%= partial "images/r12" %>
+    </div>
+
+    <div class="logo pioneer">
+        <%= partial "images/pioneer" %>
+    </div>
+
+    <div class="logo graceland">
+        <%= partial "images/graceland" %>
+    </div>
+
+
+    <div class="expanded nest">
+        <div class="float">
+            <div class="header">
+                <div class="chevron"></div>
+                <%= partial "images/nest" %>
+            </div>
+            <p>You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight.</p>
+        </div>
+    </div>
+    <div class="expanded room12">
+        <div class="float">
+            <div class="header">
+                <div class="chevron"></div>
+                <%= partial "images/r12" %>
+            </div>
+            <p>You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight.</p>
+        </div>
+    </div>
+    <div class="expanded pioneer">
+        <div class="float">
+            <div class="header">
+                <div class="chevron"></div>
+                <%= partial "images/pioneer" %>
+            </div>
+            <p>You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight.</p>
+        </div>
+    </div>
+    <div class="expanded graceland">
+        <div class="float">
+            <div class="header">
+                <div class="chevron"></div>
+                <%= partial "images/graceland" %>
+            </div>
+            <p>You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight. You found me. I'm a software enineer in Northern California. I build iOS and Web experiences to delight.</p>
+        </div>
+    </div>
+</section>
 
 <div class="row-2">
-    <section class="instagram"><h2>Instagram</h2></section>
+<!--     <section class="instagram"></section>
 
-    <section class="tweets"><h2>Twitter</h2></section>
+    <section class="tweets"></section>
 
-    <section class="lfm"><h2>Last.fm</h2></section>
-</div>
+    <section class="lfm"></section>
+ --></div>
 
 <section class="blog clearfix">
-    <h2>Blog</h2>
     <div class="row clearfix">
     <% blog.articles[0...6].each_with_index do |article, index| %>
       <% if (index > 0 and index % 2 == 0) %>

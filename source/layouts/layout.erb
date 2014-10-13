@@ -60,7 +60,7 @@
   </head>
   <body class="<%= page_classes %><% if not current_page.data.notBlog? %> blog-page<% end %>">
   <!--[if lt IE 9]>
-      <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
+      <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser.</a></div>
   <![endif]-->
   <% if current_page.data.headerImage %>
     <section class="me" style="background-image: url(<%= asset_path :images, current_page.data.headerImage %>)">
@@ -73,9 +73,7 @@
       <header>
         <% if current_page.data.title %>
           <h1><%= kill_orphans current_page.data.title %></h1>
-        <% else %>
-          <h1>Alex Cash</h1>
-        <% end %>
+       <% end %>
       </header>
   </section>
 
@@ -89,16 +87,13 @@
           <tr>
             <td><%= image_tag 'social.jpg', :class => 'social-me'%></td>
             <td class="copy">
-              <i>Alex Cash is a software engineer and aspiring designer currently building web experiences to delight at&nbsp;Nest.</i>
+              <i>Alex Cash is a software engineer in Northern California. He currently writes iOS software for Nest, a Google company.</i>
             </td>
             <td class="socials">
               <nav class="clearfix"><ul class="clearfix">
-                <li><a href="/" rel="me"><i class="icon-home"></i></a></li>
                 <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
                 <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
                 <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
-                <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
-                <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
                 <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
               </ul></nav>
               <span>&copy; <%= Time.now.year %> Alex Cash</span>
@@ -107,12 +102,9 @@
         </table>
         <div class="social-floater">
           <nav class="clearfix"><ul class="clearfix">
-            <li><a href="/" rel="me"><i class="icon-home"></i></a></li>
             <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
             <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
             <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
-            <li><a href="http://www.facebook.com/alexcash" rel="me"><i class="icon-facebook"></i></a></li>
-            <li><a href="https://plus.google.com/u/0/111755575489705453111?rel=author" rel="me"><i class="icon-google-plus"></i></a>
             <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
           </ul></nav>
           <span>&copy; <%= Time.now.year %> Alex Cash</span>
@@ -139,8 +131,12 @@
             <img src='{{{ element.imgURL }}}'>
             <div class='info'>
               <div class='text'>
-                {{{ element.title }}} - {{{ element.artist }}} <br>
-                {{{ element.played }}} tracks played
+                {{# if(element.instagram) { }}
+                  {{{ element.caption }}}
+                {{# } else { }}
+                  {{{ element.title }}} - {{{ element.artist }}} <br>
+                  {{{ element.played }}} tracks played
+                {{# } }}
               </div>
             </div>
         </a>
