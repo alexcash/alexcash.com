@@ -315,7 +315,7 @@ body{
                 width: 100%;
                 min-height: 50px;
                 position: relative;
-                svg {
+                .svg {
                     position: relative;
                     left: 50%;
                     transform: translateX(-50%);
@@ -356,7 +356,7 @@ body{
     transform-style: preserve-3d;
     backface-visibility: hidden;
 
-    svg {
+    .svg {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -426,51 +426,23 @@ $nest-blue: rgba(0, 175, 216, 1.0);
 $pioneer-green: rgba(66, 119, 49, 1.0);
 .pioneer, .pioneer:after {
     background-color: $pioneer-green;
-
-    svg {
-        margin-bottom: -58px;
-        @media screen and (max-width: $breakpoint-2) {
-            height: 180px;
-        }
-    }
 }
 .logo.pioneer:hover {
     background-color: lighten($pioneer-green, 3%);
 }
 
-
-.expanded.pioneer svg {
-    margin-top: -58px;
-}
-
 $gu-blue: rgba(20, 56, 113, 1.0);
 .graceland, .graceland:after {
     background-color: $gu-blue;
-    svg {
-        margin-bottom: -60px;
-    }
 }
 .logo.graceland:hover {
     background-color: lighten($gu-blue, 3%);
-}
-
-.expanded.graceland svg {
-    margin-top: -68px;
 }
 
 $r12-black: #231F20;
 .room12, .room12:after {
     background-color: $r12-black;
 
-    svg { 
-        top: 53%;
-        height: 200px;
-        margin-bottom: -65px;        
-
-        @media screen and (max-width: $breakpoint-2) {
-            height: 160px;
-        }
-    }
     &.expanded .float .chevron {
         background-color: rgba(255,255,255, 0.2);
         &:hover {
@@ -481,11 +453,6 @@ $r12-black: #231F20;
 .logo.room12:hover {
     background-color: lighten($r12-black, 3%);
 }
-
-.expanded.room12 svg {
-    margin-top: -65px;
-}
-
 
 .row-2 {
     position: relative;
@@ -713,6 +680,37 @@ $r12-black: #231F20;
         }
     }
 }
+
+.svg {
+    height: 150px;
+    width: 240px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nSVG {
+    height: 80px;
+    width: 140px;
+    background-image: url("../images/nest.svg");
+    .expanded & {
+        transform: translate(-50%, -4px) !important;
+    }
+}
+
+.nr12 {
+    background-position: center 15px;
+    background-image: url("../images/r12.svg"); 
+}
+
+.pSVG {
+    background-image: url("../images/pioneer.svg"); 
+}
+
+.gSVG {
+    background-image: url("../images/graceland.svg"); 
+}
+
 
 @import "blog";
 @import "eq";
