@@ -19,13 +19,12 @@ $(function() {
             targetOffset = $target.offset(),
             scaleX =  $container.width() / $target.width(),
             scaleY =  $container.height() / $target.height(),
-            isTouchingLeft =  targetOffset.left - containerOffset.left == 0,
+            isTouchingLeft =  targetOffset.left - containerOffset.left === 0,
             isTouchingRight = targetOffset.left - containerOffset.left + $target.width() >= ($container.width() - 5),
             isTouchingSide = isTouchingLeft || isTouchingRight,
-            isTargetRight = targetOffset.left - containerOffset.left  > $container.width()/2,
+            isTargetRight = targetOffset.left - containerOffset.left  >= $container.width()/2,
             offsetX =  isTouchingSide ? (isTargetRight ? 1 : -1) * ((($container.width() - $target.width())/2) / scaleX) : 0,
-            isTargetBottom = targetOffset.top - containerOffset.top  >= $container.height()/2,
-            offsetY = (isTargetBottom ? -1 : 1) * ((($container.height() - $target.height())/2) / scaleY);
+            offsetY = (containerOffset.top - targetOffset.top + ($container.height() - $target.height()) / 2) / scaleY;
 
         if (doesSuckAt3dTransforms){
             $target.css({ zIndex: 10 });

@@ -413,6 +413,14 @@ $nest-blue: rgba(0, 175, 216, 1.0);
 .logo.nest:hover {
     background-color: lighten($nest-blue, 3%);
 }
+.expanded.nest {
+    a {
+        color: darken($a-blue-text, 10%);
+        &:hover {
+            color: darken($a-blue-hover, 10%);
+        }
+    }
+}
 
 
 $pioneer-green: rgba(66, 119, 49, 1.0);
