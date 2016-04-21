@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-gem "middleman",        "~> 3.2"
-gem "middleman-smusher","~> 3.0"
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman"
+gem "middleman-smusher"
+gem "middleman-livereload"
 gem 'middleman-autoprefixer'
 gem "nokogiri"
 gem "middleman-blog"
 gem "builder"
+gem 'middleman-s3_sync'

@@ -54,3 +54,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket = 'alexcash.com'
+end
