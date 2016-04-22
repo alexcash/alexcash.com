@@ -3,6 +3,7 @@ title: "v4.0"
 date: 2013/01/19
 description: "For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the beginning, I promised myself I'd frequently iterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:"
 sitemap_priority: 0.8
+published: false
 ---
 
 For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the beginning, I promised myself I'd frequently iterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:
