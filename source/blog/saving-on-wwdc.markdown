@@ -95,3 +95,5 @@ I just hate the idea of someone counting themselves out because of cost. Especia
 know all of their options. WWDC is an incredibly enriching experience I recommend for any
 Apple developer. If you are considering attending I encourage you to be creative, and try to
 find a way to make it work.
+
+__UPDATE__: I've written a [small followup](/crowd-sourced-wwdc-tips) with some crowd sourced tips.
