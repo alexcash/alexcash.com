@@ -1,0 +1,45 @@
+---
+title: "Motocamp 2016"
+headerImage: "/images/blog/motocamp-2016/header.jpg"
+date: 2016/07/22
+description: "For the next week, I live out of this motorcycle."
+sitemap_priority: 0.8
+---
+
+Starting tomorrow, and for the next week, I live out of this motorcycle. It contains everything I need.
+Food. Shelter. Clothing. It wasn't really meant for a journey such as this, but I
+am confident that it will rise to the task.
+
+![My Kawasaki Vulcan S](/images/blog/motocamp-2016/motorcycle.jpg)
+
+I'll be using the original global positioning system to orienteer accross the country.
+Through the Great Basin Desert. A quick stop off in Ogden, Utah. Yellowstone National Park.
+The Bitterroot National Forest. The Sawtooth National Forest. Crater Lake. Juanita Lake.
+Mad River.
+
+![Paper Map](/images/blog/motocamp-2016/map.jpg)
+
+I'll start with [one companion](https://twitter.com/pfhobia), but after just three
+nights, I'll be going alone. Six days with the open road, and five nights with the stars 
+in the sky. Plenty of time to think, to reflect. Time enough to miss home.
+
+![Me and friends with our bikes](/images/blog/motocamp-2016/friends.jpg)
+
+I'll be camping six of the eight nights. Sleeping outside, cooking my own food. Roughing it.
+
+![Tents](/images/blog/motocamp-2016/tents.jpg)
+
+I've done short trips before. But nothing quite like this. I've spent much of today
+going over my packing list, and going over it again. I'm anxious, and I miss my wife and
+home already. But above all I'm excited. I'll learn more about myself. Either I'll have
+a new annual tradition, or one hell of a story. I can't wait to set out.
+
+![An early version of my packing list](/images/blog/motocamp-2016/list.jpg)
+
+
+I'll be [tweeting](https://twitter.com/alexcash) as I can, and you can see a map 
+tracking my location (don't be creepy guys) along the way [here](http://share.findmespot.com/shared/faces/viewspots.jsp?glId=0qH20ST17Pxr1DsxXSTFrOFz5rjvRN3WB). 
+If you have an iPhone and want in on a photo stream send me a message. I may write 
+about it here again as well.
+
+Wish me luck.
