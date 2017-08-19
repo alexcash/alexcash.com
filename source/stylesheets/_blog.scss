@@ -1,7 +1,13 @@
 .blog-page {
     article {
-        max-width: 700px;
-        margin: 0 auto;
+        min-width: 60%;
+        max-width: 70%;
+        padding: 0 20px;
+
+        @media screen and (max-width: $breakpoint-1) {
+            width: 100%;
+            max-width: 100%;
+        }
 
         header {
             position: relative;
@@ -35,29 +41,6 @@
             width: 100%;
             height: auto;
         }
-
-        padding: 10px;
     }
 
-}
-
-.skrillex-at-20x #back-home {
-    background: rgba(150, 150, 150, 0.5);
-}
-
-#back-home {
-    position: absolute;
-    margin: 15px;
-    background: rgba(255, 255, 255, 0.3);
-    height: 40px;
-    width: 40px;
-    display: block;
-    border-radius: 50%;
-    font-size: 30px;
-    text-align: center;
-    i {
-        position: absolute;
-        top: 4px;
-        left: 6px;
-    }
 }

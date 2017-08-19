@@ -1,0 +1,15 @@
+--- 
+title: "Video Game Backlog: Pokémon X"
+date: 2017/08/07
+headerImage: "/images/blog/pokemon-x/logo.png"
+description: "Ok, this ones a little embarrassing but here it goes. Pokémon X (3DS, 2013)"
+sitemap_priority: 0.8
+---
+
+Ok, this ones a little embarrassing but here it goes. Pokémon X (3DS, 2013)
+
+<img src= "../images/blog/pokemon-x/the-end.jpg"  />
+
+The good: stunning environments. Both artwork and engine give a sense of place and scale impressive for a handheld. The bad: everything else. Despite having the exact same core gameplay loop as 20 years ago it still took ~23 hours. New music is forgettable. Old music is nostalgic for a while but loops for hours. Attempt at a story is admirable but can be [summed up in 22 seconds](https://youtu.be/DN9DW4rrEjY)
+
+If I hadn’t been shut in with a runny nose, and hadn’t the nostalgia been strong I wouldn’t have finished. I won’t be revisiting. C+.

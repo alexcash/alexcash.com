@@ -3,10 +3,9 @@
 
 $breakpoint-1: 1150px;
 $breakpoint-2: 675px;
-$blog-break: 550px;
 $breakpoint-3: 475px;
 
-$contain-width: 1500px;
+$contain-width: 1300px;
 
 $a-blue-text: #1A86D9;
 $a-blue-hover: #3F92D2;
@@ -33,11 +32,42 @@ $a-trans-bg: rgba(96, 74, 32, 0.2);
     clear: both;
 }
 
-.chromeframe {
-    text-align: center;
-    width: 100%;
-    display: block;
-    background-color: $a-trans-bg;
+.blurb {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-1) {
+        display: block;
+        position: relative;
+    }
+    
+    .social-me {
+        float: left;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px;
+        box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+        @media screen and (max-width: $breakpoint-1) {
+            display: block;
+            float: none;
+            margin: 20px auto;
+        }
+    }
+    .copy {
+        font-size: 18px;
+        padding-right: 10px;
+        @media screen and (max-width: $breakpoint-1) {
+            display: block;
+            float: none; 
+            width: 100%;
+            padding: 20px 15px;
+            padding-top: 0;
+        }
+    }
+}
+
+html, body {
+    height: 100%;
 }
 
 body{
@@ -73,128 +103,46 @@ body{
 
     h1 {
         color: $a-blue-text;
+        margin: .5em 0 .05em 0;
     }
 
     .contain {
         width: 100%;
         max-width: $contain-width;
+        min-height: 100%;
         position: relative;
         min-height: 100%;
         margin: 0 auto;
-    }
-
-    footer {
-        background-color: $a-trans-bg;
-        margin-top: 20px;
-        clear: both;
-        width: 100%;
-        max-width: $contain-width;
-        margin: 0 auto;
-        @extend .clearfix;
-
-        .social-table {
-            max-width: 850px;
-            margin: 0 auto;
-            font-size: 18px;
-            @media screen and (max-width: 850px){
-                font-size: 15px;
-            }
-
-            @media screen and (max-width: 767px){
-                max-width: 430px;
-            }
-
-            @media screen and (max-width: $breakpoint-3){
-                font-size: 15px;
-                .copy {
-                    padding-right: 10px;
-                }
-            }
-            .social-me {
-                width: 100px;
-                height: 100px;
-                @media screen and (max-width: $breakpoint-3){
-                    width: 65px;
-                    height: 65px;
-                    margin: 10px;
-                }
-                border-radius: 50%;
-                margin: 20px;
-                box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
-            }
-            .socials {
-                width: 50%;
-                @media screen and (max-width: 767px){
-                    display: none;
-                }
-            }
-        }
-
-        .social-floater {
-            display: none;
-            @media screen and (max-width: 767px){
-                display: block;
-            }
-            margin: 0 10px;
-            span {
-                padding-bottom: 15px;
-                font-size: 15px;
-            }
-        }
-        span {
+        display: flex;
+        @media screen and (max-width: $breakpoint-2) {
             display: block;
-            margin: 0 auto;
-            text-align: center;
-        }
-        nav {
-            max-width: 240px;
-            margin: 0 auto;
-            padding: 0;
-            padding-bottom: 10px;
-            ul {
-                margin: 0;
-                padding: 0;
-                li{
-                    text-align: center;
-                    float: left;
-                    display: block;
-                    width: 25%;
-                    font-size: 1.5em;
-                }
-            }
-
-            a, a:visited {
-                color: $a-blue-text;
-
-                &:hover {
-                    color: $a-blue-hover;
-                    text-decoration: none;
-                }
-            }
         }
     }
 }
 
-.me {
-    height: 600px;
-    width:100%;
-    max-width: 1500px;
-    margin: 0 auto;
+.master {
+    max-width: 390px;
+
+    @media screen and (max-width: $breakpoint-1) {
+        min-width:40%;
+    }
+
+    background-color: #d2d0c4;
     position: relative;
 
+    @media screen and (max-width: $breakpoint-2) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.me {
+    width: 100%;
+    height: 400px;
     background: url("../images/me.jpg");
-    background-color: #d2d0c4;
-    background-repeat:no-repeat;
-    background-position: bottom right;
+    background-position: center;
     background-size: cover;
     position:relative;
-
-    @media screen and (max-width: 770px) {
-        height: 400px;
-    }
-    @media screen and (max-width: $breakpoint-2) {
-        height: 300px;
-    }
 
     header {
         position: absolute;
@@ -235,6 +183,64 @@ body{
     }
 }
 
+nav {
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 10px;
+    ul {
+        margin: 0;
+        padding: 0;
+        li{
+            text-align: center;
+            float: left;
+            display: block;
+            width: 25%;
+            font-size: 1.5em;
+        }
+    }
+
+    a, a:visited {
+        color: $a-blue-text;
+
+        &:hover {
+            color: $a-blue-hover;
+            text-decoration: none;
+        }
+    }
+}
+
+.blog-page {
+    .blurb  {
+        @media screen and (max-width: $breakpoint-2) {
+            display: none;
+        }
+    }
+}
+
+.social-floater.top, .copyright.top {
+    @media screen and (max-width: $breakpoint-2) {
+        display: none;
+    }
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+
+    @media screen and (max-width: $breakpoint-2) {
+        position: relative;
+        padding: 0;
+    }
+}
+
+footer {
+    padding: 10px;
+}
+
 .row {
     @media screen and (max-width: $breakpoint-1) {
         position: relative;
@@ -250,9 +256,7 @@ body{
 .about {
     background-color: #FFAE00;
     color: white;
-    position: absolute;;
-    transform: translate(0, -100%);
-    width: 377px;
+    width: 100%;
     padding: 20px;
     
     h1,h2 {
@@ -277,7 +281,6 @@ body{
     }
 
     @media screen and (max-width: $breakpoint-1) {
-        width: 320px;
         padding: 10px;
         h1 {
             font-size: 50px;
@@ -288,269 +291,17 @@ body{
     }
 
     @media screen and (max-width: $breakpoint-2) {
-        width: 100%;
         position: relative;
         transform: none;
         padding: 10px;
     }
 }
 
-.color-grid {
-    position: relative;
-    .expanded {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        visibility: hidden;
-        .float {
-            width: 100%;
-            max-width: 600px;
-            padding: 15px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            .header {
-                width: 100%;
-                min-height: 50px;
-                position: relative;
-                .svg {
-                    position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
-            .chevron {
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background-image: url("../images/chevron.svg");
-                background-color: rgba(0,0,0,0.2);
-                background-repeat: no-repeat;
-                background-position: 13px center;
-                background-size: 18px;
-                border-radius: 50px;
-                cursor: pointer;
-                transition: background-color 0.2s;
-                &:hover {
-                    background-color: rgba(0,0,0,0.1);
-                }
-            }
-        }
-    }
-}
-
-.logo {
-    position: relative;
-    float: left;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    transform-origin: center center;
-    // border: 5px solid $a-bg-color;
-    will-change: transform;
-    // transform: translate3d(0, 0, 0);
-
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-
-    .svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-    }
-
-    height: 260px;
-    width: 33.33%;
-
-    &.no-hover {
-        border: 0;
-    }
-
-    &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: block;
-        content: "";
-        transform: rotateY( 180deg );
-        transform-style: preserve-3d;
-        backface-visibility: hidden;
-    }
-
-    @media screen and (max-width: $contain-width) {
-        border: 0;
-    }
-
-    @media screen and (max-width: $breakpoint-1) {
-        width: 50%;
-    }
-
+footer {
+    display: none;
+    background-color: #d2d0c4;
     @media screen and (max-width: $breakpoint-2) {
-        width: 100%;
-        height: 150px;
-        &.two {
-            height: 150px;
-        }
-    }
-}
-
-$nest-blue: rgba(0, 175, 216, 1.0);
-.nest, .nest:after {
-    background-color: $nest-blue;
-
-    @media screen and (min-width: $breakpoint-1) {
-        width: 100%;
-        height: 300px;    
-    }
-}
-.logo.nest:hover {
-    background-color: lighten($nest-blue, 3%);
-}
-.expanded.nest {
-    a {
-        color: darken($a-blue-text, 10%);
-        &:hover {
-            color: darken($a-blue-hover, 10%);
-        }
-    }
-}
-
-
-$pioneer-green: rgba(66, 119, 49, 1.0);
-.pioneer, .pioneer:after {
-    background-color: $pioneer-green;
-}
-.logo.pioneer:hover {
-    background-color: lighten($pioneer-green, 3%);
-}
-
-$gu-blue: rgba(20, 56, 113, 1.0);
-.graceland, .graceland:after {
-    background-color: $gu-blue;
-}
-.logo.graceland:hover {
-    background-color: lighten($gu-blue, 3%);
-}
-
-$r12-black: #231F20;
-.room12, .room12:after {
-    background-color: $r12-black;
-
-    &.expanded .float .chevron {
-        background-color: rgba(255,255,255, 0.2);
-        &:hover {
-            background-color: rgba(255,255,255, 0.3);
-        }
-    }
-}
-.logo.room12:hover {
-    background-color: lighten($r12-black, 3%);
-}
-
-.row-2 {
-    position: relative;
-    clear: left;
-    display: flex;
-    width: 100%;
-    > section {
-        border: 5px solid $a-bg-color;
-        
-        @media screen and (max-width: $contain-width) {
-            border: 0;
-        }
-
-        padding: 0 !important;
-        flex: 1;
-        display: none;
-        .no-flex & {
-            width: 33%;
-        }
-    }
-
-    @media screen and (max-width: $breakpoint-1) {
         display: block;
-    }
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-
-.tweets {
-    padding: 1em;
-    float: left;
-    position: relative;
-
-    .no-flexbox & {
-        height: 900px;
-    }
-
-    @media screen and (max-width: $breakpoint-1) {
-        padding: .5em;
-        width: 100%;
-        height: 600px;
-    }
-
-    ol {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        overflow-y: hidden;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-
-        li {
-            background-color: lighten($a-trans-bg, 50%);
-            overflow-y: auto;
-            overflow-x: hidden;
-            padding: 0.5em;
-            list-style-type: none;
-            p {
-                margin: 0;
-            }
-            .permalink {
-                color: $a-blue-text;
-                &:hover {
-                    color: $a-blue-hover;
-                }
-            }
-        }
-        .tweet_odd {
-            background-color: $a-trans-bg;
-        }
-    }
-    &:after {
-        content: '';
-        display: block;
-        background: linear-gradient(to bottom, rgba(231, 231, 226, 0), $a-bg-color);
-        bottom: 0;
-        height: 20%;
-        left: 0;
-        right: 0;
-        position: absolute;
-        width: 100%;
-    }
-}
-
-.lfm, .instagram {
-    @extend .clearfix;
-    float: left;
-
-    @media screen and (max-width: $breakpoint-1) {
-        width: 100%;
-        clear: both;
     }
 }
 
@@ -648,14 +399,21 @@ $r12-black: #231F20;
 }
 
 .blog {
+    min-width: 60%;
+    max-width: 70%;
     padding: 20px 0;
+
+    @media screen and (max-width: $breakpoint-2) {
+        width: 100%;
+        max-width: 100%;
+    }
 
     p {
         margin-top: 0.3em;
     }
 
     article {
-        @media screen and (max-width: $breakpoint-2) {
+        @media screen and (max-width: $breakpoint-1) {
             width: 100%;
         }
         float: left;
@@ -687,28 +445,6 @@ $r12-black: #231F20;
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.nSVG {
-    height: 80px;
-    width: 140px;
-    background-image: url("../images/nest.svg");
-    .expanded & {
-        transform: translate(-50%, -4px) !important;
-    }
-}
-
-.nr12 {
-    background-position: center 15px;
-    background-image: url("../images/r12.svg"); 
-}
-
-.pSVG {
-    background-image: url("../images/pioneer.svg"); 
-}
-
-.gSVG {
-    background-image: url("../images/graceland.svg"); 
 }
 
 

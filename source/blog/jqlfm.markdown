@@ -3,6 +3,7 @@ title: "jQuery.last.fm"
 date: 2013/02/10
 description: "Recently, I discovered a script one of my new coworkers wrote for his website called rdio tiles that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away."
 sitemap_priority: 0.8
+published: false
 ---
 
 Recently, I discovered a script one of my new coworkers wrote for [his website](http://www.number61.net/about/) called [rdio tiles](https://github.com/mgipp/Rdio-Tiles) that showed artwork for music from his 'heavy rotation' on rdio. I thought this was so cool. What better way to share more about yourself than a visual example of the music you're currently into? It's the perfect addition to this site -- I started searching for a way to do it right away.

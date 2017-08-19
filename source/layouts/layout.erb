@@ -14,33 +14,35 @@
 
     <meta name="description" content="<%= current_page.data.description %>">
 
-    <link rel="shortcut icon" href="http://alexca.sh/favicon.ico" />
+    <link rel="shortcut icon" href="http://alex.cash/favicon.ico" />
 
-    <link rel="canonical" href="http://alexca.sh<%= current_page.url %>">
+    <link rel="canonical" href="http://alex.cash<%= current_page.url %>">
+    <link rel="alternate" href="http://alexca.sh<%= current_page.url %>">
+    <link rel="alternate" href="http://alexcash.com<%= current_page.url %>">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="/feed.xml">
 
     <meta property="og:title" content="<%= current_page.data.title || "Alex Cash" %>"/>
     <meta property="og:type" content="<% if current_page.data.notBlog? %>website<% else %>article<% end %>"/>
-    <meta property="og:url" content="http://alexca.sh<%= current_page.url %>"/>
+    <meta property="og:url" content="http://alex.cash<%= current_page.url %>"/>
     <% if current_page.data.headerImage %>
-      <meta property="og:image" content="http://alexca.sh<%= asset_path :images, current_page.data.headerImage %>"/>
+      <meta property="og:image" content="http://alex.cash<%= asset_path :images, current_page.data.headerImage %>"/>
     <% else %>
-      <meta property="og:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+      <meta property="og:image" content="http://alex.cash<%= asset_path :images, 'social.jpg' %>"/>
     <% end %>
-    <meta property="og:site_name" content="alexca.sh"/>
+    <meta property="og:site_name" content="alex.cash"/>
     <meta property="og:description" content="<%= current_page.data.description %>"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@alexcash">
     <meta name="twitter:creator" content="@alexcash">
-    <meta name="twitter:url" content="http://alexca.sh<%= current_page.url %>">
+    <meta name="twitter:url" content="http://alex.cash<%= current_page.url %>">
     <meta name="twitter:title" content="<%= current_page.data.title || "Alex Cash" %>">
     <meta name="twitter:description" content="<%= current_page.data.description %>">
     <% if current_page.data.headerImage %>
-      <meta name="twitter:image" content="http://alexca.sh<%= asset_path :images, current_page.data.headerImage %>"/>
+      <meta name="twitter:image" content="http://alex.cash<%= asset_path :images, current_page.data.headerImage %>"/>
     <% else %>
-      <meta name="twitter:image" content="http://alexca.sh<%= asset_path :images, 'social.jpg' %>"/>
+      <meta name="twitter:image" content="http://alex.cash<%= asset_path :images, 'social.jpg' %>"/>
     <% end %>
 
     <%= stylesheet_link_tag "all" %>
@@ -59,58 +61,61 @@
     <% end %>
   </head>
   <body class="<%= page_classes %><% if not current_page.data.notBlog? %> blog-page<% end %>">
-  <!--[if lt IE 9]>
-      <div class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser.</a></div>
-  <![endif]-->
-  <% if current_page.data.headerImage %>
-    <section class="me" style="background-image: url(<%= asset_path :images, current_page.data.headerImage %>)">
-  <% else %>
-    <section class="me">
-  <% end %>
-  <% if not current_page.data.notBlog? %>
-    <a href="/" id="back-home"><i class="icon-home"></i></a>
-  <% end %>
-      <header>
-        <% if current_page.data.title %>
-          <h1><%= kill_orphans current_page.data.title %></h1>
-       <% end %>
-      </header>
-  </section>
 
     <div class="contain">
-      <%= yield %>
-    </div>
+      <section class="master">
+        <% if current_page.data.headerImage %>
+          <div class="me" style="background-image: url(<%= asset_path :images, current_page.data.headerImage %>)"></div>
+        <% else %>
+          <div class="me"></div>
+        <% end %>
+        <a href="/">
+        <div class="about">
+        <h1>ALEX CASH</h1>
+        </div>
+        </a>
 
-    <footer>
-      <div class="footer-contain">
-        <table class="social-table">
-          <tr>
-            <td><%= image_tag 'social.jpg', :class => 'social-me'%></td>
-            <td class="copy">
-              <i>Alex Cash is an iOS developer in Northern California. He is currently at Nest, an Alphabet company.</i>
-            </td>
-            <td class="socials">
-              <nav class="clearfix"><ul class="clearfix">
-                <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
-                <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
-                <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
-                <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
-              </ul></nav>
-              <span>&copy; <%= Time.now.year %> Alex Cash</span>
-            </td>
-          </tr>
-        </table>
-        <div class="social-floater">
-          <nav class="clearfix"><ul class="clearfix">
+        <div class="blurb">
+            <%= image_tag 'social.jpg', :class => 'social-me'%>
+            <div class="copy">
+              <i>I'm a software developer in Northern California. I enjoy video games, motorcycle camping, and ocassionally&nbspwriting.</i>
+            </div>
+        </div>
+
+        <div class="social-floater top">
+          <nav class="clearfix">
+            <ul class="clearfix">
             <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
             <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
             <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
             <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
-          </ul></nav>
-          <span>&copy; <%= Time.now.year %> Alex Cash</span>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </footer>
+
+        <span class="copyright top">&copy; 2012 - <%= Time.now.year %> Alex Cash</span>
+
+        </section>
+
+
+
+      <%= yield %>
+
+      <footer>
+        <div class="social-floater">
+          <nav class="clearfix">
+            <ul class="clearfix">
+            <li><a href="http://www.twitter.com/alexcash" rel="me"><i class="icon-twitter"></i></a></li>
+            <li><a href="http://www.github.com/alexcash" rel="me"><i class="icon-github"></i></a></li>
+            <li><a href="http://www.linkedin.com/pub/alex-cash/48/460/307" rel="me"><i class="icon-linkedin"></i></a></li>
+            <li><a href="/feed.xml" rel="me"><i class="icon-rss"></i></a>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="copyright">&copy; 2012 - <%= Time.now.year %> Alex Cash</div>
+      </footer>
+    </div>
 
   </body>
   <script type="text/template" id="image-grid">
@@ -145,8 +150,6 @@
   <% if current_page.data.script %>
     <%= javascript_include_tag "all", :async => false %>
     <%= javascript_include_tag current_page.data.script, :async => false %>
-  <% else %>
-    <%= javascript_include_tag "all", :async => true %>
   <% end %>
 
 

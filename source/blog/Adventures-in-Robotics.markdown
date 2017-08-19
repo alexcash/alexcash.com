@@ -17,4 +17,4 @@ The source code for this solution can be found on [my github](https://github.com
 	<iframe src="http://www.youtube.com/embed/Ln_6duaCqnI?rel=0" frameborder="0" width="560" height="315"> </iframe>
 </div>
 
-expect a follow up with all kinds of goodies about the competition Friday.
+Expect a follow up with all kinds of goodies about the competition Friday.

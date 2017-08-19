@@ -1,8 +1,5 @@
 //= require jquery-2.1.0.js
 //= require lodash.js
-//= require moment.js
-//= require jquery-transit.js
-//= require fastclick.js
 
 //doc ready
 $(function() {

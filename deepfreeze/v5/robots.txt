@@ -1,0 +1,5 @@
+Sitemap: http://alexca.sh/sitemap.xml   
+
+User-agent: *
+Disallow: /email_assets/
+Disallow: /holiday2012/
