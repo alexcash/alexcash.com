@@ -1,7 +1,7 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title "Alex Cash"
-  xml.subtitle "Dangerous thoughts from a dangerous mind."
+  xml.subtitle "Games, Motorcylces Camping, Software and More"
   xml.id "http://alexca.sh/"
   xml.link "href" => "http://alexca.sh/"
   xml.link "href" => "http://alexca.sh/feed.xml", "rel" => "self"
