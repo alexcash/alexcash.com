@@ -10,7 +10,7 @@ I've been playing BoxBoy! (3DS, 2015) in little hunks for the last month. It's a
 
 The concept is novel. You're platforming as a little box that can generate and manipulate other little boxes. The idea is to use those boxes to avoid hazards and reach the end of each stage. As an extra challenge, there are rewards for getting to hard to reach locations, or using a particularly few numbers of boxes. This core mechanic is inventive and very enjoyable.
 
-<img src= "../images/blog/boxboy/gameplay.gif"  />
+<img src= "../images/blog/boxboy/gameplay.gif" alt="A short video clip of gameplay" title="A short video clip of gameplay"  />
 
 The game is split into 17 different worlds that share puzzle mechanic themes. Each mechanic is interesting and challenging in it's own right, and you feel clever after solving puzzles with them. Sometimes the mechanics layer on top of each other in fun ways, though this isn't as frequent as I would have liked.
 
@@ -18,6 +18,6 @@ BoxBoy! exudses charm, and does so very much artistically with so very little. T
 
 Time flew playing this game -- I thought for sure I'd played for 3-4 hours, but the gameplay log on my 3DS says I played for just about 6.
 
-<img src= "../images/blog/boxboy/the-end.jpg"  />
+<img src= "../images/blog/boxboy/the-end.jpg" alt="A 3DS on the game end screen" title="A 3DS on the game end screen" />
 
 BoxBoy! is the bite sized game that every mobile title wishes it was. If you are into puzzles and like to jump into a game for just a few minutes at a time this title is a must. A+
