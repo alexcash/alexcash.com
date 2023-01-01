@@ -19,9 +19,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/cache@v2
+    - uses: actions/checkout@v2
     - name: Set up Ruby
-      uses: setup-ruby@v1
+      uses: actions/setup-ruby@v1
       with:
         bundler-cache: true
     - name: "Build Site"
