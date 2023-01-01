@@ -1,0 +1,10 @@
+---
+layout: none
+---
+User-agent: *
+Sitemap: {{ site.url }}/sitemap.xml
+
+
+Disallow: /email_assets/
+Disallow: /holiday2012/
+Disallow: /deepfreeze/

@@ -1,0 +1,73 @@
+title: Alex Cash
+description: >- # this means to ignore newlines until "baseurl:"
+  Writings of and landing page for Alex Cash. Alex is a software engineer, comic book lover, retro game hardware tinkerer, occassional podcaster, and seldom motorcylcist.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://alex.cash" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: alexcash
+github_username:  alexcash
+
+#opengraph etc
+twitter:
+  username: alexcash
+  card: summary
+  creator: alexcash
+author:
+  twitter: alexcash
+  name: #alexcash
+  avatar:
+  url: "http://alex.cash/about"
+permalink: pretty
+
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+
+exclude:
+  - readme.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

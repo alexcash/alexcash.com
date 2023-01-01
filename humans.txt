@@ -1,0 +1,25 @@
+---
+layout: none
+---
+
+So, I guess this is where we do the secret handshake. I work a lot on my site
+and I'm pretty proud of it. If you're reading this your feedback is welcome.
+Feel free to reach out at toalexcash@gmail.com
+
+Tools
+
+  Sublime Text, iTerm, Pixelmator, Docker
+
+Services
+
+  AWS, Github
+
+Frameworks, Lbraries, Assets
+
+  Jekyll (https://jekyllrb.com)
+  Sidey (https://github.com/ronv/sidey)
+
+All code included from a tool, framework, or library maintains it's respective
+license. All other code and assets:
+
+Copyright © 2012-{{ 'now' | date: "%Y" }} Alex Cash

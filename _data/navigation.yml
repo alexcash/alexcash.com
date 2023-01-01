@@ -1,0 +1,14 @@
+links:
+- title: Writing
+  url: /
+- title: About
+  url: /about
+# - title: Search
+#   url: /search
+- title: Mastodon
+  url: https://mastodon.social/@alexcash
+  rel: me
+- title: Bat Lessons
+  url: https://batlessons.com
+- title: Rss
+  url: /feed.xml

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "v4.0"
+date: 2013/01/19
+description: "For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the beginning, I promised myself I'd frequently iterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:"
+sitemap_priority: 0.8
+published: false
+---
+
+For almost a year, this site has served as both an example of my skills, and a proving ground to hone them. Since the beginning, I promised myself I'd frequently iterate upon it, forcing myself to grow and learn. Today is the next step on that path. Here's what's new:
+
+- **New look and feel.** Fully responsive, clean and lightweight.
+
+- **A blog!** As a senior at Graceland, I created and maintained a small wordpress blog at binarysmokesignals.com. Now that I'm graduated, I wanted provide a more personal platform to share thoughts and writings. Now you can find posts right here at alexcash.com. Posts that I felt were relevant have made the migration from binary smoke signals. Others did not. I'm looking forward to writing more here in the future.
+
+- **Complete code rewrite.** Over the last months, I've become a bit of a tools snob. I went from just slamming out html and css in a text editor in v3, to a full blown tool chain for v4. The site is staticly generated using [middleman](http://middlemanapp.com/) and [sass](http://sass-lang.com/). You can see the [source](https://github.com/alexcash/alexcash.com) on github. I'm pretty proud of it.
+
+- **alexca.sh short domain.** A few months ago I aquired this URL, and with 4.0 it will provide short links to all my blog posts, and future pages of interest.
+
+- **New server architecture.** I recently made the jump from a traditional apache server at dreamhost to cloud fronted nginx instance through AWS. Page loads should be stupid fast.
+
+- **Design retrospective.** My code has been out in the public since 1.0, and you can jump through the commit history on [github](https://github.com/alexcash/alexcash.com) to see my progress. However, I wanted to provide a simpler way for people to see how far I've come. So, on my home page I've provided a [timeline](/#timeline) with images of alexcash.com at every major revision. Click or tap through to see a 'deep freeze' copy of that version of the site.
+
+The web should be beautiful, funcitonal, clear, and concise. I hope you've enjoyed my efforts so far. Join me as I work to contribute to that future.
