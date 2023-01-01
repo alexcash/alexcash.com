@@ -11,7 +11,7 @@
   </author>
   <entry>
     <title>jQuery.last.fm</title>
-    <link rel="alternate" href="/jqlfm/"/>
+    <link rel="alternate" href="/deepfreeze/v4/jqlfm/"/>
     <id>/jqlfm/</id>
     <published>2013-02-10T00:00:00Z</published>
     <updated>2013-02-10T00:00:00Z</updated>
@@ -30,7 +30,7 @@
   </entry>
   <entry>
     <title>v4.0</title>
-    <link rel="alternate" href="/v4/"/>
+    <link rel="alternate" href="/deepfreeze/v4/v4/"/>
     <id>/v4/</id>
     <published>2013-01-19T00:00:00Z</published>
     <updated>2013-01-19T00:00:00Z</updated>
@@ -70,7 +70,7 @@
   </entry>
   <entry>
     <title>The Taste of Defeat</title>
-    <link rel="alternate" href="/Taste-of-Defeat/"/>
+    <link rel="alternate" href="/deepfreeze/v4/Taste-of-Defeat/"/>
     <id>/Taste-of-Defeat/</id>
     <published>2012-04-25T00:00:00Z</published>
     <updated>2012-04-25T00:00:00Z</updated>
@@ -89,7 +89,7 @@
   </entry>
   <entry>
     <title>Adventures in Robotics</title>
-    <link rel="alternate" href="/Adventures-in-Robotics/"/>
+    <link rel="alternate" href="/deepfreeze/v4/Adventures-in-Robotics/"/>
     <id>/Adventures-in-Robotics/</id>
     <published>2012-04-12T00:00:00Z</published>
     <updated>2012-04-12T00:00:00Z</updated>
@@ -109,7 +109,7 @@
   </entry>
   <entry>
     <title>History Repeats Itself</title>
-    <link rel="alternate" href="/History-Repeats-Itself/"/>
+    <link rel="alternate" href="/deepfreeze/v4/History-Repeats-Itself/"/>
     <id>/History-Repeats-Itself/</id>
     <published>2012-03-06T00:00:00Z</published>
     <updated>2012-03-06T00:00:00Z</updated>
