@@ -19,13 +19,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
+    - name: Checkout
       uses: actions/checkout@v2
-    
-    - name: Perform jekyll build
-      uses: helaili/jekyll-action@v2
-      with:
-        build_only: true
+
+    - name: Build
+      uses: jerryjvl/jekyll-build-action@v1
 
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
