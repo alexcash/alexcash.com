@@ -3,6 +3,7 @@ layout: post
 title: "Missing Out on Comic Books"
 date: 2018/08/24
 description: "I feel like I've been missing out on comic books."
+permalink: "/adventures-in-comics/"
 ---
 
 ![1st person photo of me holding a copy of Captain America (2018) #2 on the beach](/images/blog/adventures-in-comics/beach-comic.jpg)

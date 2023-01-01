@@ -4,7 +4,7 @@ title: "Video Game Backlog: BoxBoy!"
 date: 2017/09/16
 headerImage: "/images/blog/boxboy/box.jpg"
 description: "I've been playing BoxBoy! (3DS, 2015) in little hunks for the last month."
-sitemap_priority: 0.8
+permalink: "/boxboy/"
 ---
 
 I've been playing BoxBoy! (3DS, 2015) in little hunks for the last month. It's a $5 digital only title develped by HAL Labratory of Super Smash Brothers fame. The game showed up on my radar when it's sequel "Bye Bye BoxBoy" was announced earlier this year. While covering it several of the gaming podcasts I listen to went out of their way to sing the original's praises, so I decided to give it a go.

@@ -4,7 +4,7 @@ title: "Crowd Sourced WWDC Tips"
 headerImage: "/images/blog/saving-on-wwdc/header.jpg"
 date: 2016/04/22
 description: "More ideas for traveling to San Francisco on a budget."
-sitemap_priority: 0.8
+permalink: "/crowd-sourced-wwdc-tips/"
 ---
 
 ![The Apple Official WWDC 2016 promotional image. "Hello, WWDC16." it reads.](/images/blog/saving-on-wwdc/header.jpg)

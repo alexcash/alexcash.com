@@ -4,7 +4,7 @@ title: "Video Game Backlog: Super Mario Galaxy 2"
 date: 2017/08/16
 headerImage: "/images/blog/mario-galaxy-2/logo.png"
 description: "In for a treat this time. Super Mario Galaxy 2 (Wii, 2010)"
-sitemap_priority: 0.8
+permalink: "/mario-galaxy-2/"
 ---
 
 In for a treat this time. Super Mario Galaxy 2 (Wii, 2010)

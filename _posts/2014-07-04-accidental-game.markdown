@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "I accidentally a game"
-headerImage: "/images/blog/accidental-game/ecliptic.jpg"
 date: 2014/07/04
 description: "It's called ecliptic, and it's live on the App Store today."
 script: "circle-field"
+permalink: "/accidental-game/"
 ---
 
-![The Apple Official WWDC 2016 promotional image. "Hello, WWDC16." it reads.](/images/blog/accidental-game/ecliptic.jpg)
+![A screenshot of the game. Several transparent circles overlap.](/images/blog/accidental-game/ecliptic.jpg)
 
 Just over a year ago, I started hacking in my spare time on a little game. Nights
 and weekends when I got a wild hair, I'd sit in front of a glowing screen until

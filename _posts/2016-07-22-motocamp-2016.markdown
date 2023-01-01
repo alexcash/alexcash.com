@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Motocamp 2016"
-headerImage: "/images/blog/motocamp-2016/header.jpg"
 date: 2016/07/22
 description: "For the next week, I live out of this motorcycle."
+permalink: "/motocamp-2016/"
 ---
 
 ![A map to yellowstone](/images/blog/motocamp-2016/header.jpg)

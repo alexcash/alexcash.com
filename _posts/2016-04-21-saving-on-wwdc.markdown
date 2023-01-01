@@ -3,6 +3,7 @@ layout: post
 title: "Saving on WWDC"
 date: 2016/04/21
 description: "Ideas for traveling to San Francisco on a budget."
+permalink: "/saving-on-wwdc/"
 ---
 
 ![The Apple Official WWDC 2016 promotional image. "Hello, WWDC16." it reads.](/images/blog/saving-on-wwdc/header.jpg)

@@ -4,7 +4,7 @@ title: "Video Game Backlog: Splatoon 2"
 date: 2017/08/10
 headerImage: "/images/blog/splatoon-2/logo.jpg"
 description: "This time for the videogame backlog we have a new release! Splatoon 2 (Switch, 2017)"
-sitemap_priority: 0.8
+permalink: "/splatoon-2/"
 ---
 
 This time for the videogame backlog we have a new release! Splatoon 2 (Switch, 2017)
