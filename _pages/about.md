@@ -19,7 +19,7 @@ Professionally, I'm a software engineer. I attended [Graceland Univeristy](https
 
 In 2012, I interned with [Nest Labs](https://web.archive.org/web/20121017084020/http://www.nest.com/) and was subsequently hired on full time. I was at Nest for five years, working on many projects. For the second generation theremostat, I rewrote the web tool that help prospective customers find out if their HVAC system was compatible. For the third generation thermostat, I worked on a (very) small team to take the nest.com marketing website in house, moving from wordpress (and duct tape) to a [middleman](https://middlemanapp.com) static site. For the smoke detector, I worked on the web app (home.nest.com) which allowed you to control and monitor our devices from your web browser. I then moved on to the iOS team. I worked on redesigning the UI (we called it version 5.0), folding in DropCam (we aquired them, and renamed it Nest Cam), writing our watchOS and tvOS apps.
 
-In 2017, I left Nest and joined my current employer. Some kind of fruit company or somehting like that. Some day, when I've moved on I'll share more.
+In 2017, I left Nest and joined my current employer. Some kind of fruit company or somehting like that. Eventually, when I've moved on I'll share more.
 
 ### Play
 
