@@ -1,14 +1,14 @@
---- 
-layout: post
-title: "Hey."
-date: 2023/01/01
-description: "A quick note to start the new year"
 ---
+layout: post
+title: Hey.
+date: 2023/01/01
+description: A quick note to start the new year
 
+---
 Long time no see.
 
 In 2020 my son was born! That's been an immense pleasure and my primary focus. I mostly haven't been online, but I did start a podcast in 2022 called [Bat Lessons](https://batlessons.com). You should check that out.
 
 Over the holidays I've been working to simplify this site way the heck down. My hope is that if it's easier to post, I'll do so. Stay tuned for occasional thoughts and writings.
 
-Don't tell anyone, but you can get at old version of my site at [/deepfreeze](/deepfreeze)
+Don't tell anyone, but you can get at old version of my site at [/deepfreeze](/deepfreeze).
