@@ -81,29 +81,25 @@ prose:
         field:
           element: "hidden"
           value: "post"
-
       - name: "title"
         field:
           element: "text"
-          label: "Permalink"
+          label: "title"
           value: ""
-
       - name: "date"
+        field:
           element: "hidden"
           value: CURRENT_DATETIME
-
       - name: "description"
         field:
           element: "text"
           label: "description"
           value: ""
-
       - name: "published"
         field:
           element: "checkbox"
           label: "published"
           value: ""
-
       - name: "permalink"
         field:
           element: "text"
@@ -118,9 +114,8 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "Permalink"
+          label: "title"
           value: ""
-
       - name: "permalink"
         field:
           element: "text"
