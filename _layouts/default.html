@@ -11,8 +11,10 @@ layout: compress
 	    {% include navigation.html %}
 	    
         {{ content }}
-        	    
+      
+      <footer>
+        <p><a href="feed.xml">RSS Feed</a> &middot; © Alex Cash 2012 - {{ 'now' | date: "%Y" }}</p>
+      </footer>   
     </main>
-            
   </body>
 </html>
