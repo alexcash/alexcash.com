@@ -54,10 +54,17 @@ defaults:
     values:
       layout: "post"
 
+jekyll-archives:
+  enabled: [tags]
+  layout: tag
+  permalinks:
+    tag: '/tag/:name/'
+
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap  
+  - jekyll-sitemap
+  - jekyll-archives
 
 exclude:
   - readme.md

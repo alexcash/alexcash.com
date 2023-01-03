@@ -23,7 +23,7 @@ In 2017, I left Nest and joined my current employer. Some kind of fruit company 
 
 ### Play
 
-I play video games to pass the time. I write about it here occasionally. Mabye if I ever add category tags I'll link all of those posts. I'd classify myself as casual, but I **_did_** raid in World of Warcraft for 10 years. I was a [paladin healer](https://youtu.be/uWNd-bRRBvY) for the guild [Dulce Bellum](http://www.dulcebellum.com\]), rest in pepperoni. Very recently I've gotten into modifying and restoring retro video game consoles. I've been working on my soldering skills. I hope to share about that here soon.
+I play video games to pass the time. [I write about it](/tag/gaming/) here occasionally. I'd classify myself as casual, but I **_did_** raid in World of Warcraft for 10 years. I was a [paladin healer](https://youtu.be/uWNd-bRRBvY) for the guild [Dulce Bellum](http://www.dulcebellum.com\]), rest in pepperoni. Very recently I've gotten into modifying and restoring retro video game consoles. I've been working on my soldering skills. I hope to share about that here soon.
 
 One of my cousins is huge on motorcycles, and he passed that bug on to me. I've been on several moto-camping trips including two big ones to [yellowstone]({% post_url 2016-07-22-motocamp-2016 %}) and El Paso. I've only written about it once here, but perhaps I'll do more in the future.
 

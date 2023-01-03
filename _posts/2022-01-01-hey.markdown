@@ -3,7 +3,7 @@ layout: post
 title: Hey.
 date: 2023/01/01
 description: A quick note to start the new year
-
+tags: meta
 ---
 Long time no see.
 

@@ -1,11 +1,12 @@
 --- 
 layout: post
-title: "Video Game Backlog: A Link Between Worlds"
+title: "A Link Between Worlds"
 date: 2017/07/31
 headerImage: "/images/blog/link-between-worlds/box.jpg"
 description: "The first post in my videogame backlog series. I'll post here when I beat a game I've been meaning to get to. All screenshots are my own.
 Today is The Legend of Zelda: A Link Between Worlds for the Nintendo 3DS, relased in 2013."
 permalink: "/link-between-worlds/"
+tags: gaming
 ---
 
 The first post in my videogame backlog series. I'll post here when I beat a game I've been meaning to get to. All screenshots are my own.

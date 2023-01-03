@@ -4,6 +4,7 @@ title: "Motocamp 2016"
 date: 2016/07/22
 description: "For the next week, I live out of this motorcycle."
 permalink: "/motocamp-2016/"
+tags: motorcycle
 ---
 
 ![A map to yellowstone](/images/blog/motocamp-2016/header.jpg)

@@ -1,10 +1,11 @@
 --- 
 layout: post
-title: "Video Game Backlog: Pokémon X"
+title: "Pokémon X"
 date: 2017/08/07
 headerImage: "/images/blog/pokemon-x/logo.png"
 description: "Ok, this ones a little embarrassing but here it goes. Pokémon X (3DS, 2013)"
 permalink: "/pokemon-x/"
+tags: gaming
 ---
 
 Ok, this ones a little embarrassing but here it goes. Pokémon X (3DS, 2013)

@@ -12,6 +12,7 @@ gem 'jekyll-sass-converter', '~> 2.2' # forcing down from 3.0 because embeded-sa
 gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
+gem 'jekyll-archives'
 
 group :jekyll_plugins do
 end

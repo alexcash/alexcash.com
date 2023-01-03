@@ -5,6 +5,7 @@ date: 2014/07/04
 description: "It's called ecliptic, and it's live on the App Store today."
 script: "circle-field"
 permalink: "/accidental-game/"
+tags: gaming development
 ---
 
 ![A screenshot of the game. Several transparent circles overlap.](/images/blog/accidental-game/ecliptic.jpg)

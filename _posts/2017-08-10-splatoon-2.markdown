@@ -1,10 +1,11 @@
 --- 
 layout: post
-title: "Video Game Backlog: Splatoon 2"
+title: "Splatoon 2"
 date: 2017/08/10
 headerImage: "/images/blog/splatoon-2/logo.jpg"
 description: "This time for the videogame backlog we have a new release! Splatoon 2 (Switch, 2017)"
 permalink: "/splatoon-2/"
+tags: gaming
 ---
 
 This time for the videogame backlog we have a new release! Splatoon 2 (Switch, 2017)

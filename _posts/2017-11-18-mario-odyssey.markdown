@@ -1,10 +1,11 @@
 --- 
 layout: post
-title: "Review: Super Mario Odyssey"
+title: "Super Mario Odyssey"
 date: 2017/11/18
 headerImage: "/images/blog/mario-odyssey/logo.jpg"
 description: "It’s hard to say much more about this game than has already been said."
 permalink: "/mario-odyssey/"
+tags: gaming
 ---
 
 It’s hard to say much more about _Super Mario Odyssey_ than has already been said. A game of it's cultural significance comes seldom and ink is liberally spilled. In that light I’ll keep it short and focus on extra perspective I can bring to the table.
