@@ -21,12 +21,22 @@
         - {{ site.description | escape }}
       {% endunless %}
     </title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29834387-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-29834387-1');
+  </script>
   
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
   <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
-      
+  
   <style>
     {% capture include_to_scssify %}
       {% include inline.scss %}

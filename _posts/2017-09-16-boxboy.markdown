@@ -2,7 +2,7 @@
 layout: post
 title: "BoxBoy!"
 date: 2017/09/16
-headerImage: "/images/blog/boxboy/box.jpg"
+image: "/images/blog/boxboy/box.jpg"
 description: "I've been playing BoxBoy! (3DS, 2015) in little hunks for the last month."
 permalink: "/boxboy/"
 tags: gaming

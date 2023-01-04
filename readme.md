@@ -1,6 +1,6 @@
 ## alexcash.com
 
-The source for http://alex.cash. Built with [Jekyll](https://jekyllrb.com)
+The source for https://alex.cash. Built with [Jekyll](https://jekyllrb.com)
 
 ###To get started
 

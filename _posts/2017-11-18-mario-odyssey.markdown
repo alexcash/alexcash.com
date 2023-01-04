@@ -2,7 +2,7 @@
 layout: post
 title: "Super Mario Odyssey"
 date: 2017/11/18
-headerImage: "/images/blog/mario-odyssey/logo.jpg"
+image: "/images/blog/mario-odyssey/logo.jpg"
 description: "It’s hard to say much more about this game than has already been said."
 permalink: "/mario-odyssey/"
 tags: gaming

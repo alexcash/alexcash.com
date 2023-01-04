@@ -2,7 +2,7 @@
 layout: post
 title: "Super Mario Galaxy 2"
 date: 2017/08/16
-headerImage: "/images/blog/mario-galaxy-2/logo.png"
+image: "/images/blog/mario-galaxy-2/logo.png"
 description: "In for a treat this time. Super Mario Galaxy 2 (Wii, 2010)"
 permalink: "/mario-galaxy-2/"
 tags: gaming
