@@ -45,4 +45,4 @@ fields:
   description: this image was used in the template as the header before. now if provided
     it's used in social sharing links.
 pages:
-- _posts/bat-lessons.md
+- _posts/2023-01-16-bat-lessons.md
