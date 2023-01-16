@@ -14,7 +14,7 @@ For one, my area of greatest interest is technology. It's hard to talk about tha
 
 But about a year ago, the stars started to align.
 
-![](/images/uploads/batlessons_artwork_1000x1000.jpg)
+![The podcast artwork for Bat Lessons. A bat in a super hero outfit stands at a chalkboard, pointing at the text "Bat Lessons". Villains sit in the classroom looking onward.](/images/batlessons_artwork_1000x1000.jpg)
 
 In 2018 I [wrote briefly]() about how I was getting into comic books. I just kept falling down that rabbit hole. I've been reading and reading and reading. It's super fun, but I've not really had anyone to talk about it with. Turns out that despite massive cinematic success, the books themselves are a pretty small niche. I found myself craving an outlet. It occured to me that a podcast may be just the ticket.
 
