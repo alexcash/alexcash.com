@@ -44,3 +44,5 @@ fields:
   label: Social Image
   description: this image was used in the template as the header before. now if provided
     it's used in social sharing links.
+pages:
+- _posts/bat-lessons.md
