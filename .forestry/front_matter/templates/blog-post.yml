@@ -5,18 +5,42 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
+  hidden: true
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - type: text
   name: date
   label: date
+  config:
+    required: true
+    min: 10
+    max: 10
+  description: YYYY/MM/DD
 - type: text
   name: description
   label: description
+  config:
+    required: true
+  description: Goes in RSS, google, social previes.
 - type: text
   name: permalink
   label: permalink
 - type: text
   name: tags
   label: tags
+- name: published
+  type: boolean
+  label: published
+  default: true
+  description: if false, will not be included in builds.
+- name: headerImage
+  type: file
+  config:
+    maxSize: 64
+  label: Social Image
+  description: this image was used in the template as the header before. now if provided
+    it's used in social sharing links.
