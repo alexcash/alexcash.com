@@ -32,11 +32,6 @@ fields:
 - type: text
   name: tags
   label: tags
-- name: published
-  type: boolean
-  label: published
-  default: true
-  description: if false, will not be included in builds.
 - name: headerImage
   type: file
   config:
