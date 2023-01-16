@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
----
 
+---
 Hey. I'm Alex Cash. This is my digital home. Here you can find links to other places I am on the interwebs and some of my musings. I suppose this page specifically is where you can find a little more about me too.
 
 ![Black and white photo of me smiling.](/images/me.jpeg)
@@ -29,8 +29,8 @@ I play video games to pass the time. [I write about it](/tag/gaming/) here occas
 
 One of my cousins is huge on motorcycles, and he passed that bug on to me. I've been on several moto-camping trips including two big ones to [Yellowstone]({% post_url 2016-07-22-motocamp-2016 %}) and El Paso. I've only written about it once here, but perhaps I'll do more in the future.
 
-In 2018, with the Marvel Cinematic Universe at a fever pitch I decided to [try out comic books]({% post_url 2018-08-24-adventures-in-comics %}). I've fallen [way far down](https://mastodon.social/@alexcash/109243476257069735) that rabbit hole. I hope to write about that more here, but suffice to say I went and started a podcast about comics. It's called [Bat Lessons](https://batlessons.com) and it's about the history of Batman. Shouts out to my good friend [Brian](https://briananders.net) for being my cohost.
+In 2018, with the Marvel Cinematic Universe at a fever pitch I decided to [try out comic books]({% post_url 2018-08-24-adventures-in-comics %}). I've fallen [way far down](https://mastodon.social/@alexcash/109243476257069735) that rabbit hole. I hope to write about that more here, but suffice to say I went and [started a podcast](/2023/01/16/bat-lessons/) about comics. It's called [Bat Lessons](https://batlessons.com) and it's about the history of Batman. Shouts out to my good friend [Brian](https://briananders.net) for being my cohost.
 
 ### Family
 
-I don't want to share too much online, but family is deeply important to me. I've been happily married for 10 years, and I have a wonderful toddler. After living in the San Francisco Bay Area for 10 years, I returned to Kansas City in 2022. Having my son be near his grandparents has made all the difference in the world.
+I don't want to share too much online, but family is deeply important to me. I've been happily married for 10 years, and I have a wonderful toddler. After living in the San Francisco Bay Area our entire marriage, we returned to Kansas City in 2022. Having my son be near his grandparents has made all the difference in the world.
