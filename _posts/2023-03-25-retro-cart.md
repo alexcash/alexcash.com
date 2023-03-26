@@ -12,7 +12,7 @@ Late last year, I moved back to the midwest from California. There are upsides l
    <source src="/images/blog/retro-cart/mystuff.mp4" type="video/mp4">
 </video>
 
-One thing I've wanted for a long time is a CRT television set to play old games on. I'm inclined to say it's because I think the image is objectively better so as to avoid judgment and derision but I don't. Don't get me wrong, there is a specific picture quality that is hard to deny. I'd agree wholeheartedly agree this is how designers and artists worked on their games and intended them to be seen. There are benefits to a CRT.
+One thing I've wanted for a long time is a CRT television set to play old games on. I'm inclined to say it's because I think the image is objectively better so as to avoid judgment and derision but I don't. Don't get me wrong, there is a specific picture quality that is hard to deny. I'd wholeheartedly agree this is how designers and artists worked on their games and intended them to be seen. There are benefits to a CRT.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Castlevania: Symphony of the Night (1997, Konami) - PS1<br><br>Sharp Pixels vs. PS1 Composite via Sony KV-13M51<br><br>This could be my new favorite. Notice the way composite color bleed turns a single pixel into red eyes, or the way the scanlines give definition to Dracula&#39;s lips and teeth. <a href="https://t.co/YkhDpEEwSD">pic.twitter.com/YkhDpEEwSD</a></p>&mdash; CRT Pixels (@CRTpixels) <a href="https://twitter.com/CRTpixels/status/1408451743214616587?ref_src=twsrc%5Etfw">June 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
