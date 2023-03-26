@@ -8,7 +8,7 @@ image: "/images/blog/retro-cart/panasonic.jpeg"
 ---
 Late last year, I moved back to the midwest from California. There are upsides like being near family, and downsides like pretty crummy weather. One benefit: We've been able to afford a much larger house, which I can fill with more stuff. 
 
-<video autoplay loop muted>
+<video autoplay loop muted playsinline>
    <source src="/images/blog/retro-cart/mystuff.mp4" type="video/mp4">
 </video>
 
