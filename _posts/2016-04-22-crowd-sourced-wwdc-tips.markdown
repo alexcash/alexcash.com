@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Crowd Sourced WWDC Tips"
-headerImage: "/images/blog/saving-on-wwdc/header.jpg"
+image: "/images/blog/saving-on-wwdc/header.jpg"
 date: 2016/04/22
 description: "More ideas for traveling to San Francisco on a budget."
 permalink: "/crowd-sourced-wwdc-tips/"

@@ -4,7 +4,7 @@ title: Retro Cart
 date: 2023/03/25
 description: Sharing about my new retro gaming setup
 tags: gaming
-headerImage: '/images/blog/retro-cart/panasonic.jpeg'
+image: "/images/blog/mario-galaxy-2/logo.png"
 ---
 Late last year, I moved back to the midwest from California. There are upsides like being near family, and downsides like pretty crummy weather. One benefit: We've been able to afford a much larger house, which I can fill with more stuff. 
 

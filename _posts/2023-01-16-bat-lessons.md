@@ -4,7 +4,7 @@ title: Bat Lessons
 date: 2023/01/16
 description: A little note about my podcast, Bat Lessons.
 tags: comics podcasting
-headerImage: ''
+image: ''
 
 ---
 I've always wanted to do a podcast. It's not as easy as it sounds.
