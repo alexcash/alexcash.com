@@ -207,3 +207,21 @@ section {
 figcaption {
     font-size: smaller;
 }
+
+
+// custom
+
+.myPhoto {
+	display: none;
+}
+@media screen and (min-width: 35rem ) {
+	.myPhoto {
+		display: block;
+		max-width: 40%;
+		float: right;
+		padding-left: 1rem;
+	}
+	.myPhotoSmall {
+		display: none;
+	}
+}

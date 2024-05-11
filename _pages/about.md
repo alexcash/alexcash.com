@@ -3,9 +3,7 @@ layout: page
 title: About
 
 ---
-Hey. I'm Alex Cash. This is my digital home. Here you can find links to other places I am on the interwebs and some of my musings. I suppose this page specifically is where you can find a little more about me too.
-
-![Black and white photo of me smiling.](/images/me.jpeg)
+![Black and white photo of me smiling.](/images/me.jpeg){: .myPhoto}Hey. I'm Alex Cash. This is my digital home. Here you can find links to other places I am on the web and some of my musings. On this page specifically you can read what I have to say about myself. I don't really recommend that, but I won't stop you.![Black and white photo of me smiling.](/images/me.jpeg){: .myPhotoSmall}
 
 ### Origin
 
