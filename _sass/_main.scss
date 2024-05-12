@@ -12,7 +12,11 @@ body {
     text-rendering: optimizeLegibility;
 	line-height:1.5;
 	font-size: 1rem;
-	color: rgb(22, 23, 26);
+	// color: rgb(22, 23, 26);
+
+	background-color: Canvas;
+	color: CanvasText;
+	color-scheme: light dark;
 }
 
 footer {
@@ -26,9 +30,24 @@ nav ul {
 }
 
 a {
-    color: #000;
+    // color: AccentColor;
+    color: #fc8b19;
     text-decoration-skip-ink: auto;
     text-decoration: underline;
+}
+
+a:hover {
+	filter: brightness(110%);
+}
+
+@media (prefers-color-scheme: dark) {
+	a {
+		color: #f59b42;
+	}
+
+	a:hover {
+		filter: brightness(120%);
+	}
 }
 
 pre {
