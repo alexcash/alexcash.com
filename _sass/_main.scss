@@ -214,6 +214,10 @@ figcaption {
 .myPhoto {
 	display: none;
 }
+
+.myPhotoSmall {
+	padding-top: 1rem;
+}
 @media screen and (min-width: 35rem ) {
 	.myPhoto {
 		display: block;

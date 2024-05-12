@@ -11,8 +11,8 @@ The source for https://alex.cash. Built with [Jekyll](https://jekyllrb.com)
 The theme I started with is Sidey
 https://github.com/ronv/sidey
 
-_Included in this project are several libraries and code snippets, and their_
-_respective copyright and license information is included with or contained in_
-_them. For all other code and assets:_
+_Included in this project are several libraries and code snippets, which retain_
+_respective copyright and license information included with or contained within._
+_All other code and assets:_
 
 _Copyright © 2012-2024 Alex Cash_
