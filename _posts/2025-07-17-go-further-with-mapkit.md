@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Go Further With MapKit
-date: 2025/07/16
+date: 2025/07/17
 description: My WWDC 2025 Session
 tags: apple
 image: "/images/blog/go-further-with-mapkit/wwdc-thumbnail.jpg"
